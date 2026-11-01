@@ -1,0 +1,114 @@
+# Packaging metadata for bibauthor.
+#
+# No email address appears anywhere in this file on purpose. Contact for this
+# project is the issue tracker named under [project.urls].
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bibauthor"
+version = "0.1.0"
+description = "Verify bibliography AUTHOR LISTS against authoritative metadata, so a chimeric citation cannot pass as a clean one."
+readme = "README.md"
+requires-python = ">=3.9"
+# The PEP 639 form is license = "MIT" with license-files. The table form below
+# is kept because it is accepted by every setuptools that supports PEP 621,
+# including the older ones a minimal CI image may ship.
+license = { text = "MIT" }
+authors = [{ name = "Manu Nicholas Jacob" }]
+maintainers = [{ name = "Manu Nicholas Jacob" }]
+keywords = [
+    "bibliography",
+    "bibtex",
+    "citations",
+    "author verification",
+    "hallucination",
+    "crossref",
+    "openalex",
+    "arxiv",
+    "reproducibility",
+    "latex",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Text Processing :: Markup :: LaTeX",
+    "Topic :: Scientific/Engineering",
+]
+
+# The library core is standard library only, deliberately, so a paper
+# repository can install it into a minimal CI image. tomli is needed only to
+# read a TOML config on Python older than 3.11, where tomllib does not exist.
+dependencies = [
+    'tomli>=1.2; python_version < "3.11"',
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+bibauthor = "bibauthor.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/manunicholasjacob/bibauthor"
+Source = "https://github.com/manunicholasjacob/bibauthor"
+Issues = "https://github.com/manunicholasjacob/bibauthor/issues"
+Changelog = "https://github.com/manunicholasjacob/bibauthor/blob/main/CHANGELOG.md"
+ORCID = "https://orcid.org/0009-0007-6589-6572"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# No package data. The only data files in the repository are the recorded HTTP
+# fixtures and the .bib fixtures under tests/, and tests are not packaged.
+[tool.setuptools.package-data]
+bibauthor = []
+
+# ---------------------------------------------------------------------------
+# bibauthor's own configuration, which doubles as the documented example of
+# the [tool.bibauthor] table. Every value below is the shipped default, so
+# deleting this whole table changes nothing. Copy it into your own
+# pyproject.toml (or into a bibauthor.toml) and edit only what you mean to
+# change; bibauthor searches upward from the bibliography for either file.
+#
+# CLI flags win over this table, and this table wins over the defaults.
+# cache_dir is deliberately absent: the default is computed per machine from
+# BIBAUTHOR_CACHE, XDG_CACHE_HOME or LOCALAPPDATA, and pinning it here would
+# hard-code one developer's path into the repository.
+# ---------------------------------------------------------------------------
+[tool.bibauthor]
+providers = ["crossref", "arxiv", "openalex", "semanticscholar"]
+offline = false
+min_interval = 1.0
+timeout = 20.0
+check_years = true
+stop_after_confident = true
+ignore_keys = []
+fail_on_unverifiable = false
+
+[tool.bibauthor.thresholds]
+name_match = 0.92
+name_variant = 0.70
+partial_coverage = 0.50
+title_similarity = 0.80
+disjoint_min_record_authors = 2
+disjoint_max_coverage = 0.0
+surname_only_penalty = 0.18
+initial_vs_full_given = 0.90
+allow_order_differs_as_pass = false
+promote_order_differs = false
+promote_truncated = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"

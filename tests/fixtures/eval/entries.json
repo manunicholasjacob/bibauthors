@@ -1,0 +1,191 @@
+[
+ {
+  "bibtex": "@article{collusion_chimeric, title={Evaluating LLM Agent Collusion in Double Auctions}, author={Agrawal, Kushal and Liu, Andy and Fried, Daniel and Sycara, Katia and Jacobs, Abigail and Oesterheld, Caspar and Conitzer, Vincent}, year={2025}, eprint={2507.01413}, archiveprefix={arXiv}}",
+  "expected_verdict": "PARTIAL_OVERLAP",
+  "id": "entry-01",
+  "label_basis": "the real 29 Oct 2026 chimeric citation: only Kushal Agrawal and Andy Liu are on this work; Fried, Sycara, Jacobs, Oesterheld and Conitzer are real researchers who did not write it",
+  "requires_cache": "arxiv-2507.01413"
+ },
+ {
+  "bibtex": "@article{collusion_true, title={Evaluating LLM Agent Collusion in Double Auctions}, author={Agrawal, Kushal and Teo, Verona and Vazquez, Juan J. and Kunnavakkam, Sudarsh and Srikanth, Vishak and Liu, Andy}, year={2025}, eprint={2507.01413}, archiveprefix={arXiv}}",
+  "expected_verdict": "MATCH",
+  "id": "entry-02",
+  "label_basis": "the true arXiv author list, spelled exactly as arXiv holds it, in the comma order",
+  "requires_cache": "arxiv-2507.01413"
+ },
+ {
+  "bibtex": "@article{collusion_initials, title={Evaluating LLM Agent Collusion in Double Auctions}, author={Agrawal, K. and Teo, V. and Vazquez, J. J. and Kunnavakkam, S. and Srikanth, V. and Liu, A.}, year={2025}, eprint={2507.01413}, archiveprefix={arXiv}}",
+  "expected_verdict": "MATCH_WITH_VARIANTS",
+  "id": "entry-03",
+  "label_basis": "the true author list with every given name abbreviated to initials, which is what a numeric-style bibliography produces",
+  "requires_cache": "arxiv-2507.01413"
+ },
+ {
+  "bibtex": "@article{collusion_fabricated, title={Evaluating LLM Agent Collusion in Double Auctions}, author={Hartley, Miriam and Okonkwo, Daniel and Lindqvist, Petra and Rahimi, Farhad and Beaumont, Clive and Osei, Adwoa}, year={2025}, eprint={2507.01413}, archiveprefix={arXiv}}",
+  "expected_verdict": "DISJOINT",
+  "id": "entry-04",
+  "label_basis": "a wholly invented author list of plausible names on a real title and a real arXiv id; not one of these people is on the work",
+  "requires_cache": "arxiv-2507.01413"
+ },
+ {
+  "bibtex": "@article{collusion_permuted, title={Evaluating LLM Agent Collusion in Double Auctions}, author={Liu, Andy and Agrawal, Kushal and Teo, Verona and Vazquez, Juan J. and Kunnavakkam, Sudarsh and Srikanth, Vishak}, year={2025}, eprint={2507.01413}, archiveprefix={arXiv}}",
+  "expected_verdict": "ORDER_DIFFERS",
+  "id": "entry-05",
+  "label_basis": "the true author list with the last author moved to the front: every author is right, the order is not",
+  "requires_cache": "arxiv-2507.01413"
+ },
+ {
+  "bibtex": "@article{collusion_etal, title={Evaluating LLM Agent Collusion in Double Auctions}, author={Agrawal, Kushal and Teo, Verona and others}, year={2025}, eprint={2507.01413}, archiveprefix={arXiv}}",
+  "expected_verdict": "TRUNCATED",
+  "id": "entry-06",
+  "label_basis": "the first two true authors followed by and others, which is a correct opening run of the real list",
+  "requires_cache": "arxiv-2507.01413"
+ },
+ {
+  "bibtex": "@article{alphago_true, title={Mastering the game of Go with deep neural networks and tree search}, author={Silver, David and Huang, Aja and Maddison, Chris J. and Guez, Arthur and Sifre, Laurent and van den Driessche, George and Schrittwieser, Julian and Antonoglou, Ioannis and Panneershelvam, Veda and Lanctot, Marc and Dieleman, Sander and Grewe, Dominik and Nham, John and Kalchbrenner, Nal and Sutskever, Ilya and Lillicrap, Timothy and Leach, Madeleine and Kavukcuoglu, Koray and Graepel, Thore and Hassabis, Demis}, year={2016}, doi={10.1038/nature16961}}",
+  "expected_verdict": "MATCH",
+  "id": "entry-07",
+  "label_basis": "the full publisher-deposited author list, including the Dutch particle surname van den Driessche, spelled exactly as deposited",
+  "requires_cache": "crossref-doi-10.1038-nature16961"
+ },
+ {
+  "bibtex": "@article{alphago_particle_moved, title={Mastering the game of Go with deep neural networks and tree search}, author={Silver, David and Huang, Aja and Maddison, Chris J. and Guez, Arthur and Sifre, Laurent and Driessche, George van den and Schrittwieser, Julian and Antonoglou, Ioannis and Panneershelvam, Veda and Lanctot, Marc and Dieleman, Sander and Grewe, Dominik and Nham, John and Kalchbrenner, Nal and Sutskever, Ilya and Lillicrap, Timothy and Leach, Madeleine and Kavukcuoglu, Koray and Graepel, Thore and Hassabis, Demis}, year={2016}, doi={10.1038/nature16961}}",
+  "expected_verdict": "MATCH_WITH_VARIANTS",
+  "id": "entry-08",
+  "label_basis": "the correct author list, with the one Dutch name written in the style that moves the tussenvoegsel behind the given name (Driessche, George van den). Every author is still right, so the honest verdict is same authors written differently",
+  "requires_cache": "crossref-doi-10.1038-nature16961"
+ },
+ {
+  "bibtex": "@article{alphago_etal, title={Mastering the game of Go with deep neural networks and tree search}, author={Silver, David and Huang, Aja and Maddison, Chris J. and others}, year={2016}, doi={10.1038/nature16961}}",
+  "expected_verdict": "TRUNCATED",
+  "id": "entry-09",
+  "label_basis": "the first three deposited authors plus and others: a correct prefix of a twenty-author list",
+  "requires_cache": "crossref-doi-10.1038-nature16961"
+ },
+ {
+  "bibtex": "@article{alphago_fabricated, title={Mastering the game of Go with deep neural networks and tree search}, author={Castellano, Marta and Oyelaran, Tunde and Hofstadter, Emil and Vartanian, Lusine and Prendergast, Niall and Takahara, Yuki}, year={2016}, doi={10.1038/nature16961}}",
+  "expected_verdict": "DISJOINT",
+  "id": "entry-10",
+  "label_basis": "a wholly invented author list on a real Nature DOI",
+  "requires_cache": "crossref-doi-10.1038-nature16961"
+ },
+ {
+  "bibtex": "@article{alphago_reversed, title={Mastering the game of Go with deep neural networks and tree search}, author={Hassabis, Demis and Graepel, Thore and Kavukcuoglu, Koray and Leach, Madeleine and Lillicrap, Timothy and Sutskever, Ilya and Kalchbrenner, Nal and Nham, John and Grewe, Dominik and Dieleman, Sander and Lanctot, Marc and Panneershelvam, Veda and Antonoglou, Ioannis and Schrittwieser, Julian and van den Driessche, George and Sifre, Laurent and Guez, Arthur and Maddison, Chris J. and Huang, Aja and Silver, David}, year={2016}, doi={10.1038/nature16961}}",
+  "expected_verdict": "ORDER_DIFFERS",
+  "id": "entry-11",
+  "label_basis": "the full true author list in exactly reverse order: the right people, the wrong credit order",
+  "requires_cache": "crossref-doi-10.1038-nature16961"
+ },
+ {
+  "bibtex": "@article{alphafold_ascii, title={Highly accurate protein structure prediction with AlphaFold}, author={Jumper, John and Evans, Richard and Pritzel, Alexander and Green, Tim and Figurnov, Michael and Ronneberger, Olaf and Tunyasuvunakool, Kathryn and Bates, Russ and Zidek, Augustin and Potapenko, Anna and Bridgland, Alex and Meyer, Clemens and Kohl, Simon A. A. and Ballard, Andrew J. and Cowie, Andrew and Romera-Paredes, Bernardino and Nikolov, Stanislav and Jain, Rishub and Adler, Jonas and Back, Trevor and Petersen, Stig and Reiman, David and Clancy, Ellen and Zielinski, Michal and Steinegger, Martin and Pacholska, Michalina and Berghammer, Tamas and Bodenstein, Sebastian and Silver, David and Vinyals, Oriol and Senior, Andrew W. and Kavukcuoglu, Koray and Kohli, Pushmeet and Hassabis, Demis}, year={2021}, doi={10.1038/s41586-021-03819-2}}",
+  "expected_verdict": "MATCH_WITH_VARIANTS",
+  "id": "entry-12",
+  "label_basis": "the full true author list with the one accented name (Zidek) folded to ASCII, which is what a great many real .bib files contain",
+  "requires_cache": "crossref-doi-10.1038-s41586-021-03819-2"
+ },
+ {
+  "bibtex": "@article{alphafold_latex, title={Highly accurate protein structure prediction with AlphaFold}, author={Jumper, John and Evans, Richard and Pritzel, Alexander and Green, Tim and Figurnov, Michael and Ronneberger, Olaf and Tunyasuvunakool, Kathryn and Bates, Russ and \\v{Z}\\'{\\i}dek, Augustin and Potapenko, Anna and Bridgland, Alex and Meyer, Clemens and Kohl, Simon A. A. and Ballard, Andrew J. and Cowie, Andrew and Romera-Paredes, Bernardino and Nikolov, Stanislav and Jain, Rishub and Adler, Jonas and Back, Trevor and Petersen, Stig and Reiman, David and Clancy, Ellen and Zielinski, Michal and Steinegger, Martin and Pacholska, Michalina and Berghammer, Tamas and Bodenstein, Sebastian and Silver, David and Vinyals, Oriol and Senior, Andrew W. and Kavukcuoglu, Koray and Kohli, Pushmeet and Hassabis, Demis}, year={2021}, doi={10.1038/s41586-021-03819-2}}",
+  "expected_verdict": "MATCH",
+  "id": "entry-13",
+  "label_basis": "the same full true author list with the accented name written in LaTeX accent commands, which decodes to the deposited spelling exactly",
+  "requires_cache": "crossref-doi-10.1038-s41586-021-03819-2"
+ },
+ {
+  "bibtex": "@article{alphafold_mixed, title={Highly accurate protein structure prediction with AlphaFold}, author={Jumper, John and Evans, Richard and Pritzel, Alexander and Green, Tim and Figurnov, Michael and Arkwright, Penelope and Delacroix, Yves}, year={2021}, doi={10.1038/s41586-021-03819-2}}",
+  "expected_verdict": "PARTIAL_OVERLAP",
+  "id": "entry-14",
+  "label_basis": "five real AlphaFold authors followed by two invented ones, with no et al. to excuse the short list",
+  "requires_cache": "crossref-doi-10.1038-s41586-021-03819-2"
+ },
+ {
+  "bibtex": "@inproceedings{resnet_true, title={Deep Residual Learning for Image Recognition}, author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian}, year={2016}, doi={10.1109/CVPR.2016.90}}",
+  "expected_verdict": "MATCH",
+  "id": "entry-15",
+  "label_basis": "the four deposited authors spelled exactly as deposited",
+  "requires_cache": "crossref-doi-10.1109-cvpr.2016.90"
+ },
+ {
+  "bibtex": "@inproceedings{resnet_family_first, title={Deep Residual Learning for Image Recognition}, author={He Kaiming and Zhang Xiangyu and Ren Shaoqing and Sun Jian}, year={2016}, doi={10.1109/CVPR.2016.90}}",
+  "expected_verdict": "MATCH_WITH_VARIANTS",
+  "id": "entry-16",
+  "label_basis": "the same four authors written family-name-first without a comma, the order used in Chinese-language sources; the author list is correct",
+  "requires_cache": "crossref-doi-10.1109-cvpr.2016.90"
+ },
+ {
+  "bibtex": "@inproceedings{resnet_fabricated, title={Deep Residual Learning for Image Recognition}, author={Whitfield, Marcus and Ivanova, Polina and Nakamura, Rei and Oduya, Chinwe}, year={2016}, doi={10.1109/CVPR.2016.90}}",
+  "expected_verdict": "DISJOINT",
+  "id": "entry-17",
+  "label_basis": "a wholly invented author list on a real IEEE DOI",
+  "requires_cache": "crossref-doi-10.1109-cvpr.2016.90"
+ },
+ {
+  "bibtex": "@inproceedings{resnet_permuted, title={Deep Residual Learning for Image Recognition}, author={Sun, Jian and He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing}, year={2016}, doi={10.1109/CVPR.2016.90}}",
+  "expected_verdict": "ORDER_DIFFERS",
+  "id": "entry-18",
+  "label_basis": "the right four authors with the last author moved to the front",
+  "requires_cache": "crossref-doi-10.1109-cvpr.2016.90"
+ },
+ {
+  "bibtex": "@article{gw150914_consortium, title={Observation of Gravitational Waves from a Binary Black Hole Merger}, author={{LIGO Scientific Collaboration and Virgo Collaboration}}, year={2016}, doi={10.1103/PhysRevLett.116.061102}}",
+  "expected_verdict": "MATCH",
+  "id": "entry-19",
+  "label_basis": "cited by the consortium name alone, brace-protected so BibTeX keeps it whole. CrossRef deposits exactly this group author alongside the 1011 individuals, so the cited author list is correct",
+  "requires_cache": "crossref-doi-10.1103-physrevlett.116.061102"
+ },
+ {
+  "bibtex": "@article{gw150914_etal, title={Observation of Gravitational Waves from a Binary Black Hole Merger}, author={Abbott, B. P. and Abbott, R. and Abbott, T. D. and others}, year={2016}, doi={10.1103/PhysRevLett.116.061102}}",
+  "expected_verdict": "TRUNCATED",
+  "id": "entry-20",
+  "label_basis": "the first three deposited authors plus and others, which is how a 1012-author paper is cited in practice",
+  "requires_cache": "crossref-doi-10.1103-physrevlett.116.061102"
+ },
+ {
+  "bibtex": "@article{gw150914_fabricated, title={Observation of Gravitational Waves from a Binary Black Hole Merger}, author={Lindholm, Kerstin and Ferreira, Joao and Bayliss, Edmund}, year={2016}, doi={10.1103/PhysRevLett.116.061102}}",
+  "expected_verdict": "DISJOINT",
+  "id": "entry-21",
+  "label_basis": "three invented names on the GW150914 DOI, with no et al.: none of them is among the 1012 deposited authors",
+  "requires_cache": "crossref-doi-10.1103-physrevlett.116.061102"
+ },
+ {
+  "bibtex": "@article{gw150914_wrong_consortium, title={Observation of Gravitational Waves from a Binary Black Hole Merger}, author={{The ATLAS Collaboration}}, year={2016}, doi={10.1103/PhysRevLett.116.061102}}",
+  "expected_verdict": "DISJOINT",
+  "id": "entry-22",
+  "label_basis": "the wrong consortium: GW150914 is LIGO and Virgo, ATLAS is an LHC experiment that had nothing to do with it",
+  "requires_cache": "crossref-doi-10.1103-physrevlett.116.061102"
+ },
+ {
+  "bibtex": "@inproceedings{attention_true, title={Attention is all you need}, author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, Lukasz and Polosukhin, Illia}, year={2017}}",
+  "expected_verdict": "MATCH_WITH_VARIANTS",
+  "id": "entry-23",
+  "label_basis": "the true, complete author list of Attention Is All You Need, with no identifier, so the record has to be found by bibliographic search. The cited list is correct, so the honest verdict is a match",
+  "requires_cache": "crossref-search-attention"
+ },
+ {
+  "bibtex": "@article{qwen_search_mixed, title={Qwen2.5 Technical Report}, author={Yang, An and Hui, Binyuan and Smith, John}, year={2024}}",
+  "expected_verdict": "PARTIAL_OVERLAP",
+  "id": "entry-24",
+  "label_basis": "two real Qwen2.5 contributors plus one invented author, no identifier, so the record comes from the OpenAlex title search",
+  "requires_cache": "openalex-search-qwen"
+ },
+ {
+  "bibtex": "@article{qwen_etal, title={Qwen2.5 Technical Report}, author={Yang, An and Yang, Baosong and Zhang, Beichen and others}, year={2024}, eprint={2412.15115}, archiveprefix={arXiv}}",
+  "expected_verdict": "TRUNCATED",
+  "id": "entry-25",
+  "label_basis": "the first three human authors of the arXiv Qwen2.5 list plus and others; arXiv prefixes the list with the corporate tokens Qwen and a colon, so this is a correct run of real authors but not a prefix of the raw record",
+  "requires_cache": "arxiv-2412.15115"
+ },
+ {
+  "bibtex": "@inproceedings{uncached_doi, title={KDD 2019 Applied Data Science Track Paper}, author={Nobody, Alice and Nobody, Bob}, year={2019}, doi={10.1145/3292500.3330701}}",
+  "expected_verdict": "UNVERIFIABLE",
+  "id": "entry-26",
+  "label_basis": "a real-looking ACM DOI that is in none of the recorded fixtures: offline the tool cannot ask anybody, and not being able to check is not the same as finding a problem",
+  "requires_cache": "none"
+ },
+ {
+  "bibtex": "@misc{uncached_title, title={A Completely Uncached Paper About Nothing In Particular}, author={Fictional, Author and Imaginary, Coauthor}, year={2023}}",
+  "expected_verdict": "UNVERIFIABLE",
+  "id": "entry-27",
+  "label_basis": "no identifier and a title no recorded search covers, so every provider reports could not ask",
+  "requires_cache": "none"
+ }
+]

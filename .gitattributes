@@ -1,0 +1,35 @@
+# Line endings are pinned on purpose.
+#
+# Everything is stored and checked out with LF. Two test fixtures are the
+# exception and must keep their bytes exactly as committed, because what they
+# test IS their byte content: if git were allowed to normalize them, the test
+# suite would pass on the machine that wrote them and fail everywhere else.
+#
+# The repository is also pure ASCII apart from one marked fixture, and CI
+# enforces that with a byte-level check. Git Bash's grep strips CR in text
+# mode, so a CRLF file can look ASCII-clean locally and then match on a Linux
+# runner; pinning LF here removes that whole class of false green.
+
+* text=auto eol=lf
+
+# Deliberate CRLF line endings: this fixture exists to prove the BibTeX
+# parser handles CRLF without shifting its reported line numbers. Keep the
+# bytes verbatim.
+tests/fixtures/bib/messy.bib -text
+
+# The only non-ASCII file in the repository: raw UTF-8 accented, CJK and
+# Cyrillic author names, which is the point of it. Keep the bytes verbatim.
+tests/fixtures/bib/unicode_names.bib -text
+
+# Recorded API responses. Treated as data, not source: they are regenerated
+# by tools/record_fixtures.py, never hand-edited.
+tests/fixtures/cache/*.json -text -diff
+
+*.py   text eol=lf
+*.md   text eol=lf
+*.toml text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.cff  text eol=lf
+*.txt  text eol=lf
+*.json text eol=lf

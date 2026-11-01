@@ -1,0 +1,130 @@
+{
+ "fixtures": [
+  {
+   "description": "arXiv Atom feed for 2412.15115 (Qwen2.5 Technical Report), used for the v1-versus-latest-version date split and for a large author list",
+   "file": "5dfb1060ffd17a492173045f1478e620955ea509beeaf0f43757ebc7f7e2dd72.json",
+   "kind": "text",
+   "name": "arxiv-2412.15115",
+   "note": "ok",
+   "params": {
+    "id_list": "2412.15115"
+   },
+   "status": 200,
+   "url": "https://export.arxiv.org/api/query"
+  },
+  {
+   "description": "arXiv Atom feed for 2507.01413, the chimeric-citation case: the true author list is the one the tool must recover",
+   "file": "47c199c5ce7d3f2062ef3b81cff9d92c8632aa2ee1ca1c05b5fb8f63fe6475d4.json",
+   "kind": "text",
+   "name": "arxiv-2507.01413",
+   "note": "ok",
+   "params": {
+    "id_list": "2507.01413"
+   },
+   "status": 200,
+   "url": "https://export.arxiv.org/api/query"
+  },
+  {
+   "description": "CrossRef HTTP 404 for an arXiv DOI: the wrong-registry case, recorded with status 404 so the test can assert that it is not treated as evidence about the citation",
+   "file": "b614eb2f395291e83b1f8965b161f2477a68df44d1785013237152f2967f87f7.json",
+   "kind": "json",
+   "name": "crossref-404-10.48550-arxiv.2507.01413",
+   "note": "recorded non-200",
+   "params": {},
+   "status": 404,
+   "url": "https://api.crossref.org/works/10.48550/arxiv.2507.01413"
+  },
+  {
+   "description": "CrossRef work 10.1038/nature16961. particle surname: the author list contains a Dutch tussenvoegsel name, so the matcher has to keep the particle with the surname",
+   "file": "0ee145faf3958b5eb057fc6cacc304fb05d812cfff719d01fcd6dc59a59bedbb.json",
+   "kind": "json",
+   "name": "crossref-doi-10.1038-nature16961",
+   "note": "ok",
+   "params": {},
+   "status": 200,
+   "url": "https://api.crossref.org/works/10.1038/nature16961"
+  },
+  {
+   "description": "CrossRef work 10.1038/s41586-021-03819-2. heavy diacritics across several alphabets, including a caron and an acute, so the matcher has to fold them to ASCII without merging distinct people",
+   "file": "5c3bb83040015efc249d30334c7791210c9d609d11a53b29f4fdca93029f3ac4.json",
+   "kind": "json",
+   "name": "crossref-doi-10.1038-s41586-021-03819-2",
+   "note": "ok",
+   "params": {},
+   "status": 200,
+   "url": "https://api.crossref.org/works/10.1038/s41586-021-03819-2"
+  },
+  {
+   "description": "CrossRef work 10.1103/physrevlett.116.061102. very large consortium author list, with a collaboration group name deposited as a CrossRef {name} object rather than {given, family}",
+   "file": "9c3505b625889ff22023a6e4734ce204231258f43eef700c5048acf4974acc6b.json",
+   "kind": "json",
+   "name": "crossref-doi-10.1103-physrevlett.116.061102",
+   "note": "ok",
+   "params": {},
+   "status": 200,
+   "url": "https://api.crossref.org/works/10.1103/physrevlett.116.061102"
+  },
+  {
+   "description": "CrossRef work 10.1109/cvpr.2016.90. romanized CJK given/family names, where the given name is a single token and family-name-first order is common in the wild",
+   "file": "80174ff5027a96aa8aa1a2da54e7690d11d925386211020ad7763e0696a25a2f.json",
+   "kind": "json",
+   "name": "crossref-doi-10.1109-cvpr.2016.90",
+   "note": "ok",
+   "params": {},
+   "status": 200,
+   "url": "https://api.crossref.org/works/10.1109/cvpr.2016.90"
+  },
+  {
+   "description": "CrossRef query.bibliographic search for an entry with no DOI",
+   "file": "77c3da700a2ac5f2b2277d6bbbff3ad07c39d44673b932117a21cf76de992004.json",
+   "kind": "json",
+   "name": "crossref-search-attention",
+   "note": "ok",
+   "params": {
+    "query.bibliographic": "Attention is all you need Vaswani 2017",
+    "rows": 5,
+    "select": "DOI,title,author,issued,score,container-title"
+   },
+   "status": 200,
+   "url": "https://api.crossref.org/works"
+  },
+  {
+   "description": "OpenAlex work fetched by the arXiv DOI, which CrossRef does not hold; also the fixture that proves meta.notice never reaches disk",
+   "file": "2e8d53cd4fed5c76112243c9426504d7253e13a9fa330c0cf41c5a9f7e542a96.json",
+   "kind": "json",
+   "name": "openalex-doi-10.48550-arxiv.2507.01413",
+   "note": "ok",
+   "params": {},
+   "status": 200,
+   "url": "https://api.openalex.org/works/https://doi.org/10.48550/arxiv.2507.01413"
+  },
+  {
+   "description": "OpenAlex title search for the Qwen2.5 Technical Report, the no-identifier path",
+   "file": "d50c1dc52f567a3453150095b1919d110b0a8e75bc0ed0ee86e4c777d428375d.json",
+   "kind": "json",
+   "name": "openalex-search-qwen",
+   "note": "ok",
+   "params": {
+    "per-page": 5,
+    "search": "Qwen2.5 Technical Report"
+   },
+   "status": 200,
+   "url": "https://api.openalex.org/works"
+  },
+  {
+   "description": "Semantic Scholar paper record for arXiv:2507.01413, the abbreviated-given-name case",
+   "file": "a1dc5af3a53ef8555191759bc94c41720ee7dfb05cc8b5fb42650fd2feb7b4d8.json",
+   "kind": "json",
+   "name": "s2-arxiv-2507.01413",
+   "note": "ok",
+   "params": {
+    "fields": "title,year,authors,externalIds,publicationDate"
+   },
+   "status": 200,
+   "url": "https://api.semanticscholar.org/graph/v1/paper/arXiv:2507.01413"
+  }
+ ],
+ "generated_by": "tools/record_fixtures.py",
+ "note": "Recorded read-only HTTP GETs against four public metadata APIs. No request carried an API key or any contact address. OpenAlex meta.notice fields are stripped before anything is written.",
+ "recorded_at": "2026-11-01T17:21:20Z"
+}

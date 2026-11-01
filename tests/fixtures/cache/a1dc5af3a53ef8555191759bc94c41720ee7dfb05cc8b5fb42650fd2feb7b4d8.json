@@ -1,0 +1,47 @@
+{
+ "body": {
+  "authors": [
+   {
+    "authorId": "2372763118",
+    "name": "Kushal Agrawal"
+   },
+   {
+    "authorId": "2372991721",
+    "name": "Verona Teo"
+   },
+   {
+    "authorId": "2372441893",
+    "name": "J. V\u00e1zquez"
+   },
+   {
+    "authorId": "2372989577",
+    "name": "Sudarsh Kunnavakkam"
+   },
+   {
+    "authorId": "2150492303",
+    "name": "Vishak Srikanth"
+   },
+   {
+    "authorId": "1998678399",
+    "name": "Andy Liu"
+   }
+  ],
+  "externalIds": {
+   "ArXiv": "2507.01413",
+   "CorpusId": 280138458,
+   "DBLP": "journals/corr/abs-2507-01413",
+   "DOI": "10.48550/arXiv.2507.01413"
+  },
+  "paperId": "37a696a0c95fa76e0f7998cf5209b537b549d516",
+  "publicationDate": "2025-07-02",
+  "title": "Evaluating LLM Agent Collusion in Double Auctions",
+  "year": 2025
+ },
+ "content_type": "application/json",
+ "params": {
+  "fields": "title,year,authors,externalIds,publicationDate"
+ },
+ "recorded_at": "2026-11-01T17:21:13Z",
+ "status": 200,
+ "url": "https://api.semanticscholar.org/graph/v1/paper/arXiv:2507.01413"
+}

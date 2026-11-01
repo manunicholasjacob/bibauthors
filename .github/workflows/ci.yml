@@ -1,0 +1,204 @@
+# Continuous integration for bibauthor.
+#
+# Two jobs, and nothing else. "test" runs the unit suite on every supported
+# platform and Python. "selftest" runs the composite Action in this repository
+# against this repository's own fixtures, which is the only way to prove the
+# Action actually works before an adopter finds out that it does not.
+#
+# This workflow never publishes, pushes, tags, releases or comments. It only
+# reads the repository and runs tests.
+#
+# The whole suite is offline by design: every provider lookup goes through
+# tests/fixtures/cache with the cache in offline mode, and a cache miss raises
+# rather than reaching the network. A CI run that needs the network is a bug.
+
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: test ${{ matrix.os }} py${{ matrix.python-version }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: ["3.9", "3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install
+        shell: bash
+        run: |
+          set -e
+          python -m pip install --disable-pip-version-check --upgrade pip
+          python -m pip install -e ".[dev]"
+
+      - name: Test
+        shell: bash
+        run: |
+          set -e
+          python -X utf8 -m pytest
+
+      # One platform runs the text hygiene gates. They are repository-wide
+      # rules, not per-platform ones, so running them three times by three
+      # would only slow the matrix down.
+      - name: ASCII gate
+        if: matrix.os == 'ubuntu-latest' && matrix.python-version == '3.13'
+        shell: bash
+        run: |
+          set -o pipefail
+          # grep exits 1 when it finds NOTHING, which is the success case here,
+          # so the pipeline's exit status is useless and is discarded with
+          # "|| true". The decision is made on whether any text came back.
+          hits=$(LC_ALL=C grep -rn '[^ -~]' \
+            --include='*.py' \
+            --include='*.toml' \
+            --include='*.yml' \
+            --include='*.yaml' \
+            --include='*.cff' \
+            --include='*.md' \
+            --include='*.json' \
+            --exclude-dir=.git \
+            --exclude-dir=.pytest_cache \
+            . | grep -v 'tests/fixtures/bib/unicode_names.bib' || true)
+          if [ -n "$hits" ]; then
+            echo "non-ASCII outside the one fixture allowed to carry it:"
+            echo "$hits"
+            exit 1
+          fi
+          echo "ASCII gate: clean"
+
+      - name: Dash gate
+        if: matrix.os == 'ubuntu-latest' && matrix.python-version == '3.13'
+        shell: bash
+        run: |
+          set -o pipefail
+          # U+2014 EM DASH and U+2013 EN DASH, as their UTF-8 bytes. The
+          # patterns are built from ASCII escapes so this file stays ASCII and
+          # does not trip its own gate. Checked in every file, including the
+          # one fixture the ASCII gate exempts.
+          dashes=$(LC_ALL=C grep -rn \
+            -e $'\xe2\x80\x94' \
+            -e $'\xe2\x80\x93' \
+            --exclude-dir=.git \
+            --exclude-dir=.pytest_cache \
+            . || true)
+          if [ -n "$dashes" ]; then
+            echo "em dash (U+2014) or en dash (U+2013) found:"
+            echo "$dashes"
+            exit 1
+          fi
+          echo "dash gate: clean"
+
+  selftest:
+    name: Action self-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # The clean path. clean.bib has nothing fabricated in it, so the Action
+      # must come back with no mismatch. fail-on: never is used because the
+      # fixture also contains entries that have no cached record (bibauthor
+      # exit code 2), and that is not what this step is testing.
+      - name: Run the Action on the clean fixture
+        id: clean
+        uses: ./
+        with:
+          paths: tests/fixtures/bib/clean.bib
+          offline: "true"
+          cache-dir: tests/fixtures/cache
+          fail-on: never
+          json-report: bibauthor-selftest-clean.json
+
+      - name: Assert the clean report exists and parses
+        shell: bash
+        env:
+          EXIT_CODE: ${{ steps.clean.outputs.exit-code }}
+          MISMATCHES: ${{ steps.clean.outputs.mismatches }}
+          REPORT_PATH: ${{ steps.clean.outputs.report-path }}
+        run: |
+          set -e
+          test -f bibauthor-selftest-clean.json
+          python - <<'PY'
+          import json
+          import os
+
+          with open("bibauthor-selftest-clean.json", encoding="utf-8") as handle:
+              data = json.load(handle)
+
+          assert data["tool"] == "bibauthor", data.get("tool")
+          assert data["schema_version"], "no schema_version in the report"
+          assert data["offline"] is True, data["offline"]
+          assert isinstance(data["entries"], list) and data["entries"], "no entries"
+          assert data["totals"]["mismatches"] == 0, data["totals"]
+          assert "exit_code" in data, sorted(data)
+
+          assert os.environ["MISMATCHES"] == "0", os.environ["MISMATCHES"]
+          assert os.environ["REPORT_PATH"] == "bibauthor-selftest-clean.json", (
+              os.environ["REPORT_PATH"]
+          )
+          print(
+              "clean fixture: %d entries, exit_code %s, action exit-code output %r"
+              % (len(data["entries"]), data["exit_code"], os.environ["EXIT_CODE"])
+          )
+          PY
+
+      # The detection path, end to end, in CI. chimeric.bib is the real
+      # fabricated-author-list case: a true title and a borrowed author list.
+      # If this step ever reports zero mismatches, the tool has stopped doing
+      # the one thing it exists to do.
+      - name: Run the Action on the chimeric fixture
+        id: chimeric
+        uses: ./
+        with:
+          paths: tests/fixtures/bib/chimeric.bib
+          offline: "true"
+          cache-dir: tests/fixtures/cache
+          fail-on: never
+          json-report: bibauthor-selftest-chimeric.json
+
+      - name: Assert the chimeric report records exactly one mismatch
+        shell: bash
+        env:
+          EXIT_CODE: ${{ steps.chimeric.outputs.exit-code }}
+          MISMATCHES: ${{ steps.chimeric.outputs.mismatches }}
+        run: |
+          set -e
+          test -f bibauthor-selftest-chimeric.json
+          python - <<'PY'
+          import json
+          import os
+
+          with open("bibauthor-selftest-chimeric.json", encoding="utf-8") as handle:
+              data = json.load(handle)
+
+          assert data["totals"]["mismatches"] == 1, data["totals"]
+          assert data["exit_code"] == 1, data["exit_code"]
+
+          flagged = [e for e in data["entries"] if e["is_mismatch"]]
+          assert len(flagged) == 1, [e["key"] for e in flagged]
+          entry = flagged[0]
+          assert entry["comparison"]["unmatched_cited"], entry["comparison"]
+          names = " ".join(u["name"] for u in entry["comparison"]["unmatched_cited"])
+          assert "Conitzer" in names or "Sycara" in names, names
+
+          assert os.environ["MISMATCHES"] == "1", os.environ["MISMATCHES"]
+          assert os.environ["EXIT_CODE"] == "1", os.environ["EXIT_CODE"]
+          print(
+              "chimeric fixture: %s is %s, not on this work: %s"
+              % (entry["key"], entry["verdict"], names)
+          )
+          PY

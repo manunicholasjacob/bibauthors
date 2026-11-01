@@ -1,0 +1,482 @@
+{
+ "body": {
+  "message": {
+   "DOI": "10.1109/cvpr.2016.90",
+   "URL": "https://doi.org/10.1109/cvpr.2016.90",
+   "author": [
+    {
+     "affiliation": [],
+     "family": "He",
+     "given": "Kaiming",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "first"
+    },
+    {
+     "affiliation": [],
+     "family": "Zhang",
+     "given": "Xiangyu",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Ren",
+     "given": "Shaoqing",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Sun",
+     "given": "Jian",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    }
+   ],
+   "container-title": [
+    "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"
+   ],
+   "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+   },
+   "created": {
+    "date-parts": [
+     [
+      2016,
+      12,
+      12
+     ]
+    ],
+    "date-time": "2016-12-12T20:38:49Z",
+    "timestamp": 1481575129000
+   },
+   "deposited": {
+    "date-parts": [
+     [
+      2025,
+      6,
+      13
+     ]
+    ],
+    "date-time": "2025-06-13T10:31:40Z",
+    "timestamp": 1749810700000
+   },
+   "event": {
+    "end": {
+     "date-parts": [
+      [
+       2016,
+       6,
+       30
+      ]
+     ]
+    },
+    "location": "Las Vegas, NV, USA",
+    "name": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+    "start": {
+     "date-parts": [
+      [
+       2016,
+       6,
+       27
+      ]
+     ]
+    }
+   },
+   "indexed": {
+    "date-parts": [
+     [
+      2026,
+      11,
+      1
+     ]
+    ],
+    "date-time": "2026-11-01T13:02:34Z",
+    "timestamp": 1793538154590,
+    "version": "4.5.0"
+   },
+   "is-referenced-by-count": 179408,
+   "issued": {
+    "date-parts": [
+     [
+      2016,
+      6
+     ]
+    ]
+   },
+   "link": [
+    {
+     "URL": "http://xplorestaging.ieee.org/ielx7/7776647/7780329/07780459.pdf?arnumber=7780459",
+     "content-type": "unspecified",
+     "content-version": "vor",
+     "intended-application": "similarity-checking"
+    }
+   ],
+   "member": "263",
+   "original-title": [],
+   "page": "770-778",
+   "prefix": "10.1109",
+   "published": {
+    "date-parts": [
+     [
+      2016,
+      6
+     ]
+    ]
+   },
+   "published-print": {
+    "date-parts": [
+     [
+      2016,
+      6
+     ]
+    ]
+   },
+   "publisher": "IEEE",
+   "reference": [
+    {
+     "article-title": "Overfeat: Integrated recognition, localization and detection using convolutional networks",
+     "author": "sermanet",
+     "journal-title": "ICLRE",
+     "key": "ref39",
+     "year": "2014"
+    },
+    {
+     "DOI": "10.1007/3-540-49430-8_11",
+     "doi-asserted-by": "publisher",
+     "key": "ref38"
+    },
+    {
+     "DOI": "10.1017/CBO9780511812651",
+     "doi-asserted-by": "publisher",
+     "key": "ref33"
+    },
+    {
+     "article-title": "Faster R-CNN: Towards real-time object detection with region proposal networks",
+     "author": "ren",
+     "journal-title": "NIPS",
+     "key": "ref32",
+     "year": "2015"
+    },
+    {
+     "article-title": "Deep learning made easier by linear transformations in perceptrons",
+     "author": "raiko",
+     "journal-title": "AISTATS",
+     "key": "ref31",
+     "year": "2012"
+    },
+    {
+     "DOI": "10.1109/CVPR.2007.383266",
+     "doi-asserted-by": "publisher",
+     "key": "ref30"
+    },
+    {
+     "article-title": "Accelerated gradient descent by factor-centering decomposition",
+     "author": "schraudolph",
+     "journal-title": "Technical Report",
+     "key": "ref37",
+     "year": "1998"
+    },
+    {
+     "author": "saxe",
+     "journal-title": "Exact solutions to the nonlinear dynamics of learning in deep linear neural networks",
+     "key": "ref36",
+     "year": "2013"
+    },
+    {
+     "author": "russakovsky",
+     "journal-title": "Imagenet Large Scale Visual Recognition Challenge",
+     "key": "ref35",
+     "year": "2014"
+    },
+    {
+     "article-title": "Fitnets: Hints for thin deep nets",
+     "author": "romero",
+     "journal-title": "ICLRE",
+     "key": "ref34",
+     "year": "2015"
+    },
+    {
+     "article-title": "On the number of linear regions of deep neural networks",
+     "author": "mont\u00fafar",
+     "journal-title": "NIPS",
+     "key": "ref28",
+     "year": "2014"
+    },
+    {
+     "DOI": "10.1109/CVPR.2015.7298965",
+     "doi-asserted-by": "publisher",
+     "key": "ref27"
+    },
+    {
+     "article-title": "Rectified linear units improve restricted boltzmann machines",
+     "author": "nair",
+     "journal-title": "ICML",
+     "key": "ref29",
+     "year": "2010"
+    },
+    {
+     "DOI": "10.1093/oso/9780198538493.001.0001",
+     "author": "bishop",
+     "doi-asserted-by": "crossref",
+     "journal-title": "Neural Networks for Pattern Recognition",
+     "key": "ref2",
+     "year": "1995"
+    },
+    {
+     "DOI": "10.1109/72.279181",
+     "doi-asserted-by": "publisher",
+     "key": "ref1"
+    },
+    {
+     "article-title": "Learning multiple layers of features from tiny images",
+     "author": "krizhevsky",
+     "journal-title": "Tech Report",
+     "key": "ref20",
+     "year": "2009"
+    },
+    {
+     "DOI": "10.1162/neco.1989.1.4.541",
+     "doi-asserted-by": "publisher",
+     "key": "ref22"
+    },
+    {
+     "article-title": "Imagenet classification with deep convolutional neural networks",
+     "author": "krizhevsky",
+     "journal-title": "NIPS",
+     "key": "ref21",
+     "year": "2012"
+    },
+    {
+     "author": "lee",
+     "journal-title": "Deeply-supervised nets",
+     "key": "ref24",
+     "year": "2014"
+    },
+    {
+     "DOI": "10.1007/3-540-49430-8_2",
+     "article-title": "Efficient backprop",
+     "author": "lecun",
+     "doi-asserted-by": "crossref",
+     "first-page": "9",
+     "journal-title": "Neural Networks Tricks of the Trade",
+     "key": "ref23",
+     "year": "1998"
+    },
+    {
+     "article-title": "Microsoft COCO: Common objects in context",
+     "author": "lin",
+     "journal-title": "ECCV",
+     "key": "ref26",
+     "year": "2014"
+    },
+    {
+     "author": "lin",
+     "journal-title": "Network in Network",
+     "key": "ref25",
+     "year": "2013"
+    },
+    {
+     "DOI": "10.1109/CVPR.2015.7299173",
+     "doi-asserted-by": "publisher",
+     "key": "ref10"
+    },
+    {
+     "article-title": "Spatial pyramid pooling in deep convolutional networks for visual recognition",
+     "author": "he",
+     "journal-title": "ECCV",
+     "key": "ref11",
+     "year": "2014"
+    },
+    {
+     "article-title": "Very deep convolutional networks for large-scale image recognition",
+     "author": "simonyan",
+     "journal-title": "ICLRE",
+     "key": "ref40",
+     "year": "2015"
+    },
+    {
+     "DOI": "10.1109/ICCV.2015.123",
+     "doi-asserted-by": "publisher",
+     "key": "ref12"
+    },
+    {
+     "article-title": "Improving neural networks by preventing coadaptation of feature detectors",
+     "author": "hinton",
+     "key": "ref13",
+     "year": "2012"
+    },
+    {
+     "author": "hochreiter",
+     "journal-title": "Untersuchungen zu dynamischen neuronalen Netzen",
+     "key": "ref14",
+     "year": "1991"
+    },
+    {
+     "DOI": "10.1162/neco.1997.9.8.1735",
+     "doi-asserted-by": "publisher",
+     "key": "ref15"
+    },
+    {
+     "article-title": "Batch normalization: Accelerating deep network training by reducing internal covariate shift",
+     "author": "ioffe",
+     "journal-title": "ICML",
+     "key": "ref16",
+     "year": "2015"
+    },
+    {
+     "DOI": "10.1109/TPAMI.2010.57",
+     "doi-asserted-by": "publisher",
+     "key": "ref17"
+    },
+    {
+     "DOI": "10.1109/TPAMI.2011.235",
+     "doi-asserted-by": "publisher",
+     "key": "ref18"
+    },
+    {
+     "author": "jia",
+     "journal-title": "Caffe Convolutional Architecture for Fast Feature Embedding",
+     "key": "ref19",
+     "year": "2014"
+    },
+    {
+     "DOI": "10.5244/C.25.76",
+     "doi-asserted-by": "publisher",
+     "key": "ref4"
+    },
+    {
+     "DOI": "10.1137/1.9780898719505",
+     "doi-asserted-by": "publisher",
+     "key": "ref3"
+    },
+    {
+     "DOI": "10.1109/ICCV.2015.169",
+     "doi-asserted-by": "publisher",
+     "key": "ref6"
+    },
+    {
+     "DOI": "10.1007/s11263-009-0275-4",
+     "doi-asserted-by": "publisher",
+     "key": "ref5"
+    },
+    {
+     "article-title": "Understanding the difficulty of training deep feedforward neural networks",
+     "author": "glorot",
+     "journal-title": "AISTATS",
+     "key": "ref8",
+     "year": "2010"
+    },
+    {
+     "DOI": "10.1109/CVPR.2014.81",
+     "doi-asserted-by": "publisher",
+     "key": "ref7"
+    },
+    {
+     "article-title": "Visualizing and understanding convolutional neural networks",
+     "author": "zeiler",
+     "journal-title": "ECCV",
+     "key": "ref49",
+     "year": "2014"
+    },
+    {
+     "author": "goodfellow",
+     "journal-title": "Maxout Networks",
+     "key": "ref9",
+     "year": "2013"
+    },
+    {
+     "DOI": "10.1007/978-3-642-42054-2_55",
+     "doi-asserted-by": "publisher",
+     "key": "ref46"
+    },
+    {
+     "DOI": "10.1145/1179352.1142005",
+     "doi-asserted-by": "publisher",
+     "key": "ref45"
+    },
+    {
+     "DOI": "10.1007/978-1-4757-3121-7",
+     "doi-asserted-by": "publisher",
+     "key": "ref48"
+    },
+    {
+     "author": "vedaldi",
+     "journal-title": "Vlfeat An Open and Portable Library of Computer Vision Algorithms",
+     "key": "ref47",
+     "year": "2008"
+    },
+    {
+     "article-title": "Training very deep networks",
+     "author": "srivastava",
+     "journal-title": "1507 06228",
+     "key": "ref42",
+     "year": "2015"
+    },
+    {
+     "author": "srivastava",
+     "journal-title": "Highway networks",
+     "key": "ref41",
+     "year": "2015"
+    },
+    {
+     "DOI": "10.1109/34.56188",
+     "doi-asserted-by": "publisher",
+     "key": "ref44"
+    },
+    {
+     "DOI": "10.1109/CVPR.2015.7298594",
+     "doi-asserted-by": "publisher",
+     "key": "ref43"
+    }
+   ],
+   "reference-count": 49,
+   "references-count": 49,
+   "relation": {},
+   "resource": {
+    "primary": {
+     "URL": "http://ieeexplore.ieee.org/document/7780459/"
+    }
+   },
+   "score": 1,
+   "short-container-title": [],
+   "short-title": [],
+   "source": "Crossref",
+   "subject": [],
+   "subtitle": [],
+   "title": [
+    "Deep Residual Learning for Image Recognition"
+   ],
+   "type": "proceedings-article"
+  },
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "status": "ok"
+ },
+ "content_type": "application/json",
+ "params": {},
+ "recorded_at": "2026-11-01T17:21:16Z",
+ "status": 200,
+ "url": "https://api.crossref.org/works/10.1109/cvpr.2016.90"
+}

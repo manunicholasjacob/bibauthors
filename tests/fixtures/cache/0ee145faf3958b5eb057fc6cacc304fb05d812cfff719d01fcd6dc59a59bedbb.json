@@ -1,0 +1,982 @@
+{
+ "body": {
+  "message": {
+   "DOI": "10.1038/nature16961",
+   "ISSN": [
+    "0028-0836",
+    "1476-4687"
+   ],
+   "URL": "https://doi.org/10.1038/nature16961",
+   "alternative-id": [
+    "BFnature16961"
+   ],
+   "assertion": [
+    {
+     "group": {
+      "label": "Article History",
+      "name": "ArticleHistory"
+     },
+     "label": "Received",
+     "name": "received",
+     "order": 1,
+     "value": "11 November 2015"
+    },
+    {
+     "group": {
+      "label": "Article History",
+      "name": "ArticleHistory"
+     },
+     "label": "Accepted",
+     "name": "accepted",
+     "order": 2,
+     "value": "5 January 2016"
+    },
+    {
+     "group": {
+      "label": "Article History",
+      "name": "ArticleHistory"
+     },
+     "label": "First Online",
+     "name": "first_online",
+     "order": 3,
+     "value": "27 January 2016"
+    },
+    {
+     "group": {
+      "label": "Competing interests",
+      "name": "EthicsHeading"
+     },
+     "name": "Ethics",
+     "order": 1,
+     "value": "The authors declare no competing financial interests."
+    }
+   ],
+   "author": [
+    {
+     "affiliation": [],
+     "family": "Silver",
+     "given": "David",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "first"
+    },
+    {
+     "affiliation": [],
+     "family": "Huang",
+     "given": "Aja",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Maddison",
+     "given": "Chris J.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Guez",
+     "given": "Arthur",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Sifre",
+     "given": "Laurent",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "van den Driessche",
+     "given": "George",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Schrittwieser",
+     "given": "Julian",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Antonoglou",
+     "given": "Ioannis",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Panneershelvam",
+     "given": "Veda",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Lanctot",
+     "given": "Marc",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Dieleman",
+     "given": "Sander",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Grewe",
+     "given": "Dominik",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Nham",
+     "given": "John",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Kalchbrenner",
+     "given": "Nal",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Sutskever",
+     "given": "Ilya",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Lillicrap",
+     "given": "Timothy",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Leach",
+     "given": "Madeleine",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Kavukcuoglu",
+     "given": "Koray",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Graepel",
+     "given": "Thore",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Hassabis",
+     "given": "Demis",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    }
+   ],
+   "container-title": [
+    "Nature"
+   ],
+   "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+     "link.springer.com"
+    ]
+   },
+   "created": {
+    "date-parts": [
+     [
+      2016,
+      1,
+      26
+     ]
+    ],
+    "date-time": "2016-01-26T12:44:19Z",
+    "timestamp": 1453812259000
+   },
+   "deposited": {
+    "date-parts": [
+     [
+      2023,
+      5,
+      18
+     ]
+    ],
+    "date-time": "2023-05-18T13:49:53Z",
+    "timestamp": 1684417793000
+   },
+   "indexed": {
+    "date-parts": [
+     [
+      2026,
+      11,
+      1
+     ]
+    ],
+    "date-time": "2026-11-01T15:18:26Z",
+    "timestamp": 1793546306903,
+    "version": "4.5.0"
+   },
+   "is-referenced-by-count": 12003,
+   "issn-type": [
+    {
+     "type": "print",
+     "value": "0028-0836"
+    },
+    {
+     "type": "electronic",
+     "value": "1476-4687"
+    }
+   ],
+   "issue": "7587",
+   "issued": {
+    "date-parts": [
+     [
+      2016,
+      1,
+      27
+     ]
+    ]
+   },
+   "journal-issue": {
+    "issue": "7587",
+    "published-print": {
+     "date-parts": [
+      [
+       2016,
+       1,
+       28
+      ]
+     ]
+    }
+   },
+   "language": "en",
+   "license": [
+    {
+     "URL": "https://www.springer.com/tdm",
+     "content-version": "tdm",
+     "delay-in-days": 0,
+     "start": {
+      "date-parts": [
+       [
+        2016,
+        1,
+        27
+       ]
+      ],
+      "date-time": "2016-01-27T00:00:00Z",
+      "timestamp": 1453852800000
+     }
+    },
+    {
+     "URL": "https://www.springer.com/tdm",
+     "content-version": "vor",
+     "delay-in-days": 0,
+     "start": {
+      "date-parts": [
+       [
+        2016,
+        1,
+        27
+       ]
+      ],
+      "date-time": "2016-01-27T00:00:00Z",
+      "timestamp": 1453852800000
+     }
+    }
+   ],
+   "link": [
+    {
+     "URL": "http://www.nature.com/articles/nature16961.pdf",
+     "content-type": "application/pdf",
+     "content-version": "vor",
+     "intended-application": "text-mining"
+    },
+    {
+     "URL": "http://www.nature.com/articles/nature16961",
+     "content-type": "text/html",
+     "content-version": "vor",
+     "intended-application": "text-mining"
+    },
+    {
+     "URL": "http://www.nature.com/articles/nature16961.pdf",
+     "content-type": "application/pdf",
+     "content-version": "vor",
+     "intended-application": "similarity-checking"
+    }
+   ],
+   "member": "297",
+   "original-title": [],
+   "page": "484-489",
+   "prefix": "10.1038",
+   "published": {
+    "date-parts": [
+     [
+      2016,
+      1,
+      27
+     ]
+    ]
+   },
+   "published-online": {
+    "date-parts": [
+     [
+      2016,
+      1,
+      27
+     ]
+    ]
+   },
+   "published-print": {
+    "date-parts": [
+     [
+      2016,
+      1,
+      28
+     ]
+    ]
+   },
+   "publisher": "Springer Science and Business Media LLC",
+   "reference": [
+    {
+     "key": "BFnature16961_CR1",
+     "unstructured": "Allis, L. V. Searching for Solutions in Games and Artificial Intelligence. PhD thesis, Univ. Limburg, Maastricht, The Netherlands (1994)"
+    },
+    {
+     "DOI": "10.1016/S0004-3702(01)00152-7",
+     "author": "H van den Herik",
+     "doi-asserted-by": "publisher",
+     "first-page": "277",
+     "journal-title": "Artif. Intell.",
+     "key": "BFnature16961_CR2",
+     "unstructured": "van den Herik, H., Uiterwijk, J. W. & van Rijswijck, J. Games solved: now and in the future. Artif. Intell. 134, 277\u2013311 (2002)",
+     "volume": "134",
+     "year": "2002"
+    },
+    {
+     "DOI": "10.1016/S0065-2458(00)80019-4",
+     "author": "J Schaeffer",
+     "doi-asserted-by": "publisher",
+     "first-page": "189",
+     "journal-title": "Advances in Computers",
+     "key": "BFnature16961_CR3",
+     "unstructured": "Schaeffer, J. The games computers (and people) play. Advances in Computers 52, 189\u2013266 (2000)",
+     "volume": "52",
+     "year": "2000"
+    },
+    {
+     "DOI": "10.1016/S0004-3702(01)00129-1",
+     "author": "M Campbell",
+     "doi-asserted-by": "publisher",
+     "first-page": "57",
+     "journal-title": "Artif. Intell.",
+     "key": "BFnature16961_CR4",
+     "unstructured": "Campbell, M., Hoane, A. & Hsu, F. Deep Blue. Artif. Intell. 134, 57\u201383 (2002)",
+     "volume": "134",
+     "year": "2002"
+    },
+    {
+     "DOI": "10.1016/0004-3702(92)90074-8",
+     "author": "J Schaeffer",
+     "doi-asserted-by": "publisher",
+     "first-page": "273",
+     "journal-title": "Artif. Intell.",
+     "key": "BFnature16961_CR5",
+     "unstructured": "Schaeffer, J. et al. A world championship caliber checkers program. Artif. Intell. 53, 273\u2013289 (1992)",
+     "volume": "53",
+     "year": "1992"
+    },
+    {
+     "DOI": "10.1007/3-540-48957-6_8",
+     "doi-asserted-by": "crossref",
+     "key": "BFnature16961_CR6",
+     "unstructured": "Buro, M. From simple features to sophisticated evaluation functions. In 1st International Conference on Computers and Games, 126\u2013145 (1999)"
+    },
+    {
+     "DOI": "10.1016/S0004-3702(01)00121-7",
+     "author": "M M\u00fcller",
+     "doi-asserted-by": "publisher",
+     "first-page": "145",
+     "journal-title": "Artif. Intell.",
+     "key": "BFnature16961_CR7",
+     "unstructured": "M\u00fcller, M. Computer Go. Artif. Intell. 134, 145\u2013179 (2002)",
+     "volume": "134",
+     "year": "2002"
+    },
+    {
+     "key": "BFnature16961_CR8",
+     "unstructured": "Tesauro, G. & Galperin, G. On-line policy improvement using Monte-Carlo search. In Advances in Neural Information Processing, 1068\u20131074 (1996)"
+    },
+    {
+     "DOI": "10.1016/S0004-3702(01)00166-7",
+     "author": "B Sheppard",
+     "doi-asserted-by": "publisher",
+     "first-page": "241",
+     "journal-title": "Artif. Intell.",
+     "key": "BFnature16961_CR9",
+     "unstructured": "Sheppard, B. World-championship-caliber Scrabble. Artif. Intell. 134, 241\u2013275 (2002)",
+     "volume": "134",
+     "year": "2002"
+    },
+    {
+     "DOI": "10.1007/978-0-387-35706-5_11",
+     "doi-asserted-by": "crossref",
+     "key": "BFnature16961_CR10",
+     "unstructured": "Bouzy, B. & Helmstetter, B. Monte-Carlo Go developments. In 10th International Conference on Advances in Computer Games, 159\u2013174 (2003)"
+    },
+    {
+     "DOI": "10.1007/978-3-540-75538-8_7",
+     "doi-asserted-by": "crossref",
+     "key": "BFnature16961_CR11",
+     "unstructured": "Coulom, R. Efficient selectivity and backup operators in Monte-Carlo tree search. In 5th International Conference on Computers and Games, 72\u201383 (2006)"
+    },
+    {
+     "DOI": "10.1007/11871842_29",
+     "doi-asserted-by": "crossref",
+     "key": "BFnature16961_CR12",
+     "unstructured": "Kocsis, L. & Szepesv\u00e1ri, C. Bandit based Monte-Carlo planning. In 15th European Conference on Machine Learning, 282\u2013293 (2006)"
+    },
+    {
+     "DOI": "10.3233/ICG-2007-30403",
+     "author": "R Coulom",
+     "doi-asserted-by": "publisher",
+     "first-page": "198",
+     "journal-title": "ICGA J.",
+     "key": "BFnature16961_CR13",
+     "unstructured": "Coulom, R. Computing Elo ratings of move patterns in the game of Go. ICGA J. 30, 198\u2013208 (2007)",
+     "volume": "30",
+     "year": "2007"
+    },
+    {
+     "DOI": "10.1007/978-3-642-31866-5_3",
+     "doi-asserted-by": "crossref",
+     "key": "BFnature16961_CR14",
+     "unstructured": "Baudi\u0161, P. & Gailly, J.-L. Pachi: State of the art open source Go program. In Advances in Computer Games, 24\u201338 (Springer, 2012)"
+    },
+    {
+     "DOI": "10.1109/TCIAIG.2010.2083662",
+     "author": "M M\u00fcller",
+     "doi-asserted-by": "publisher",
+     "first-page": "259",
+     "journal-title": "IEEE Trans. Comput. Intell. AI in Games",
+     "key": "BFnature16961_CR15",
+     "unstructured": "M\u00fcller, M., Enzenberger, M., Arneson, B. & Segal, R. Fuego \u2013 an open-source framework for board games and Go engine based on Monte-Carlo tree search. IEEE Trans. Comput. Intell. AI in Games 2, 259\u2013270 (2010)",
+     "volume": "2",
+     "year": "2010"
+    },
+    {
+     "DOI": "10.1145/1273496.1273531",
+     "doi-asserted-by": "crossref",
+     "key": "BFnature16961_CR16",
+     "unstructured": "Gelly, S. & Silver, D. Combining online and offline learning in UCT. In 17th International Conference on Machine Learning, 273\u2013280 (2007)"
+    },
+    {
+     "key": "BFnature16961_CR17",
+     "unstructured": "Krizhevsky, A., Sutskever, I. & Hinton, G. ImageNet classification with deep convolutional neural networks. In Advances in Neural Information Processing Systems, 1097\u20131105 (2012)"
+    },
+    {
+     "DOI": "10.1109/72.554195",
+     "author": "S Lawrence",
+     "doi-asserted-by": "publisher",
+     "first-page": "98",
+     "journal-title": "IEEE Trans. Neural Netw.",
+     "key": "BFnature16961_CR18",
+     "unstructured": "Lawrence, S., Giles, C. L., Tsoi, A. C. & Back, A. D. Face recognition: a convolutional neural-network approach. IEEE Trans. Neural Netw. 8, 98\u2013113 (1997)",
+     "volume": "8",
+     "year": "1997"
+    },
+    {
+     "DOI": "10.1038/nature14236",
+     "author": "V Mnih",
+     "doi-asserted-by": "publisher",
+     "first-page": "529",
+     "journal-title": "Nature",
+     "key": "BFnature16961_CR19",
+     "unstructured": "Mnih, V. et al. Human-level control through deep reinforcement learning. Nature 518, 529\u2013533 (2015)",
+     "volume": "518",
+     "year": "2015"
+    },
+    {
+     "DOI": "10.1038/nature14539",
+     "author": "Y LeCun",
+     "doi-asserted-by": "publisher",
+     "first-page": "436",
+     "journal-title": "Nature",
+     "key": "BFnature16961_CR20",
+     "unstructured": "LeCun, Y., Bengio, Y. & Hinton, G. Deep learning. Nature 521, 436\u2013444 (2015)",
+     "volume": "521",
+     "year": "2015"
+    },
+    {
+     "DOI": "10.1145/1143844.1143954",
+     "doi-asserted-by": "crossref",
+     "key": "BFnature16961_CR21",
+     "unstructured": "Stern, D., Herbrich, R. & Graepel, T. Bayesian pattern ranking for move prediction in the game of Go. In International Conference of Machine Learning, 873\u2013880 (2006)"
+    },
+    {
+     "DOI": "10.1007/978-3-540-87559-8_11",
+     "doi-asserted-by": "crossref",
+     "key": "BFnature16961_CR22",
+     "unstructured": "Sutskever, I. & Nair, V. Mimicking Go experts with convolutional neural networks. In International Conference on Artificial Neural Networks, 101\u2013110 (2008)"
+    },
+    {
+     "key": "BFnature16961_CR23",
+     "unstructured": "Maddison, C. J., Huang, A., Sutskever, I. & Silver, D. Move evaluation in Go using deep convolutional neural networks. 3rd International Conference on Learning Representations (2015)"
+    },
+    {
+     "key": "BFnature16961_CR24",
+     "unstructured": "Clark, C. & Storkey, A. J. Training deep convolutional neural networks to play go. In 32nd International Conference on Machine Learning, 1766\u20131774 (2015)"
+    },
+    {
+     "author": "RJ Williams",
+     "first-page": "229",
+     "journal-title": "Mach. Learn.",
+     "key": "BFnature16961_CR25",
+     "unstructured": "Williams, R. J. Simple statistical gradient-following algorithms for connectionist reinforcement learning. Mach. Learn. 8, 229\u2013256 (1992)",
+     "volume": "8",
+     "year": "1992"
+    },
+    {
+     "key": "BFnature16961_CR26",
+     "unstructured": "Sutton, R., McAllester, D., Singh, S. & Mansour, Y. Policy gradient methods for reinforcement learning with function approximation. In Advances in Neural Information Processing Systems, 1057\u20131063 (2000)"
+    },
+    {
+     "DOI": "10.1109/TNN.1998.712192",
+     "doi-asserted-by": "crossref",
+     "key": "BFnature16961_CR27",
+     "unstructured": "Sutton, R. & Barto, A. Reinforcement Learning: an Introduction (MIT Press, 1998)"
+    },
+    {
+     "author": "NN Schraudolph",
+     "first-page": "817",
+     "journal-title": "Adv. Neural Inf. Process. Syst.",
+     "key": "BFnature16961_CR28",
+     "unstructured": "Schraudolph, N. N., Dayan, P. & Sejnowski, T. J. Temporal difference learning of position evaluation in the game of Go. Adv. Neural Inf. Process. Syst. 6, 817\u2013824 (1994)",
+     "volume": "6",
+     "year": "1994"
+    },
+    {
+     "DOI": "10.1007/978-0-387-35706-5_7",
+     "doi-asserted-by": "crossref",
+     "key": "BFnature16961_CR29",
+     "unstructured": "Enzenberger, M. Evaluation in Go by a neural network using soft segmentation. In 10th Advances in Computer Games Conference, 97\u2013108 (2003). 267"
+    },
+    {
+     "DOI": "10.1007/s10994-012-5280-0",
+     "author": "D Silver",
+     "doi-asserted-by": "publisher",
+     "first-page": "183",
+     "journal-title": "Mach. Learn.",
+     "key": "BFnature16961_CR30",
+     "unstructured": "Silver, D., Sutton, R. & M\u00fcller, M. Temporal-difference search in computer Go. Mach. Learn. 87, 183\u2013219 (2012)",
+     "volume": "87",
+     "year": "2012"
+    },
+    {
+     "key": "BFnature16961_CR31",
+     "unstructured": "Levinovitz, A. The mystery of Go, the ancient game that computers still can\u2019t win. Wired Magazine (2014)"
+    },
+    {
+     "DOI": "10.1002/j.2326-1951.1998.tb03356.x",
+     "author": "D Mechner",
+     "doi-asserted-by": "publisher",
+     "first-page": "32",
+     "journal-title": "The Sciences",
+     "key": "BFnature16961_CR32",
+     "unstructured": "Mechner, D. All Systems Go. The Sciences 38, 32\u201337 (1998)",
+     "volume": "38",
+     "year": "1998"
+    },
+    {
+     "DOI": "10.1007/978-3-540-71984-7_15",
+     "doi-asserted-by": "crossref",
+     "key": "BFnature16961_CR33",
+     "unstructured": "Mandziuk, J. Computational intelligence in mind games. In Challenges for Computational Intelligence, 407\u2013442 (2007)"
+    },
+    {
+     "DOI": "10.1016/S0004-3702(78)80012-5",
+     "author": "H Berliner",
+     "doi-asserted-by": "publisher",
+     "first-page": "201",
+     "journal-title": "Artif. Intell.",
+     "key": "BFnature16961_CR34",
+     "unstructured": "Berliner, H. A chronology of computer chess and its literature. Artif. Intell. 10, 201\u2013214 (1978)",
+     "volume": "10",
+     "year": "1978"
+    },
+    {
+     "DOI": "10.1109/TCIAIG.2012.2186810",
+     "author": "C Browne",
+     "doi-asserted-by": "publisher",
+     "first-page": "1",
+     "journal-title": "IEEE Trans. Comput. Intell. AI in Games",
+     "key": "BFnature16961_CR35",
+     "unstructured": "Browne, C. et al. A survey of Monte-Carlo tree search methods. IEEE Trans. Comput. Intell. AI in Games 4, 1\u201343 (2012)",
+     "volume": "4",
+     "year": "2012"
+    },
+    {
+     "DOI": "10.1145/2093548.2093574",
+     "author": "S Gelly",
+     "doi-asserted-by": "publisher",
+     "first-page": "106",
+     "journal-title": "Commun. ACM",
+     "key": "BFnature16961_CR36",
+     "unstructured": "Gelly, S. et al. The grand challenge of computer Go: Monte Carlo tree search and extensions. Commun. ACM 55, 106\u2013113 (2012)",
+     "volume": "55",
+     "year": "2012"
+    },
+    {
+     "DOI": "10.1007/978-3-540-87608-3_11",
+     "doi-asserted-by": "crossref",
+     "key": "BFnature16961_CR37",
+     "unstructured": "Coulom, R. Whole-history rating: A Bayesian rating system for players of time-varying strength. In International Conference on Computers and Games, 113\u2013124 (2008)"
+    },
+    {
+     "key": "BFnature16961_CR38",
+     "unstructured": "KGS. Rating system math. http://www.gokgs.com/help/rmath.html"
+    },
+    {
+     "DOI": "10.1016/B978-1-55860-335-6.50027-1",
+     "doi-asserted-by": "crossref",
+     "key": "BFnature16961_CR39",
+     "unstructured": "Littman, M. L. Markov games as a framework for multi-agent reinforcement learning. In 11th International Conference on Machine Learning, 157\u2013163 (1994)"
+    },
+    {
+     "DOI": "10.1016/0004-3702(75)90019-3",
+     "author": "DE Knuth",
+     "doi-asserted-by": "publisher",
+     "first-page": "293",
+     "journal-title": "Artif. Intell.",
+     "key": "BFnature16961_CR40",
+     "unstructured": "Knuth, D. E. & Moore, R. W. An analysis of alpha-beta pruning. Artif. Intell. 6, 293\u2013326 (1975)",
+     "volume": "6",
+     "year": "1975"
+    },
+    {
+     "author": "R Sutton",
+     "first-page": "9",
+     "journal-title": "Mach. Learn.",
+     "key": "BFnature16961_CR41",
+     "unstructured": "Sutton, R. Learning to predict by the method of temporal differences. Mach. Learn. 3, 9\u201344 (1988)",
+     "volume": "3",
+     "year": "1988"
+    },
+    {
+     "DOI": "10.1023/A:1007634325138",
+     "author": "J Baxter",
+     "doi-asserted-by": "publisher",
+     "first-page": "243",
+     "journal-title": "Mach. Learn.",
+     "key": "BFnature16961_CR42",
+     "unstructured": "Baxter, J., Tridgell, A. & Weaver, L. Learning to play chess using temporal differences. Mach. Learn. 40, 243\u2013263 (2000)",
+     "volume": "40",
+     "year": "2000"
+    },
+    {
+     "key": "BFnature16961_CR43",
+     "unstructured": "Veness, J., Silver, D., Blair, A. & Uther, W. Bootstrapping from game tree search. In Advances in Neural Information Processing Systems (2009)"
+    },
+    {
+     "DOI": "10.1147/rd.116.0601",
+     "author": "AL Samuel",
+     "doi-asserted-by": "publisher",
+     "first-page": "601",
+     "journal-title": "IBM J. Res. Develop.",
+     "key": "BFnature16961_CR44",
+     "unstructured": "Samuel, A. L. Some studies in machine learning using the game of checkers II - recent progress. IBM J. Res. Develop. 11, 601\u2013617 (1967)",
+     "volume": "11",
+     "year": "1967"
+    },
+    {
+     "key": "BFnature16961_CR45",
+     "unstructured": "Schaeffer, J., Hlynka, M. & Jussila, V. Temporal difference learning applied to a high-performance game-playing program. In 17th International Joint Conference on Artificial Intelligence, 529\u2013534 (2001)"
+    },
+    {
+     "DOI": "10.1162/neco.1994.6.2.215",
+     "author": "G Tesauro",
+     "doi-asserted-by": "publisher",
+     "first-page": "215",
+     "journal-title": "Neural Comput.",
+     "key": "BFnature16961_CR46",
+     "unstructured": "Tesauro, G. TD-gammon, a self-teaching backgammon program, achieves master-level play. Neural Comput. 6, 215\u2013219 (1994)",
+     "volume": "6",
+     "year": "1994"
+    },
+    {
+     "key": "BFnature16961_CR47",
+     "unstructured": "Dahl, F. Honte, a Go-playing program using neural nets. In Machines that learn to play games, 205\u2013223 (Nova Science, 1999)"
+    },
+    {
+     "DOI": "10.1007/s10472-011-9258-6",
+     "author": "CD Rosin",
+     "doi-asserted-by": "publisher",
+     "first-page": "203",
+     "journal-title": "Ann. Math. Artif. Intell.",
+     "key": "BFnature16961_CR48",
+     "unstructured": "Rosin, C. D. Multi-armed bandits with episode context. Ann. Math. Artif. Intell. 61, 203\u2013230 (2011)",
+     "volume": "61",
+     "year": "2011"
+    },
+    {
+     "DOI": "10.1109/CIG.2014.6932903",
+     "doi-asserted-by": "crossref",
+     "key": "BFnature16961_CR49",
+     "unstructured": "Lanctot, M., Winands, M. H. M., Pepels, T. & Sturtevant, N. R. Monte Carlo tree search with heuristic evaluations using implicit minimax backups. In IEEE Conference on Computational Intelligence and Games, 1\u20138 (2014)"
+    },
+    {
+     "author": "S Gelly",
+     "first-page": "INRIA",
+     "journal-title": "Tech. Rep.",
+     "key": "BFnature16961_CR50",
+     "unstructured": "Gelly, S., Wang, Y., Munos, R. & Teytaud, O. Modification of UCT with patterns in Monte-Carlo Go. Tech. Rep. 6062, INRIA (2006)",
+     "volume": "6062",
+     "year": "2006"
+    },
+    {
+     "DOI": "10.1145/1553374.1553495",
+     "doi-asserted-by": "crossref",
+     "key": "BFnature16961_CR51",
+     "unstructured": "Silver, D. & Tesauro, G. Monte-Carlo simulation balancing. In 26th International Conference on Machine Learning, 119 (2009)"
+    },
+    {
+     "DOI": "10.1007/978-3-642-17928-0_8",
+     "doi-asserted-by": "crossref",
+     "key": "BFnature16961_CR52",
+     "unstructured": "Huang, S.-C., Coulom, R. & Lin, S.-S. Monte-Carlo simulation balancing in practice. In 7th International Conference on Computers and Games, 81\u201392 (Springer-Verlag, 2011)"
+    },
+    {
+     "DOI": "10.1109/TCIAIG.2010.2100396",
+     "author": "H Baier",
+     "doi-asserted-by": "publisher",
+     "first-page": "303",
+     "journal-title": "IEEE Trans. Comput. Intell. AI in Games",
+     "key": "BFnature16961_CR53",
+     "unstructured": "Baier, H. & Drake, P. D. The power of forgetting: improving the last-good-reply policy in Monte Carlo Go. IEEE Trans. Comput. Intell. AI in Games 2, 303\u2013309 (2010)",
+     "volume": "2",
+     "year": "2010"
+    },
+    {
+     "DOI": "10.1007/978-3-319-09165-5_4",
+     "doi-asserted-by": "crossref",
+     "key": "BFnature16961_CR54",
+     "unstructured": "Huang, S. & M\u00fcller, M. Investigating the limits of Monte-Carlo tree search methods in computer Go. In 8th International Conference on Computers and Games, 39\u201348 (2013)"
+    },
+    {
+     "DOI": "10.1007/978-3-642-17928-0_4",
+     "author": "RB Segal",
+     "doi-asserted-by": "publisher",
+     "first-page": "36",
+     "journal-title": "Computers and Games",
+     "key": "BFnature16961_CR55",
+     "unstructured": "Segal, R. B. On the scalability of parallel UCT. Computers and Games 6515, 36\u201347 (2011)",
+     "volume": "6515",
+     "year": "2011"
+    },
+    {
+     "DOI": "10.1007/978-3-642-12993-3_2",
+     "doi-asserted-by": "crossref",
+     "key": "BFnature16961_CR56",
+     "unstructured": "Enzenberger, M. & M\u00fcller, M. A lock-free multithreaded Monte-Carlo tree search algorithm. In 12th Advances in Computer Games Conference, 14\u201320 (2009)"
+    },
+    {
+     "DOI": "10.1109/TAAI.2010.78",
+     "doi-asserted-by": "crossref",
+     "key": "BFnature16961_CR57",
+     "unstructured": "Huang, S.-C., Coulom, R. & Lin, S.-S. Time management for Monte-Carlo tree search applied to the game of Go. In International Conference on Technologies and Applications of Artificial Intelligence, 462\u2013466 (2010)"
+    },
+    {
+     "DOI": "10.1016/j.artint.2011.03.007",
+     "author": "S Gelly",
+     "doi-asserted-by": "publisher",
+     "first-page": "1856",
+     "journal-title": "Artif. Intell.",
+     "key": "BFnature16961_CR58",
+     "unstructured": "Gelly, S. & Silver, D. Monte-Carlo tree search and rapid action value estimation in computer Go. Artif. Intell. 175, 1856\u20131875 (2011)",
+     "volume": "175",
+     "year": "2011"
+    },
+    {
+     "DOI": "10.3233/ICG-2011-34302",
+     "author": "P Baudi\u0161",
+     "doi-asserted-by": "publisher",
+     "first-page": "131",
+     "journal-title": "ICGA J.",
+     "key": "BFnature16961_CR59",
+     "unstructured": "Baudi\u0161, P. Balancing MCTS by dynamically adjusting the komi value. ICGA J. 34, 131 (2011)",
+     "volume": "34",
+     "year": "2011"
+    },
+    {
+     "key": "BFnature16961_CR60",
+     "unstructured": "Baier, H. & Winands, M. H. Active opening book application for Monte-Carlo tree search in 19\u00d719 Go. In Benelux Conference on Artificial Intelligence, 3\u201310 (2011)"
+    },
+    {
+     "key": "BFnature16961_CR61",
+     "unstructured": "Dean, J. et al. Large scale distributed deep networks. In Advances in Neural Information Processing Systems, 1223\u20131231 (2012)"
+    },
+    {
+     "key": "BFnature16961_CR62",
+     "unstructured": "Go ratings. http://www.goratings.org"
+    }
+   ],
+   "reference-count": 62,
+   "references-count": 62,
+   "relation": {
+    "has-review": [
+     {
+      "asserted-by": "object",
+      "id": "10.3410/f.726105619.793525345",
+      "id-type": "doi"
+     }
+    ]
+   },
+   "resource": {
+    "primary": {
+     "URL": "https://www.nature.com/articles/nature16961"
+    }
+   },
+   "score": 1,
+   "short-container-title": [
+    "Nature"
+   ],
+   "short-title": [],
+   "source": "Crossref",
+   "subject": [],
+   "subtitle": [],
+   "title": [
+    "Mastering the game of Go with deep neural networks and tree search"
+   ],
+   "type": "journal-article",
+   "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+   "volume": "529"
+  },
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "status": "ok"
+ },
+ "content_type": "application/json",
+ "params": {},
+ "recorded_at": "2026-11-01T17:21:13Z",
+ "status": 200,
+ "url": "https://api.crossref.org/works/10.1038/nature16961"
+}

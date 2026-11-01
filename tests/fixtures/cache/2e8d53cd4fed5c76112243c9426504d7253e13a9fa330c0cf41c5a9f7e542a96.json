@@ -1,0 +1,962 @@
+{
+ "body": {
+  "abstract_inverted_index": {
+   "(LLMs)": [
+    3
+   ],
+   "As": [
+    18
+   ],
+   "In": [
+    34
+   ],
+   "LLM": [
+    63
+   ],
+   "LLM-based": [
+    148
+   ],
+   "Large": [
+    0
+   ],
+   "Our": [
+    136
+   ],
+   "Through": [
+    74
+   ],
+   "To": [
+    54
+   ],
+   "We": [
+    106
+   ],
+   "a": [
+    75
+   ],
+   "ability": [
+    87
+   ],
+   "across": [
+    120
+   ],
+   "acting": [
+    65
+   ],
+   "affect": [
+    98
+   ],
+   "agents": [
+    10,
+    20,
+    64
+   ],
+   "agents.": [
+    150
+   ],
+   "analyze": [
+    81
+   ],
+   "and": [
+    93,
+    101,
+    122,
+    128,
+    141
+   ],
+   "another": [
+    52
+   ],
+   "applications": [
+    14
+   ],
+   "as": [
+    8,
+    47,
+    66,
+    85,
+    126
+   ],
+   "auction": [
+    72
+   ],
+   "authority": [
+    131
+   ],
+   "autonomous": [
+    9
+   ],
+   "becomes": [
+    32
+   ],
+   "behavior": [
+    31,
+    61
+   ],
+   "behavior.": [
+    135
+   ],
+   "can": [
+    42
+   ],
+   "capabilities": [
+    7
+   ],
+   "choice": [
+    90
+   ],
+   "choose": [
+    43
+   ],
+   "collude": [
+    118
+   ],
+   "collude,": [
+    45
+   ],
+   "collusion.": [
+    105
+   ],
+   "collusive": [
+    113,
+    134
+   ],
+   "communicate,": [
+    89
+   ],
+   "communication": [
+    111
+   ],
+   "considerations": [
+    143
+   ],
+   "continuous": [
+    70
+   ],
+   "controlled": [
+    78
+   ],
+   "cooperation": [
+    49
+   ],
+   "defined": [
+    46
+   ],
+   "demonstrated": [
+    5
+   ],
+   "deployment": [
+    146
+   ],
+   "direct": [
+    109
+   ],
+   "domains.": [
+    17
+   ],
+   "double": [
+    71
+   ],
+   "economic": [
+    140
+   ],
+   "emergence": [
+    102
+   ],
+   "engage": [
+    22
+   ],
+   "environmental": [
+    96,
+    123
+   ],
+   "essential.": [
+    33
+   ],
+   "ethical": [
+    142
+   ],
+   "examine": [
+    38
+   ],
+   "expanding": [
+    13
+   ],
+   "experiments,": [
+    79
+   ],
+   "figures,": [
+    132
+   ],
+   "find": [
+    107
+   ],
+   "findings": [
+    137
+   ],
+   "for": [
+    29,
+    144
+   ],
+   "from": [
+    130
+   ],
+   "harms": [
+    51
+   ],
+   "have": [
+    4
+   ],
+   "highlight": [
+    138
+   ],
+   "how": [
+    82
+   ],
+   "identifying": [
+    26
+   ],
+   "important": [
+    139
+   ],
+   "impressive": [
+    6
+   ],
+   "in": [
+    15,
+    23,
+    68
+   ],
+   "increases": [
+    112
+   ],
+   "increasingly": [
+    21
+   ],
+   "influence": [
+    133
+   ],
+   "interactions,": [
+    25
+   ],
+   "investigate": [
+    59
+   ],
+   "language": [
+    1
+   ],
+   "market": [
+    149
+   ],
+   "markets.": [
+    73
+   ],
+   "model,": [
+    92
+   ],
+   "models": [
+    2
+   ],
+   "models,": [
+    121
+   ],
+   "of": [
+    62,
+    77,
+    91,
+    95,
+    103,
+    147
+   ],
+   "oversight": [
+    127
+   ],
+   "parameters": [
+    83
+   ],
+   "party.": [
+    53
+   ],
+   "potential": [
+    28
+   ],
+   "presence": [
+    94
+   ],
+   "pressures": [
+    97
+   ],
+   "pressures,": [
+    124
+   ],
+   "propensity": [
+    116
+   ],
+   "rapidly": [
+    12
+   ],
+   "scenarios": [
+    39
+   ],
+   "secretive": [
+    48
+   ],
+   "seller": [
+    104,
+    110
+   ],
+   "sellers": [
+    67
+   ],
+   "series": [
+    76
+   ],
+   "simulated": [
+    69
+   ],
+   "socioeconomic": [
+    24
+   ],
+   "stability": [
+    100
+   ],
+   "study": [
+    56
+   ],
+   "such": [
+    84,
+    125
+   ],
+   "systematically": [
+    55
+   ],
+   "tendencies,": [
+    114
+   ],
+   "that": [
+    50,
+    108
+   ],
+   "the": [
+    60,
+    86,
+    99,
+    115,
+    145
+   ],
+   "their": [
+    27
+   ],
+   "these": [
+    19
+   ],
+   "they": [
+    41
+   ],
+   "this": [
+    35
+   ],
+   "this,": [
+    57
+   ],
+   "to": [
+    44,
+    88,
+    117
+   ],
+   "undesirable": [
+    30
+   ],
+   "urgency": [
+    129
+   ],
+   "varies": [
+    119
+   ],
+   "various": [
+    16
+   ],
+   "we": [
+    37,
+    58,
+    80
+   ],
+   "where": [
+    40
+   ],
+   "with": [
+    11
+   ],
+   "work,": [
+    36
+   ]
+  },
+  "apc_list": null,
+  "apc_paid": null,
+  "authorships": [
+   {
+    "affiliations": [],
+    "author": {
+     "display_name": "Kushal Agrawal",
+     "id": "https://openalex.org/A5104029603",
+     "observed_orcids": [],
+     "orcid": null
+    },
+    "author_position": "first",
+    "countries": [],
+    "institutions": [],
+    "is_corresponding": false,
+    "raw_affiliation_strings": [],
+    "raw_author_name": "Agrawal, Kushal",
+    "raw_orcid": null
+   },
+   {
+    "affiliations": [],
+    "author": {
+     "display_name": "Verona Teo",
+     "id": "https://openalex.org/A5120738419",
+     "observed_orcids": [],
+     "orcid": null
+    },
+    "author_position": "middle",
+    "countries": [],
+    "institutions": [],
+    "is_corresponding": false,
+    "raw_affiliation_strings": [],
+    "raw_author_name": "Teo, Verona",
+    "raw_orcid": null
+   },
+   {
+    "affiliations": [],
+    "author": {
+     "display_name": "Juan J. Vazquez",
+     "id": "https://openalex.org/A5120759992",
+     "observed_orcids": [],
+     "orcid": null
+    },
+    "author_position": "middle",
+    "countries": [],
+    "institutions": [],
+    "is_corresponding": false,
+    "raw_affiliation_strings": [],
+    "raw_author_name": "Vazquez, Juan J.",
+    "raw_orcid": null
+   },
+   {
+    "affiliations": [],
+    "author": {
+     "display_name": "Sudarsh Kunnavakkam",
+     "id": "https://openalex.org/A5120738420",
+     "observed_orcids": [],
+     "orcid": null
+    },
+    "author_position": "middle",
+    "countries": [],
+    "institutions": [],
+    "is_corresponding": false,
+    "raw_affiliation_strings": [],
+    "raw_author_name": "Kunnavakkam, Sudarsh",
+    "raw_orcid": null
+   },
+   {
+    "affiliations": [],
+    "author": {
+     "display_name": "Vishak Srikanth",
+     "id": "https://openalex.org/A5120738421",
+     "observed_orcids": [],
+     "orcid": null
+    },
+    "author_position": "middle",
+    "countries": [],
+    "institutions": [],
+    "is_corresponding": false,
+    "raw_affiliation_strings": [],
+    "raw_author_name": "Srikanth, Vishak",
+    "raw_orcid": null
+   },
+   {
+    "affiliations": [],
+    "author": {
+     "display_name": "Andy Liu",
+     "id": "https://openalex.org/A5100673526",
+     "observed_orcids": [
+      "https://orcid.org/0000-0003-3096-1788"
+     ],
+     "orcid": "https://orcid.org/0000-0003-3096-1788"
+    },
+    "author_position": "last",
+    "countries": [],
+    "institutions": [],
+    "is_corresponding": false,
+    "raw_affiliation_strings": [],
+    "raw_author_name": "Liu, Andy",
+    "raw_orcid": null
+   }
+  ],
+  "awards": [],
+  "best_oa_location": {
+   "doi": null,
+   "id": "pmh:oai:arXiv.org:2507.01413",
+   "is_accepted": false,
+   "is_oa": true,
+   "is_published": false,
+   "landing_page_url": "http://arxiv.org/abs/2507.01413",
+   "license": null,
+   "license_id": null,
+   "pdf_url": "https://arxiv.org/pdf/2507.01413",
+   "raw_source_name": null,
+   "raw_type": "text",
+   "source": {
+    "display_name": "arXiv (Cornell University)",
+    "host_organization": "https://openalex.org/I205783295",
+    "host_organization_lineage": [
+     "https://openalex.org/I205783295"
+    ],
+    "host_organization_lineage_names": [],
+    "host_organization_name": "Cornell University",
+    "id": "https://openalex.org/S4306400194",
+    "is_core": false,
+    "is_in_doaj": false,
+    "is_oa": true,
+    "issn": [
+     "2331-8422"
+    ],
+    "issn_l": "2331-8422",
+    "listed_in": [],
+    "type": "repository"
+   },
+   "version": "submittedVersion"
+  },
+  "biblio": {
+   "first_page": null,
+   "issue": null,
+   "last_page": null,
+   "volume": null
+  },
+  "citation_normalized_percentile": null,
+  "cited_by_count": 0,
+  "cited_by_percentile_year": null,
+  "concepts": [
+   {
+    "display_name": "Collusion",
+    "id": "https://openalex.org/C2781198186",
+    "level": 2,
+    "score": 0.7541000247001648,
+    "wikidata": "https://www.wikidata.org/wiki/Q701521"
+   },
+   {
+    "display_name": "Common value auction",
+    "id": "https://openalex.org/C163239763",
+    "level": 2,
+    "score": 0.6521000266075134,
+    "wikidata": "https://www.wikidata.org/wiki/Q5153637"
+   },
+   {
+    "display_name": "Software deployment",
+    "id": "https://openalex.org/C105339364",
+    "level": 2,
+    "score": 0.636900007724762,
+    "wikidata": "https://www.wikidata.org/wiki/Q2297740"
+   },
+   {
+    "display_name": "Microeconomics",
+    "id": "https://openalex.org/C175444787",
+    "level": 1,
+    "score": 0.5249999761581421,
+    "wikidata": "https://www.wikidata.org/wiki/Q39072"
+   },
+   {
+    "display_name": "Affect (linguistics)",
+    "id": "https://openalex.org/C2776035688",
+    "level": 2,
+    "score": 0.41659998893737793,
+    "wikidata": "https://www.wikidata.org/wiki/Q1606558"
+   },
+   {
+    "display_name": "Incentive",
+    "id": "https://openalex.org/C29122968",
+    "level": 2,
+    "score": 0.41440001130104065,
+    "wikidata": "https://www.wikidata.org/wiki/Q1414816"
+   },
+   {
+    "display_name": "Economics",
+    "id": "https://openalex.org/C162324750",
+    "level": 0,
+    "score": 0.40130001306533813,
+    "wikidata": "https://www.wikidata.org/wiki/Q8134"
+   },
+   {
+    "display_name": "Business",
+    "id": "https://openalex.org/C144133560",
+    "level": 0,
+    "score": 0.3937000036239624,
+    "wikidata": "https://www.wikidata.org/wiki/Q4830453"
+   },
+   {
+    "display_name": "Control (management)",
+    "id": "https://openalex.org/C2775924081",
+    "level": 2,
+    "score": 0.34450000524520874,
+    "wikidata": "https://www.wikidata.org/wiki/Q55608371"
+   },
+   {
+    "display_name": "Computer science",
+    "id": "https://openalex.org/C41008148",
+    "level": 0,
+    "score": 0.3249000012874603,
+    "wikidata": "https://www.wikidata.org/wiki/Q21198"
+   },
+   {
+    "display_name": "Stability (learning theory)",
+    "id": "https://openalex.org/C112972136",
+    "level": 2,
+    "score": 0.3190999925136566,
+    "wikidata": "https://www.wikidata.org/wiki/Q7595718"
+   },
+   {
+    "display_name": "Cheap talk",
+    "id": "https://openalex.org/C106485872",
+    "level": 2,
+    "score": 0.298799991607666,
+    "wikidata": "https://www.wikidata.org/wiki/Q5088884"
+   },
+   {
+    "display_name": "Enforcement",
+    "id": "https://openalex.org/C2779777834",
+    "level": 2,
+    "score": 0.2921000123023987,
+    "wikidata": "https://www.wikidata.org/wiki/Q4202277"
+   },
+   {
+    "display_name": "Economic model",
+    "id": "https://openalex.org/C119693030",
+    "level": 2,
+    "score": 0.28839999437332153,
+    "wikidata": "https://www.wikidata.org/wiki/Q2180497"
+   },
+   {
+    "display_name": "Risk analysis (engineering)",
+    "id": "https://openalex.org/C112930515",
+    "level": 1,
+    "score": 0.2881999909877777,
+    "wikidata": "https://www.wikidata.org/wiki/Q4389547"
+   },
+   {
+    "display_name": "Game theory",
+    "id": "https://openalex.org/C177142836",
+    "level": 2,
+    "score": 0.28610000014305115,
+    "wikidata": "https://www.wikidata.org/wiki/Q44455"
+   },
+   {
+    "display_name": "Competition (biology)",
+    "id": "https://openalex.org/C91306197",
+    "level": 2,
+    "score": 0.27239999175071716,
+    "wikidata": "https://www.wikidata.org/wiki/Q45767"
+   },
+   {
+    "display_name": "Industrial organization",
+    "id": "https://openalex.org/C40700",
+    "level": 1,
+    "score": 0.2651999890804291,
+    "wikidata": "https://www.wikidata.org/wiki/Q1411783"
+   },
+   {
+    "display_name": "Experimental economics",
+    "id": "https://openalex.org/C18619997",
+    "level": 2,
+    "score": 0.26429998874664307,
+    "wikidata": "https://www.wikidata.org/wiki/Q47627"
+   },
+   {
+    "display_name": "Incentive compatibility",
+    "id": "https://openalex.org/C91810955",
+    "level": 3,
+    "score": 0.2581999897956848,
+    "wikidata": "https://www.wikidata.org/wiki/Q7731670"
+   },
+   {
+    "display_name": "Computer security",
+    "id": "https://openalex.org/C38652104",
+    "level": 1,
+    "score": 0.2567000091075897,
+    "wikidata": "https://www.wikidata.org/wiki/Q3510521"
+   },
+   {
+    "display_name": "Competitive equilibrium",
+    "id": "https://openalex.org/C2780964549",
+    "level": 2,
+    "score": 0.2547000050544739,
+    "wikidata": "https://www.wikidata.org/wiki/Q5156353"
+   },
+   {
+    "display_name": "Adversarial system",
+    "id": "https://openalex.org/C37736160",
+    "level": 2,
+    "score": 0.2506999969482422,
+    "wikidata": "https://www.wikidata.org/wiki/Q1801315"
+   }
+  ],
+  "content_urls": null,
+  "corresponding_author_ids": [],
+  "corresponding_institution_ids": [],
+  "countries_distinct_count": 0,
+  "counts_by_year": [],
+  "created_date": "2025-10-10T00:00:00",
+  "display_name": "Evaluating LLM Agent Collusion in Double Auctions",
+  "doi": "https://doi.org/10.48550/arxiv.2507.01413",
+  "funders": [],
+  "fwci": null,
+  "has_content": {
+   "grobid_xml": false,
+   "pdf": false
+  },
+  "has_fulltext": false,
+  "id": "https://openalex.org/W4417182809",
+  "ids": {
+   "doi": "https://doi.org/10.48550/arxiv.2507.01413",
+   "openalex": "https://openalex.org/W4417182809"
+  },
+  "indexed_in": [
+   "arxiv",
+   "datacite"
+  ],
+  "institutions": [],
+  "institutions_distinct_count": 0,
+  "is_paratext": false,
+  "is_retracted": false,
+  "is_xpac": false,
+  "keywords": [
+   {
+    "display_name": "large language models",
+    "id": "https://openalex.org/keywords/large-language-models",
+    "score": 0.7300000190734863
+   },
+   {
+    "display_name": "double auction",
+    "id": "https://openalex.org/keywords/double-auction",
+    "score": 0.6840000152587891
+   },
+   {
+    "display_name": "collusive behavior",
+    "id": "https://openalex.org/keywords/collusive-behavior",
+    "score": 0.7279999852180481
+   },
+   {
+    "display_name": "environmental pressure",
+    "id": "https://openalex.org/keywords/environmental-pressure",
+    "score": 0.5139999985694885
+   }
+  ],
+  "language": "en",
+  "locations": [
+   {
+    "doi": null,
+    "id": "pmh:oai:arXiv.org:2507.01413",
+    "is_accepted": false,
+    "is_oa": true,
+    "is_published": false,
+    "landing_page_url": "http://arxiv.org/abs/2507.01413",
+    "license": null,
+    "license_id": null,
+    "pdf_url": "https://arxiv.org/pdf/2507.01413",
+    "raw_source_name": null,
+    "raw_type": "text",
+    "source": {
+     "display_name": "arXiv (Cornell University)",
+     "host_organization": "https://openalex.org/I205783295",
+     "host_organization_lineage": [
+      "https://openalex.org/I205783295"
+     ],
+     "host_organization_lineage_names": [],
+     "host_organization_name": "Cornell University",
+     "id": "https://openalex.org/S4306400194",
+     "is_core": false,
+     "is_in_doaj": false,
+     "is_oa": true,
+     "issn": [
+      "2331-8422"
+     ],
+     "issn_l": "2331-8422",
+     "listed_in": [],
+     "type": "repository"
+    },
+    "version": "submittedVersion"
+   },
+   {
+    "doi": "https://doi.org/10.48550/arxiv.2507.01413",
+    "id": "doi:10.48550/arxiv.2507.01413",
+    "is_accepted": false,
+    "is_oa": true,
+    "is_published": false,
+    "landing_page_url": "https://doi.org/10.48550/arxiv.2507.01413",
+    "license": "cc-by",
+    "license_id": "https://openalex.org/licenses/cc-by",
+    "pdf_url": null,
+    "raw_source_name": null,
+    "raw_type": "Preprint",
+    "source": {
+     "display_name": "arXiv (Cornell University)",
+     "host_organization": "https://openalex.org/I205783295",
+     "host_organization_lineage": [
+      "https://openalex.org/I205783295"
+     ],
+     "host_organization_lineage_names": [],
+     "host_organization_name": "Cornell University",
+     "id": "https://openalex.org/S4306400194",
+     "is_core": false,
+     "is_in_doaj": false,
+     "is_oa": true,
+     "issn": [
+      "2331-8422"
+     ],
+     "issn_l": "2331-8422",
+     "listed_in": [],
+     "type": "repository"
+    },
+    "version": null
+   }
+  ],
+  "locations_count": 2,
+  "mesh": [],
+  "open_access": {
+   "any_repository_has_fulltext": true,
+   "is_oa": true,
+   "oa_status": "green",
+   "oa_url": "https://arxiv.org/pdf/2507.01413"
+  },
+  "primary_location": {
+   "doi": null,
+   "id": "pmh:oai:arXiv.org:2507.01413",
+   "is_accepted": false,
+   "is_oa": true,
+   "is_published": false,
+   "landing_page_url": "http://arxiv.org/abs/2507.01413",
+   "license": null,
+   "license_id": null,
+   "pdf_url": "https://arxiv.org/pdf/2507.01413",
+   "raw_source_name": null,
+   "raw_type": "text",
+   "source": {
+    "display_name": "arXiv (Cornell University)",
+    "host_organization": "https://openalex.org/I205783295",
+    "host_organization_lineage": [
+     "https://openalex.org/I205783295"
+    ],
+    "host_organization_lineage_names": [],
+    "host_organization_name": "Cornell University",
+    "id": "https://openalex.org/S4306400194",
+    "is_core": false,
+    "is_in_doaj": false,
+    "is_oa": true,
+    "issn": [
+     "2331-8422"
+    ],
+    "issn_l": "2331-8422",
+    "listed_in": [],
+    "type": "repository"
+   },
+   "version": "submittedVersion"
+  },
+  "primary_topic": {
+   "display_name": "Auction Theory and Applications",
+   "domain": {
+    "display_name": "Social Sciences",
+    "id": "https://openalex.org/domains/2"
+   },
+   "field": {
+    "display_name": "Decision Sciences",
+    "id": "https://openalex.org/fields/18"
+   },
+   "id": "https://openalex.org/T11182",
+   "score": 0.9814000129699707,
+   "subfield": {
+    "display_name": "Management Science and Operations Research",
+    "id": "https://openalex.org/subfields/1803"
+   }
+  },
+  "publication_date": "2025-07-02",
+  "publication_year": 2025,
+  "referenced_works": [],
+  "referenced_works_count": 0,
+  "related_works": [
+   "https://openalex.org/W4403818338",
+   "https://openalex.org/W7119182112",
+   "https://openalex.org/W4416941877",
+   "https://openalex.org/W7155029758",
+   "https://openalex.org/W7207802862",
+   "https://openalex.org/W4416458052",
+   "https://openalex.org/W7160948779",
+   "https://openalex.org/W7160894854",
+   "https://openalex.org/W7223079626",
+   "https://openalex.org/W7161686265"
+  ],
+  "study_designs": [],
+  "sustainable_development_goals": [],
+  "sustainable_development_goals_aurora": [],
+  "title": "Evaluating LLM Agent Collusion in Double Auctions",
+  "topics": [
+   {
+    "display_name": "Auction Theory and Applications",
+    "domain": {
+     "display_name": "Social Sciences",
+     "id": "https://openalex.org/domains/2"
+    },
+    "field": {
+     "display_name": "Decision Sciences",
+     "id": "https://openalex.org/fields/18"
+    },
+    "id": "https://openalex.org/T11182",
+    "score": 0.9814000129699707,
+    "subfield": {
+     "display_name": "Management Science and Operations Research",
+     "id": "https://openalex.org/subfields/1803"
+    }
+   },
+   {
+    "display_name": "Multi-Agent Systems and Negotiation",
+    "domain": {
+     "display_name": "Physical Sciences",
+     "id": "https://openalex.org/domains/3"
+    },
+    "field": {
+     "display_name": "Computer Science",
+     "id": "https://openalex.org/fields/17"
+    },
+    "id": "https://openalex.org/T10456",
+    "score": 0.009499999694526196,
+    "subfield": {
+     "display_name": "Artificial Intelligence",
+     "id": "https://openalex.org/subfields/1702"
+    }
+   },
+   {
+    "display_name": "Game Theory and Voting Systems",
+    "domain": {
+     "display_name": "Social Sciences",
+     "id": "https://openalex.org/domains/2"
+    },
+    "field": {
+     "display_name": "Economics, Econometrics and Finance",
+     "id": "https://openalex.org/fields/20"
+    },
+    "id": "https://openalex.org/T10991",
+    "score": 0.0017999999690800905,
+    "subfield": {
+     "display_name": "Economics and Econometrics",
+     "id": "https://openalex.org/subfields/2002"
+    }
+   }
+  ],
+  "type": "preprint",
+  "updated_date": "2026-09-25T08:18:29.962427",
+  "volume": null
+ },
+ "content_type": "application/json",
+ "params": {},
+ "recorded_at": "2026-11-01T17:21:08Z",
+ "status": 200,
+ "url": "https://api.openalex.org/works/https://doi.org/10.48550/arxiv.2507.01413"
+}

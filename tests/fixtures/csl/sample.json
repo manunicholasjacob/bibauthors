@@ -1,0 +1,45 @@
+[
+  {
+    "id": "jacob2026memory",
+    "type": "article-journal",
+    "title": "The Memory Wall at the Edge of Language",
+    "author": [
+      {"family": "Jacob", "given": "Manu Nicholas"}
+    ],
+    "issued": {"date-parts": [[2026, 3, 14]]},
+    "container-title": "IEEE Transactions on Computers",
+    "DOI": "10.1109/TC.2026.1234567",
+    "URL": "https://doi.org/10.1109/TC.2026.1234567",
+    "volume": "75",
+    "page": "1-14"
+  },
+  {
+    "id": "ligo2016",
+    "type": "article-journal",
+    "title": "Observation of Gravitational Waves from a Binary Black Hole Merger",
+    "author": [
+      {"literal": "The LIGO Scientific Collaboration"}
+    ],
+    "issued": {"raw": "2016-02-11"},
+    "container-title": "Physical Review Letters"
+  },
+  {
+    "id": "mueller2020",
+    "type": "book",
+    "title": "Ein Buch \u00fcber Umlaute",
+    "author": [
+      {"family": "M\u00fcller", "given": "J\u00fcrgen"},
+      {"family": "\u00d8stergaard", "given": "S\u00f8ren"}
+    ],
+    "issued": {"date-parts": [["2020"]]},
+    "publisher": "Beispiel Verlag"
+  },
+  {
+    "id": "undated2026",
+    "type": "manuscript",
+    "title": "An Item With No Issued Date At All",
+    "author": [
+      {"family": "Nemo", "given": "N."}
+    ]
+  }
+]

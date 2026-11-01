@@ -1,0 +1,349 @@
+# bibauthor as a composite GitHub Action.
+#
+# Minimal use in a paper repository:
+#
+#     - uses: actions/checkout@v4
+#     - uses: manunicholasjacob/bibauthor@v0.1.0
+#       with:
+#         paths: refs.bib
+#
+# No email address appears anywhere in this file. Contact for this project is
+# the issue tracker at https://github.com/manunicholasjacob/bibauthor/issues
+
+name: bibauthor
+description: >-
+  Verify the AUTHOR LIST of every bibliography entry against authoritative
+  metadata (CrossRef, arXiv, OpenAlex, Semantic Scholar), so a chimeric
+  citation with a real title and an invented author list cannot pass as clean.
+author: Manu Nicholas Jacob
+
+branding:
+  icon: check-circle
+  color: blue
+
+inputs:
+  paths:
+    description: >-
+      Bibliography files to check, separated by spaces or newlines. Each token
+      is expanded as a glob (recursive, so ** crosses directories), and the
+      expansion happens inside the Action rather than in the shell, so the
+      same pattern behaves identically on Linux, macOS and Windows runners.
+    required: false
+    default: "**/*.bib"
+  offline:
+    description: >-
+      Use only the on-disk cache and never touch the network. Set this to true
+      in a repository that commits its cache directory and wants hermetic,
+      network-free runs.
+    required: false
+    default: "false"
+  cache-dir:
+    description: >-
+      Where the HTTP cache lives. Point this at a committed directory, or at a
+      path you restore with actions/cache, to cut provider traffic.
+    required: false
+    default: ".bibauthor-cache"
+  providers:
+    description: >-
+      Comma-separated subset of crossref,arxiv,openalex,semanticscholar. Empty
+      means all of them, in that order.
+    required: false
+    default: ""
+  fail-on:
+    description: >-
+      Failure policy. "mismatch" fails the job when an author mismatch is
+      found (bibauthor exit code 1). "unverifiable" also fails when an entry
+      could not be checked at all (exit code 1 or 2). "never" always succeeds,
+      and still writes annotations and the JSON report, which is what you want
+      while you are first adopting the check. A usage or input error from
+      bibauthor itself (exit code 3) fails under "mismatch" and
+      "unverifiable", and is annotated but not failed under "never".
+    required: false
+    default: "mismatch"
+  strict:
+    description: >-
+      Pass --strict, which also treats ORDER_DIFFERS and TRUNCATED as
+      mismatches. Useful once a bibliography is already clean.
+    required: false
+    default: "false"
+  json-report:
+    description: >-
+      Path for the machine-readable JSON report. Set it to an empty string to
+      write no report, which also skips the artifact upload.
+    required: false
+    default: "bibauthor-report.json"
+  annotations:
+    description: >-
+      Pass --github, which emits GitHub Actions workflow commands so findings
+      appear as annotations on the pull request diff.
+    required: false
+    default: "true"
+  python-version:
+    description: Python version to set up for the run.
+    required: false
+    default: "3.x"
+  version:
+    description: >-
+      Leave this empty (the default) and the Action installs the bibauthor
+      copy inside its own checkout, which is the only supported path today:
+      the package is NOT published on any index yet, so a non-empty value will
+      fail to install until a release exists. Once it is published, set this
+      to a version string and the Action installs bibauthor==<version> from
+      PyPI instead of its own checkout.
+    required: false
+    default: ""
+
+outputs:
+  exit-code:
+    description: >-
+      bibauthor's own exit code: 0 clean, 1 author mismatch, 2 unverifiable
+      entries present, 3 usage or input error. This is reported whatever the
+      fail-on policy decides, so a later step can act on it.
+    value: ${{ steps.run.outputs.exit-code }}
+  mismatches:
+    description: Number of entries with an author mismatch, read from the JSON report.
+    value: ${{ steps.parse.outputs.mismatches }}
+  unverifiable:
+    description: Number of entries that could not be verified, read from the JSON report.
+    value: ${{ steps.parse.outputs.unverifiable }}
+  report-path:
+    description: Path to the JSON report that was written, or empty if none was.
+    value: ${{ steps.parse.outputs.report-path }}
+
+runs:
+  using: composite
+  steps:
+    # Pinned to the v5 major tag for readability. For a security-sensitive
+    # action, pinning third-party actions to a full commit SHA is the better
+    # practice; that choice is left to the adopter, who can vendor this file
+    # and replace the tag with a SHA.
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ inputs.python-version }}
+
+    - name: Install bibauthor
+      shell: bash
+      env:
+        ACTION_PATH: ${{ github.action_path }}
+        BIBAUTHOR_VERSION: ${{ inputs.version }}
+      run: |
+        set -e
+        python -m pip install --disable-pip-version-check --upgrade pip
+        if [ -n "$BIBAUTHOR_VERSION" ]; then
+          echo "installing bibauthor==$BIBAUTHOR_VERSION from the index"
+          python -m pip install "bibauthor==$BIBAUTHOR_VERSION"
+        else
+          echo "installing bibauthor from the checkout of this action at $ACTION_PATH"
+          python -m pip install "$ACTION_PATH"
+        fi
+        bibauthor --version
+
+    # This step NEVER fails. A composite action aborts the moment any of its
+    # run steps exits non-zero, which would make bibauthor's graded exit codes
+    # unusable: exit 2 would kill the job before the fail-on policy was ever
+    # consulted. So the real exit code is captured into a step output and the
+    # step itself always exits 0. The policy is applied by the last step.
+    - name: Run bibauthor
+      id: run
+      shell: bash
+      env:
+        INPUT_PATHS: ${{ inputs.paths }}
+        INPUT_OFFLINE: ${{ inputs.offline }}
+        INPUT_CACHE_DIR: ${{ inputs['cache-dir'] }}
+        INPUT_PROVIDERS: ${{ inputs.providers }}
+        INPUT_STRICT: ${{ inputs.strict }}
+        INPUT_ANNOTATIONS: ${{ inputs.annotations }}
+        INPUT_JSON_REPORT: ${{ inputs['json-report'] }}
+      run: |
+        set -o pipefail
+        FILE_LIST="${RUNNER_TEMP:-.}/bibauthor-file-list.txt"
+        export FILE_LIST
+
+        # Glob expansion lives in Python, not in the shell: bash on the macOS
+        # runner is 3.2 and has no globstar, so "**/*.bib" would quietly mean
+        # "*.bib" there. Python glob(recursive=True) behaves the same on every
+        # runner.
+        python - <<'PY'
+        import glob
+        import os
+
+        raw = os.environ.get("INPUT_PATHS", "")
+        tokens = [t for t in raw.replace("\r", " ").replace("\n", " ").split(" ") if t]
+        seen = set()
+        found = []
+        missing = []
+        for token in tokens:
+            hits = sorted(glob.glob(token, recursive=True))
+            if not hits and os.path.isfile(token):
+                hits = [token]
+            hits = [h for h in hits if os.path.isfile(h)]
+            if not hits:
+                missing.append(token)
+                continue
+            for hit in hits:
+                # Forward slashes everywhere: on a Windows runner glob returns
+                # backslashes, and a backslash in a GitHub annotation's file=
+                # field does not line up with the paths in the diff.
+                hit = hit.replace(os.sep, "/")
+                if hit not in seen:
+                    seen.add(hit)
+                    found.append(hit)
+        # newline="\n" matters: Python text mode on a Windows runner would write
+        # CRLF, and the shell loop below would then hand bibauthor a path with a
+        # trailing carriage return and get a spurious "no such file".
+        with open(os.environ["FILE_LIST"], "w", encoding="utf-8", newline="\n") as handle:
+            for hit in found:
+                handle.write(hit + "\n")
+        for token in missing:
+            print("::warning title=bibauthor::no bibliography file matched %s" % token)
+        print("bibauthor will check %d file(s)" % len(found))
+        for hit in found:
+            print("  " + hit)
+        PY
+
+        files=()
+        if [ -s "$FILE_LIST" ]; then
+          while IFS= read -r line; do
+            if [ -n "$line" ]; then
+              files[${#files[@]}]="$line"
+            fi
+          done < "$FILE_LIST"
+        fi
+
+        if [ ${#files[@]} -eq 0 ]; then
+          echo "::warning title=bibauthor::no bibliography file to check; nothing was verified"
+          echo "exit-code=0" >> "$GITHUB_OUTPUT"
+          exit 0
+        fi
+
+        args=()
+        args[${#args[@]}]="--cache-dir"
+        args[${#args[@]}]="$INPUT_CACHE_DIR"
+        if [ "$INPUT_OFFLINE" = "true" ]; then
+          args[${#args[@]}]="--offline"
+        fi
+        if [ "$INPUT_STRICT" = "true" ]; then
+          args[${#args[@]}]="--strict"
+        fi
+        if [ "$INPUT_ANNOTATIONS" = "true" ]; then
+          args[${#args[@]}]="--github"
+        fi
+        if [ -n "$INPUT_PROVIDERS" ]; then
+          args[${#args[@]}]="--providers"
+          args[${#args[@]}]="$INPUT_PROVIDERS"
+        fi
+        if [ -n "$INPUT_JSON_REPORT" ]; then
+          args[${#args[@]}]="--json"
+          args[${#args[@]}]="$INPUT_JSON_REPORT"
+        fi
+
+        set +e
+        bibauthor "${args[@]}" "${files[@]}"
+        code=$?
+        set -e
+
+        echo "exit-code=$code" >> "$GITHUB_OUTPUT"
+        echo "bibauthor exited $code"
+        exit 0
+
+    - name: Summarize the report
+      id: parse
+      shell: bash
+      env:
+        REPORT: ${{ inputs['json-report'] }}
+      run: |
+        set -e
+        python - <<'PY'
+        import json
+        import os
+        import re
+
+        report = os.environ.get("REPORT", "")
+        mismatches = 0
+        unverifiable = 0
+        path = ""
+        if report and os.path.isfile(report):
+            path = report
+            with open(report, encoding="utf-8") as handle:
+                data = json.load(handle)
+            totals = data.get("totals", {})
+            mismatches = int(totals.get("mismatches", 0) or 0)
+            unverifiable = int(totals.get("unverifiable", 0) or 0)
+
+        stem = re.sub(r"[^A-Za-z0-9._-]", "-", os.path.basename(path) or "none")
+        suffix = os.urandom(6).hex()
+        out = os.environ["GITHUB_OUTPUT"]
+        with open(out, "a", encoding="utf-8", newline="\n") as handle:
+            handle.write("mismatches=%d\n" % mismatches)
+            handle.write("unverifiable=%d\n" % unverifiable)
+            handle.write("report-path=%s\n" % path)
+            handle.write("artifact-name=bibauthor-report-%s-%s\n" % (stem, suffix))
+        print(
+            "mismatches=%d unverifiable=%d report=%s"
+            % (mismatches, unverifiable, path or "(none)")
+        )
+        PY
+
+    - name: Upload the JSON report
+      if: ${{ inputs['json-report'] != '' }}
+      uses: actions/upload-artifact@v4
+      with:
+        # The random suffix keeps repeated uses of this Action inside one job
+        # from colliding: upload-artifact@v4 refuses a duplicate name.
+        name: ${{ steps.parse.outputs.artifact-name }}
+        path: ${{ inputs['json-report'] }}
+        if-no-files-found: ignore
+        retention-days: 30
+
+    - name: Apply the fail-on policy
+      shell: bash
+      env:
+        FAIL_ON: ${{ inputs['fail-on'] }}
+        CODE: ${{ steps.run.outputs.exit-code }}
+        MISMATCHES: ${{ steps.parse.outputs.mismatches }}
+        UNVERIFIABLE: ${{ steps.parse.outputs.unverifiable }}
+      run: |
+        code="${CODE:-0}"
+        echo "bibauthor exit code $code, fail-on=$FAIL_ON, mismatches=$MISMATCHES, unverifiable=$UNVERIFIABLE"
+        case "$FAIL_ON" in
+          never)
+            if [ "$code" != "0" ]; then
+              echo "::notice title=bibauthor::bibauthor exited $code; fail-on=never, so the job is not failed"
+            fi
+            exit 0
+            ;;
+          mismatch)
+            if [ "$code" = "1" ]; then
+              echo "::error title=bibauthor::author mismatch found; see the annotations above"
+              exit 1
+            fi
+            if [ "$code" = "3" ]; then
+              echo "::error title=bibauthor::bibauthor could not run (usage or input error)"
+              exit 1
+            fi
+            if [ "$code" = "2" ]; then
+              echo "::warning title=bibauthor::some entries could not be verified; fail-on=mismatch, so the job passes"
+            fi
+            exit 0
+            ;;
+          unverifiable)
+            if [ "$code" = "1" ]; then
+              echo "::error title=bibauthor::author mismatch found; see the annotations above"
+              exit 1
+            fi
+            if [ "$code" = "2" ]; then
+              echo "::error title=bibauthor::some entries could not be verified and fail-on=unverifiable"
+              exit 1
+            fi
+            if [ "$code" = "3" ]; then
+              echo "::error title=bibauthor::bibauthor could not run (usage or input error)"
+              exit 1
+            fi
+            exit 0
+            ;;
+          *)
+            echo "::error title=bibauthor::unknown fail-on value '$FAIL_ON' (use mismatch, unverifiable or never)"
+            exit 1
+            ;;
+        esac

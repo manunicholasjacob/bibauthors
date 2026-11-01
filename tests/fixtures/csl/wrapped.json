@@ -1,0 +1,32 @@
+{
+  "references": [
+    {
+      "id": "collusion2025",
+      "type": "article",
+      "title": "Evaluating LLM Agent Collusion in Double Auctions",
+      "author": [
+        {"family": "Agrawal", "given": "Kushal"},
+        {"family": "Teo", "given": "Verona"},
+        {"family": "Vazquez", "given": "Juan J."},
+        {"family": "Kunnavakkam", "given": "Sudarsh"},
+        {"family": "Srikanth", "given": "Vishak"},
+        {"family": "Liu", "given": "Andy"}
+      ],
+      "issued": {"date-parts": [[2025, 7, 2]]},
+      "URL": "https://arxiv.org/abs/2507.01413"
+    },
+    {
+      "id": "qwen25report",
+      "type": "report",
+      "title": "Qwen2.5 Technical Report",
+      "author": [
+        {"family": "Yang", "given": "An"},
+        {"family": "Yang", "given": "Baosong"},
+        {"literal": "the Qwen Team"}
+      ],
+      "issued": {"date-parts": [[2025, 1, 3]]},
+      "container-title": "arXiv preprint arXiv:2412.15115",
+      "DOI": "10.48550/arXiv.2412.15115"
+    }
+  ]
+}

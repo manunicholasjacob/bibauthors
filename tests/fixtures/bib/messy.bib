@@ -1,0 +1,91 @@
+% messy.bib: everything a real bibliography throws at a parser.
+% The alpha2020 block below is stored with CRLF line endings on purpose.
+
+@preamble{ "\newcommand{\noopsort}[1]{} " }
+
+@string{ieeetc = "IEEE Transactions on Computers"}
+@string{acmcs = "ACM Computing Surveys"}
+
+@comment{this whole block is skipped, braces { and } and all}
+
+Some stray text that is not an entry at all, left behind by a merge.
+Contact: nobody@example.invalid
+
+@article{alpha2020,
+  author  = "Alpha, Ada and Beta, Bob",
+  title   = "A {Quoted} Title with {nested {braces}} inside",
+  journal = ieeetc # " (Special Issue)",
+  year    = 2020,
+  pages   = 1234,
+}
+
+@inproceedings{child2021,
+  title    = {The Child Paper},
+  crossref = {parent2021}
+}
+
+@article{alpha2020,
+  author  = {Alpha, Ada},
+  title   = {A Different Paper with the Same Citation Key},
+  journal = acmcs,
+  year    = {2021}
+}
+
+@article{loopa,
+  title    = {Loop A},
+  crossref = {loopb}
+}
+
+@article{loopb,
+  title    = {Loop B},
+  crossref = {loopa}
+}
+
+@article{selfloop,
+  title    = {Points At Itself},
+  crossref = {selfloop}
+}
+
+@proceedings{parent2021,
+  author    = {Parent, Pat},
+  editor    = {Delta, Dan},
+  booktitle = {Proceedings of the Parent Conference},
+  publisher = {Springer},
+  year      = {2021}
+}
+
+@book{editoronly1999,
+  editor    = {Epsilon, Eve},
+  title     = {A Book Cited By Its Editor},
+  publisher = {University Press},
+  year      = {1999}
+}
+
+@article{sorted1990,
+  author = {Zeta, Zoe},
+  title  = {A Year Hidden Behind noopsort},
+  year   = {\noopsort{1990}1990}
+}
+
+@misc{inpress2026,
+  author = {Eta, Evan},
+  title  = {Still In Press},
+  year   = {in press}
+}
+
+@misc{datedonly2024,
+  author = {Theta, Thea},
+  title  = {Dated But Not Yeared},
+  date   = {2024-12-19}
+}
+
+@misc{semicolons2023,
+  author = {Iota, Ida; Kappa, Ken; Lambda, Lee},
+  title  = {Separated By Semicolons},
+  year   = {2023}
+}
+
+@misc{unterminated2022,
+  author = {Omega, Omar},
+  title  = {An Entry Missing Its Final Brace},
+  year   = {2022}

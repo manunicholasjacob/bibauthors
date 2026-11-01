@@ -1,0 +1,737 @@
+{
+ "body": {
+  "message": {
+   "facets": {},
+   "items": [
+    {
+     "DOI": "10.65215/r5bs2d54",
+     "author": [
+      {
+       "affiliation": [
+        {
+         "name": "Google Brain"
+        }
+       ],
+       "family": "Vaswani",
+       "given": "Ashish",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "first"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Brain"
+        }
+       ],
+       "family": "Shazeer",
+       "given": "Noam",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Research"
+        }
+       ],
+       "family": "Parmar",
+       "given": "Niki",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Research"
+        }
+       ],
+       "family": "Uszkoreit",
+       "given": "Jakob",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Research"
+        }
+       ],
+       "family": "Jones",
+       "given": "Llion",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "University of Toronto"
+        }
+       ],
+       "family": "N.Gomez",
+       "given": "Aidan",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Brain"
+        }
+       ],
+       "family": "Kaiser",
+       "given": "Lukasz",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [],
+       "family": "Polosukhin",
+       "given": "Illia",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      }
+     ],
+     "issued": {
+      "date-parts": [
+       [
+        2025,
+        11,
+        13
+       ]
+      ]
+     },
+     "score": 43.620518,
+     "title": [
+      "Attention Is All You Need"
+     ]
+    },
+    {
+     "DOI": "10.65215/ysbyhc05",
+     "author": [
+      {
+       "affiliation": [
+        {
+         "name": "Google Brain"
+        }
+       ],
+       "family": "Vaswani",
+       "given": "Ashish",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "first"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Brain"
+        }
+       ],
+       "family": "Shazeer",
+       "given": "Noam",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Research"
+        }
+       ],
+       "family": "Parmar",
+       "given": "Niki",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Research"
+        }
+       ],
+       "family": "Uszkoreit",
+       "given": "Jakob",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Research"
+        }
+       ],
+       "family": "Jones",
+       "given": "Llion",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "University of Toronto"
+        }
+       ],
+       "family": "N.Gomez",
+       "given": "Aidan",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Brain"
+        }
+       ],
+       "family": "Kaiser",
+       "given": "Lukasz",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [],
+       "family": "Polosukhin",
+       "given": "Illia",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      }
+     ],
+     "issued": {
+      "date-parts": [
+       [
+        2025,
+        8,
+        23
+       ]
+      ]
+     },
+     "score": 43.47108,
+     "title": [
+      "Attention Is All You Need"
+     ]
+    },
+    {
+     "DOI": "10.65215/nxvz2v36",
+     "author": [
+      {
+       "affiliation": [
+        {
+         "name": "Google Brain"
+        }
+       ],
+       "family": "Vaswani",
+       "given": "Ashish",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "first"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Brain"
+        }
+       ],
+       "family": "Shazeer",
+       "given": "Noam",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Research"
+        }
+       ],
+       "family": "Parmar",
+       "given": "Niki",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Research"
+        }
+       ],
+       "family": "Uszkoreit",
+       "given": "Jakob",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Research"
+        }
+       ],
+       "family": "Jones",
+       "given": "Llion",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "University of Toronto"
+        }
+       ],
+       "family": "N.Gomez",
+       "given": "Aidan",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Brain"
+        }
+       ],
+       "family": "Kaiser",
+       "given": "Lukasz",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [],
+       "family": "Polosukhin",
+       "given": "Illia",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      }
+     ],
+     "issued": {
+      "date-parts": [
+       [
+        2025,
+        8,
+        23
+       ]
+      ]
+     },
+     "score": 43.214165,
+     "title": [
+      "Attention Is All You Need"
+     ]
+    },
+    {
+     "DOI": "10.65215/mdcm8z23",
+     "author": [
+      {
+       "affiliation": [
+        {
+         "name": "Google Brain"
+        }
+       ],
+       "family": "Vaswani",
+       "given": "Ashish",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "first"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Brain"
+        }
+       ],
+       "family": "Shazeer",
+       "given": "Noam",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Research"
+        }
+       ],
+       "family": "Parmar",
+       "given": "Niki",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Research"
+        }
+       ],
+       "family": "Uszkoreit",
+       "given": "Jakob",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Research"
+        }
+       ],
+       "family": "Jones",
+       "given": "Llion",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "University of Toronto"
+        }
+       ],
+       "family": "N.Gomez",
+       "given": "Aidan",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Brain"
+        }
+       ],
+       "family": "Kaiser",
+       "given": "Lukasz",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [],
+       "family": "Polosukhin",
+       "given": "Illia",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      }
+     ],
+     "issued": {
+      "date-parts": [
+       [
+        2025,
+        8,
+        23
+       ]
+      ]
+     },
+     "score": 43.214165,
+     "title": [
+      "Attention Is All You Need"
+     ]
+    },
+    {
+     "DOI": "10.65215/2q58a426",
+     "author": [
+      {
+       "affiliation": [
+        {
+         "name": "Google Brain"
+        }
+       ],
+       "family": "Vaswani",
+       "given": "Ashish",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "first"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Brain"
+        }
+       ],
+       "family": "Shazeer",
+       "given": "Noam",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Research"
+        }
+       ],
+       "family": "Parmar",
+       "given": "Niki",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Research"
+        }
+       ],
+       "family": "Uszkoreit",
+       "given": "Jakob",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Research"
+        }
+       ],
+       "family": "Jones",
+       "given": "Llion",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "University of Toronto"
+        }
+       ],
+       "family": "N.Gomez",
+       "given": "Aidan",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [
+        {
+         "name": "Google Brain"
+        }
+       ],
+       "family": "Kaiser",
+       "given": "Lukasz",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      },
+      {
+       "affiliation": [],
+       "family": "Polosukhin",
+       "given": "Illia",
+       "role": [
+        {
+         "role": "author",
+         "vocabulary": "crossref"
+        }
+       ],
+       "sequence": "additional"
+      }
+     ],
+     "issued": {
+      "date-parts": [
+       [
+        2025,
+        8,
+        23
+       ]
+      ]
+     },
+     "score": 43.12236,
+     "title": [
+      "Attention Is All You Need"
+     ]
+    }
+   ],
+   "items-per-page": 5,
+   "query": {
+    "search-terms": null,
+    "start-index": 0
+   },
+   "total-results": 7336038
+  },
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "status": "ok"
+ },
+ "content_type": "application/json",
+ "params": {
+  "query.bibliographic": "Attention is all you need Vaswani 2017",
+  "rows": 5,
+  "select": "DOI,title,author,issued,score,container-title"
+ },
+ "recorded_at": "2026-11-01T17:21:20Z",
+ "status": 200,
+ "url": "https://api.crossref.org/works"
+}

@@ -1,0 +1,1234 @@
+[
+ {
+  "a": "Kushal Agrawal",
+  "b": "Kushal Agrawal",
+  "category": "exact",
+  "id": "exact-01",
+  "label": "same",
+  "note": "byte-identical; first author of arXiv 2507.01413"
+ },
+ {
+  "a": "David Silver",
+  "b": "David Silver",
+  "category": "exact",
+  "id": "exact-02",
+  "label": "same",
+  "note": "byte-identical; first author of Nature 16961"
+ },
+ {
+  "a": "Silver, David",
+  "b": "David Silver",
+  "category": "exact",
+  "id": "exact-03",
+  "label": "same",
+  "note": "same name in the two written orders"
+ },
+ {
+  "a": "Kaiming He",
+  "b": "Kaiming He",
+  "category": "exact",
+  "id": "exact-04",
+  "label": "same",
+  "note": "byte-identical; first author of CVPR 2016.90"
+ },
+ {
+  "a": "van den Driessche, George",
+  "b": "George van den Driessche",
+  "category": "exact",
+  "id": "exact-05",
+  "label": "same",
+  "note": "same name in the two written orders, particle surname kept whole"
+ },
+ {
+  "a": "Jumper, John",
+  "b": "John Jumper",
+  "category": "exact",
+  "id": "exact-06",
+  "label": "same",
+  "note": "same name in the two written orders; first author of AlphaFold"
+ },
+ {
+  "a": "K. Agrawal",
+  "b": "Kushal Agrawal",
+  "category": "initials",
+  "id": "init-01",
+  "label": "same",
+  "note": "initial against the full given name, same human (arXiv 2507.01413)"
+ },
+ {
+  "a": "Agrawal, K.",
+  "b": "Kushal Agrawal",
+  "category": "initials",
+  "id": "init-02",
+  "label": "same",
+  "note": "initial plus comma order"
+ },
+ {
+  "a": "J. J. Vazquez",
+  "b": "Juan J. Vazquez",
+  "category": "initials",
+  "id": "init-03",
+  "label": "same",
+  "note": "Semantic Scholar abbreviates this author of 2507.01413 this way"
+ },
+ {
+  "a": "JJ Vazquez",
+  "b": "Juan J. Vazquez",
+  "category": "initials",
+  "id": "init-04",
+  "label": "same",
+  "note": "unspaced run of initials, a common BibTeX spelling"
+ },
+ {
+  "a": "B. P. Abbott",
+  "b": "B.P. Abbott",
+  "category": "initials",
+  "id": "init-05",
+  "label": "same",
+  "note": "spacing of the initials only; first author of PhysRevLett 116.061102"
+ },
+ {
+  "a": "D. Silver",
+  "b": "David Silver",
+  "category": "initials",
+  "id": "init-06",
+  "label": "same",
+  "note": "initial against full given name"
+ },
+ {
+  "a": "K. He",
+  "b": "Kaiming He",
+  "category": "initials",
+  "id": "init-07",
+  "label": "same",
+  "note": "initial against full given name"
+ },
+ {
+  "a": "A. Liu",
+  "b": "Andy Liu",
+  "category": "initials",
+  "id": "init-08",
+  "label": "same",
+  "note": "initial against full given name; sixth author of 2507.01413"
+ },
+ {
+  "a": "K. Agrawal",
+  "b": "Deepak Agrawal",
+  "category": "initials",
+  "id": "init-09",
+  "label": "different",
+  "note": "the initial contradicts the given name: K is not D"
+ },
+ {
+  "a": "V. Srikanth",
+  "b": "Vishak Srikanth",
+  "category": "initials",
+  "id": "init-10",
+  "label": "same",
+  "note": "initial against full given name; fifth author of 2507.01413"
+ },
+ {
+  "a": "Manu Nicholas Jacob",
+  "b": "Manu Jacob",
+  "category": "middle_name",
+  "id": "mid-01",
+  "label": "same",
+  "note": "middle name present on one side only"
+ },
+ {
+  "a": "Chris J. Maddison",
+  "b": "Chris Maddison",
+  "category": "middle_name",
+  "id": "mid-02",
+  "label": "same",
+  "note": "AlphaGo deposits the middle initial; most citations drop it"
+ },
+ {
+  "a": "Simon A. A. Kohl",
+  "b": "Simon Kohl",
+  "category": "middle_name",
+  "id": "mid-03",
+  "label": "same",
+  "note": "two middle initials dropped; AlphaFold author as deposited"
+ },
+ {
+  "a": "Andrew J. Ballard",
+  "b": "Andrew Ballard",
+  "category": "middle_name",
+  "id": "mid-04",
+  "label": "same",
+  "note": "middle initial dropped; AlphaFold author as deposited"
+ },
+ {
+  "a": "Andrew W. Senior",
+  "b": "Andrew Senior",
+  "category": "middle_name",
+  "id": "mid-05",
+  "label": "same",
+  "note": "middle initial dropped; AlphaFold author as deposited"
+ },
+ {
+  "a": "John Maynard Keynes",
+  "b": "John Keynes",
+  "category": "middle_name",
+  "id": "mid-06",
+  "label": "same",
+  "note": "full middle name dropped"
+ },
+ {
+  "a": "Juan J. Vazquez",
+  "b": "Juan Vazquez",
+  "category": "middle_name",
+  "id": "mid-07",
+  "label": "same",
+  "note": "middle initial dropped"
+ },
+ {
+  "a": "Mary Jane Watson",
+  "b": "Mary Watson",
+  "category": "middle_name",
+  "id": "mid-08",
+  "label": "same",
+  "note": "full middle name dropped"
+ },
+ {
+  "a": "George W. Bush",
+  "b": "George H. W. Bush",
+  "category": "middle_initial_conflict",
+  "id": "midc-01",
+  "label": "different",
+  "note": "father and son, two distinct humans; the canonical case for why a middle-initial conflict cannot be waved away"
+ },
+ {
+  "a": "Michael I. Jordan",
+  "b": "Michael B. Jordan",
+  "category": "middle_initial_conflict",
+  "id": "midc-02",
+  "label": "different",
+  "note": "the Berkeley machine-learning professor and the actor; two real, distinct people separated only by the middle initial"
+ },
+ {
+  "a": "John Q. Smith",
+  "b": "John R. Smith",
+  "category": "middle_initial_conflict",
+  "id": "midc-03",
+  "label": "different",
+  "note": "two different middle initials on the same first and last name; nothing here says they are one person"
+ },
+ {
+  "a": "Alice M. Carter",
+  "b": "Alice N. Carter",
+  "category": "middle_initial_conflict",
+  "id": "midc-04",
+  "label": "different",
+  "note": "middle initials contradict each other"
+ },
+ {
+  "a": "Robert A. Heinlein",
+  "b": "Robert Anson Heinlein",
+  "category": "middle_initial_conflict",
+  "id": "midc-05",
+  "label": "same",
+  "note": "the initial expands to the written middle name, so there is no conflict"
+ },
+ {
+  "a": "Alice M. Carter",
+  "b": "Alice Marie Carter",
+  "category": "middle_initial_conflict",
+  "id": "midc-06",
+  "label": "same",
+  "note": "initial expands to the written middle name; the negative control for midc-04"
+ },
+ {
+  "a": "George van den Driessche",
+  "b": "G. van den Driessche",
+  "category": "particle",
+  "id": "part-01",
+  "label": "same",
+  "note": "AlphaGo author; initial plus a three-token Dutch surname"
+ },
+ {
+  "a": "van den Driessche, George",
+  "b": "George van den Driessche",
+  "category": "particle",
+  "id": "part-02",
+  "label": "same",
+  "note": "comma order with the particle kept on the surname"
+ },
+ {
+  "a": "Jan van der Berg",
+  "b": "Jan Van Der Berg",
+  "category": "particle",
+  "id": "part-03",
+  "label": "same",
+  "note": "particle capitalisation only, which bibliographies never agree on"
+ },
+ {
+  "a": "Ludwig van Beethoven",
+  "b": "Ludwig Beethoven",
+  "category": "particle",
+  "id": "part-04",
+  "label": "same",
+  "note": "same human; English-language sources routinely drop the tussenvoegsel"
+ },
+ {
+  "a": "Charles de Gaulle",
+  "b": "Charles De Gaulle",
+  "category": "particle",
+  "id": "part-05",
+  "label": "same",
+  "note": "particle capitalisation only"
+ },
+ {
+  "a": "Maria de la Cruz",
+  "b": "Maria De La Cruz",
+  "category": "particle",
+  "id": "part-06",
+  "label": "same",
+  "note": "two-word particle, capitalisation only"
+ },
+ {
+  "a": "Omar Al-Rashid",
+  "b": "Omar Al Rashid",
+  "category": "particle",
+  "id": "part-07",
+  "label": "same",
+  "note": "Arabic article written with and without the hyphen"
+ },
+ {
+  "a": "Vincent van Gogh",
+  "b": "Vincent Van Gogh",
+  "category": "particle",
+  "id": "part-08",
+  "label": "same",
+  "note": "particle capitalisation only"
+ },
+ {
+  "a": "Jan van der Berg",
+  "b": "Jan van den Berg",
+  "category": "particle",
+  "id": "part-09",
+  "label": "different",
+  "note": "van der and van den are different surnames, not spellings of one"
+ },
+ {
+  "a": "Abdul Al-Hassan",
+  "b": "Abdul Al-Hussein",
+  "category": "particle",
+  "id": "part-10",
+  "label": "different",
+  "note": "Hassan and Hussein are different surnames"
+ },
+ {
+  "a": "John McCarthy",
+  "b": "J. McCarthy",
+  "category": "mc_mac",
+  "id": "mc-01",
+  "label": "same",
+  "note": "initial only; the Mc spelling is identical on both sides"
+ },
+ {
+  "a": "John McCarthy",
+  "b": "John Mccarthy",
+  "category": "mc_mac",
+  "id": "mc-02",
+  "label": "same",
+  "note": "internal capitalisation only"
+ },
+ {
+  "a": "Alan MacKay",
+  "b": "Alan Mackay",
+  "category": "mc_mac",
+  "id": "mc-03",
+  "label": "same",
+  "note": "internal capitalisation only"
+ },
+ {
+  "a": "Sean McDonald",
+  "b": "Sean MacDonald",
+  "category": "mc_mac",
+  "id": "mc-04",
+  "label": "different",
+  "note": "McDonald and MacDonald are two distinct surnames; a bibliography that writes one when the record says the other is naming someone else until a human says otherwise"
+ },
+ {
+  "a": "Peter McLeod",
+  "b": "Peter MacLeod",
+  "category": "mc_mac",
+  "id": "mc-05",
+  "label": "different",
+  "note": "McLeod and MacLeod are distinct surnames"
+ },
+ {
+  "a": "Ian McKenzie",
+  "b": "Ian Mackenzie",
+  "category": "mc_mac",
+  "id": "mc-06",
+  "label": "different",
+  "note": "McKenzie and Mackenzie are distinct surnames"
+ },
+ {
+  "a": "Sean O'Brien",
+  "b": "Sean OBrien",
+  "category": "apostrophe",
+  "id": "apos-01",
+  "label": "same",
+  "note": "apostrophe dropped, a common ASCII-only spelling"
+ },
+ {
+  "a": "Sean O'Brien",
+  "b": "Sean O Brien",
+  "category": "apostrophe",
+  "id": "apos-02",
+  "label": "same",
+  "note": "apostrophe replaced by a space"
+ },
+ {
+  "a": "Tim O'Reilly",
+  "b": "Tim OReilly",
+  "category": "apostrophe",
+  "id": "apos-03",
+  "label": "same",
+  "note": "apostrophe dropped"
+ },
+ {
+  "a": "D'Angelo, Maria",
+  "b": "Maria D'Angelo",
+  "category": "apostrophe",
+  "id": "apos-04",
+  "label": "same",
+  "note": "comma order, apostrophe intact on both sides"
+ },
+ {
+  "a": "Conor O'Neill",
+  "b": "Conor O'Neil",
+  "category": "apostrophe",
+  "id": "apos-05",
+  "label": "different",
+  "note": "ONeill and ONeil are separate surnames with separate families"
+ },
+ {
+  "a": "Flann O'Brien",
+  "b": "Flann O'Brian",
+  "category": "apostrophe",
+  "id": "apos-06",
+  "label": "different",
+  "note": "OBrien and OBrian are separate surnames"
+ },
+ {
+  "a": "Bernardino Romera-Paredes",
+  "b": "Bernardino Romera Paredes",
+  "category": "hyphenated",
+  "id": "hyph-01",
+  "label": "same",
+  "note": "AlphaFold author; the hyphen in the compound surname is often lost"
+ },
+ {
+  "a": "Romera-Paredes, Bernardino",
+  "b": "Bernardino Romera-Paredes",
+  "category": "hyphenated",
+  "id": "hyph-02",
+  "label": "same",
+  "note": "comma order, hyphen intact"
+ },
+ {
+  "a": "Jean-Luc Picard",
+  "b": "Jean Luc Picard",
+  "category": "hyphenated",
+  "id": "hyph-03",
+  "label": "same",
+  "note": "hyphenated given name written with a space"
+ },
+ {
+  "a": "Xiao-Ming Li",
+  "b": "Xiaoming Li",
+  "category": "hyphenated",
+  "id": "hyph-04",
+  "label": "same",
+  "note": "hyphenated romanised given name run together, the usual variation"
+ },
+ {
+  "a": "Marie-Claire Dubois",
+  "b": "Marie Claire Dubois",
+  "category": "hyphenated",
+  "id": "hyph-05",
+  "label": "same",
+  "note": "hyphenated given name written with a space"
+ },
+ {
+  "a": "Anne-Marie Smith",
+  "b": "Annemarie Smith",
+  "category": "hyphenated",
+  "id": "hyph-06",
+  "label": "same",
+  "note": "hyphenated given name run together"
+ },
+ {
+  "a": "Hans-Peter Seidel",
+  "b": "Hans-Jurgen Seidel",
+  "category": "hyphenated",
+  "id": "hyph-07",
+  "label": "different",
+  "note": "the second half of the compound given name differs"
+ },
+ {
+  "a": "Li-Wei Chen",
+  "b": "Li-Hua Chen",
+  "category": "hyphenated",
+  "id": "hyph-08",
+  "label": "different",
+  "note": "different compound given names on a very common surname"
+ },
+ {
+  "a": "Augustin \u017d\u00eddek",
+  "b": "Augustin Zidek",
+  "category": "diacritics",
+  "id": "diac-01",
+  "label": "same",
+  "note": "AlphaFold author as CrossRef deposits him, against the ASCII fold that most BibTeX files carry"
+ },
+ {
+  "a": "\u017d\u00eddek, Augustin",
+  "b": "Augustin Zidek",
+  "category": "diacritics",
+  "id": "diac-02",
+  "label": "same",
+  "note": "comma order plus the ASCII fold"
+ },
+ {
+  "a": "Juan V\u00e1zquez",
+  "b": "Juan Vazquez",
+  "category": "diacritics",
+  "id": "diac-03",
+  "label": "same",
+  "note": "acute accent folded to ASCII; arXiv and Semantic Scholar disagree about this author of 2507.01413"
+ },
+ {
+  "a": "\u0141ukasz Kaiser",
+  "b": "Lukasz Kaiser",
+  "category": "diacritics",
+  "id": "diac-04",
+  "label": "same",
+  "note": "L with stroke folded to ASCII; Attention Is All You Need author"
+ },
+ {
+  "a": "Hans M\u00fcller",
+  "b": "Hans Mueller",
+  "category": "diacritics",
+  "id": "diac-05",
+  "label": "same",
+  "note": "German umlaut written as the ue digraph"
+ },
+ {
+  "a": "Erd\u0151s, Paul",
+  "b": "Paul Erdos",
+  "category": "diacritics",
+  "id": "diac-06",
+  "label": "same",
+  "note": "Hungarian double acute folded to ASCII, comma order"
+ },
+ {
+  "a": "Fran\u00e7ois Chollet",
+  "b": "Francois Chollet",
+  "category": "diacritics",
+  "id": "diac-07",
+  "label": "same",
+  "note": "cedilla folded to ASCII"
+ },
+ {
+  "a": "J\u00f6rg M\u00fcller",
+  "b": "Jorge Muller",
+  "category": "diacritics",
+  "id": "diac-08",
+  "label": "different",
+  "note": "Joerg and Jorge are different given names; folding the umlaut must not make them meet"
+ },
+ {
+  "a": "Pyotr Tchaikovsky",
+  "b": "Pyotr Chaikovsky",
+  "category": "transliteration",
+  "id": "trans-01",
+  "label": "same",
+  "note": "two romanisations of one Russian surname"
+ },
+ {
+  "a": "Mikhail Gorbachev",
+  "b": "Mikhail Gorbachov",
+  "category": "transliteration",
+  "id": "trans-02",
+  "label": "same",
+  "note": "two romanisations of one Russian surname"
+ },
+ {
+  "a": "Muammar Gaddafi",
+  "b": "Muammar Qaddafi",
+  "category": "transliteration",
+  "id": "trans-03",
+  "label": "same",
+  "note": "two romanisations of one Arabic surname"
+ },
+ {
+  "a": "Ahmed Yusuf",
+  "b": "Ahmed Yousef",
+  "category": "transliteration",
+  "id": "trans-04",
+  "label": "same",
+  "note": "two romanisations of one Arabic surname"
+ },
+ {
+  "a": "Lev Tolstoy",
+  "b": "Leo Tolstoy",
+  "category": "transliteration",
+  "id": "trans-05",
+  "label": "same",
+  "note": "same human; Leo is the standard English rendering of Lev"
+ },
+ {
+  "a": "Nikolai Lobachevsky",
+  "b": "Nikolai Lobachevskii",
+  "category": "transliteration",
+  "id": "trans-06",
+  "label": "same",
+  "note": "two romanisations of one Russian surname"
+ },
+ {
+  "a": "Soo Kim",
+  "b": "Soo Gim",
+  "category": "transliteration",
+  "id": "trans-07",
+  "label": "same",
+  "note": "Kim and Gim are both romanisations of the Korean surname Gim"
+ },
+ {
+  "a": "Wei Zhang",
+  "b": "Wei Chang",
+  "category": "transliteration",
+  "id": "trans-08",
+  "label": "different",
+  "note": "Zhang and Chang are separate surnames in modern use; a record that says one when the citation says the other is naming someone else absent a human judgement"
+ },
+ {
+  "a": "Kaiming He",
+  "b": "He Kaiming",
+  "category": "cjk_order",
+  "id": "cjko-01",
+  "label": "same",
+  "note": "ResNet first author written family-name-first"
+ },
+ {
+  "a": "Xiangyu Zhang",
+  "b": "Zhang Xiangyu",
+  "category": "cjk_order",
+  "id": "cjko-02",
+  "label": "same",
+  "note": "ResNet second author written family-name-first"
+ },
+ {
+  "a": "Shaoqing Ren",
+  "b": "Ren Shaoqing",
+  "category": "cjk_order",
+  "id": "cjko-03",
+  "label": "same",
+  "note": "ResNet third author written family-name-first"
+ },
+ {
+  "a": "Jian Sun",
+  "b": "Sun Jian",
+  "category": "cjk_order",
+  "id": "cjko-04",
+  "label": "same",
+  "note": "ResNet fourth author written family-name-first"
+ },
+ {
+  "a": "Andy Liu",
+  "b": "Liu Andy",
+  "category": "cjk_order",
+  "id": "cjko-05",
+  "label": "same",
+  "note": "arXiv 2507.01413 author written family-name-first"
+ },
+ {
+  "a": "Kaiming He",
+  "b": "He Wei",
+  "category": "cjk_order",
+  "id": "cjko-06",
+  "label": "different",
+  "note": "the surname meets under a swap but the given name does not"
+ },
+ {
+  "a": "Xiangyu Zhang",
+  "b": "Zhang Wei",
+  "category": "cjk_order",
+  "id": "cjko-07",
+  "label": "different",
+  "note": "shared surname, different given name"
+ },
+ {
+  "a": "Jian Sun",
+  "b": "Sun Wukong",
+  "category": "cjk_order",
+  "id": "cjko-08",
+  "label": "different",
+  "note": "shared surname, different given name"
+ },
+ {
+  "a": "\u4f55\u51ef\u660e",
+  "b": "\u4f55\u51ef\u660e",
+  "category": "cjk_script",
+  "id": "cjks-01",
+  "label": "same",
+  "note": "byte-identical Han spelling of He Kaiming"
+ },
+ {
+  "a": "\u4f55\u51ef\u660e",
+  "b": "\u51ef\u660e\u4f55",
+  "category": "cjk_script",
+  "id": "cjks-02",
+  "label": "same",
+  "note": "same Han characters with the surname moved to the end"
+ },
+ {
+  "a": "\u4f55\u51ef\u660e",
+  "b": "Kaiming He",
+  "category": "cjk_script",
+  "id": "cjks-03",
+  "label": "same",
+  "note": "the same human written in Han characters and in pinyin; the honest ground truth even though no code in this tool can bridge the scripts"
+ },
+ {
+  "a": "\u5f20\u7fd4\u5b87",
+  "b": "\u5f20\u7fd4\u5b87",
+  "category": "cjk_script",
+  "id": "cjks-04",
+  "label": "same",
+  "note": "byte-identical Han spelling"
+ },
+ {
+  "a": "\u738b\u5c0f\u660e",
+  "b": "\u4f55\u51ef\u660e",
+  "category": "cjk_script",
+  "id": "cjks-05",
+  "label": "different",
+  "note": "different Han names"
+ },
+ {
+  "a": "\u5b59\u5251",
+  "b": "\u5b59\u609f\u7a7a",
+  "category": "cjk_script",
+  "id": "cjks-06",
+  "label": "different",
+  "note": "shared Han surname, different given name"
+ },
+ {
+  "a": "John Smith Jr.",
+  "b": "John Smith",
+  "category": "suffix",
+  "id": "suf-01",
+  "label": "same",
+  "note": "the generational suffix is dropped constantly in bibliographies"
+ },
+ {
+  "a": "Sammy Davis Jr.",
+  "b": "Sammy Davis",
+  "category": "suffix",
+  "id": "suf-02",
+  "label": "same",
+  "note": "suffix dropped"
+ },
+ {
+  "a": "Martin Luther King Jr.",
+  "b": "Martin Luther King",
+  "category": "suffix",
+  "id": "suf-03",
+  "label": "same",
+  "note": "read as the son with the suffix dropped, which is how the overwhelming majority of citations use the bare form"
+ },
+ {
+  "a": "John Smith Jr.",
+  "b": "John Smith Sr.",
+  "category": "suffix",
+  "id": "suf-04",
+  "label": "different",
+  "note": "Jr. and Sr. are father and son, two humans"
+ },
+ {
+  "a": "John Smith III",
+  "b": "John Smith II",
+  "category": "suffix",
+  "id": "suf-05",
+  "label": "different",
+  "note": "different generations"
+ },
+ {
+  "a": "Dale Earnhardt Jr.",
+  "b": "Dale Earnhardt Sr.",
+  "category": "suffix",
+  "id": "suf-06",
+  "label": "different",
+  "note": "father and son, two real humans"
+ },
+ {
+  "a": "Agrawal, Kushal",
+  "b": "Kushal Agrawal",
+  "category": "comma_order",
+  "id": "comma-01",
+  "label": "same",
+  "note": "the two written orders of one name"
+ },
+ {
+  "a": "He, Kaiming",
+  "b": "Kaiming He",
+  "category": "comma_order",
+  "id": "comma-02",
+  "label": "same",
+  "note": "the two written orders of one name"
+ },
+ {
+  "a": "Abbott, B. P.",
+  "b": "B. P. Abbott",
+  "category": "comma_order",
+  "id": "comma-03",
+  "label": "same",
+  "note": "comma order with initials"
+ },
+ {
+  "a": "Yang, An",
+  "b": "An Yang",
+  "category": "comma_order",
+  "id": "comma-04",
+  "label": "same",
+  "note": "Qwen2.5 author; comma order"
+ },
+ {
+  "a": "Kunnavakkam, Sudarsh",
+  "b": "Sudarsh Kunnavakkam",
+  "category": "comma_order",
+  "id": "comma-05",
+  "label": "same",
+  "note": "arXiv 2507.01413 author; comma order"
+ },
+ {
+  "a": "Zhang, Beichen",
+  "b": "Beichen Zheng",
+  "category": "comma_order",
+  "id": "comma-06",
+  "label": "different",
+  "note": "comma order plus a different surname: two real Qwen2.5 contributors are Beichen Zhang and Bo Zheng, and neither is Beichen Zheng"
+ },
+ {
+  "a": "LIGO Scientific Collaboration",
+  "b": "The LIGO Scientific Collaboration",
+  "category": "group",
+  "id": "grp-01",
+  "label": "same",
+  "note": "leading article only; same consortium"
+ },
+ {
+  "a": "Gemini Team",
+  "b": "Gemini Team",
+  "category": "group",
+  "id": "grp-02",
+  "label": "same",
+  "note": "byte-identical group author"
+ },
+ {
+  "a": "CERN",
+  "b": "CERN",
+  "category": "group",
+  "id": "grp-03",
+  "label": "same",
+  "note": "byte-identical acronym"
+ },
+ {
+  "a": "The Alan Turing Institute",
+  "b": "Alan Turing Institute",
+  "category": "group",
+  "id": "grp-04",
+  "label": "same",
+  "note": "leading article only"
+ },
+ {
+  "a": "Qwen Team",
+  "b": "Qwen",
+  "category": "group",
+  "id": "grp-05",
+  "label": "same",
+  "note": "the same corporate author; arXiv deposits the bare token Qwen at the head of the 2412.15115 author list"
+ },
+ {
+  "a": "ATLAS Collaboration",
+  "b": "CMS Collaboration",
+  "category": "group",
+  "id": "grp-06",
+  "label": "different",
+  "note": "two different LHC collaborations"
+ },
+ {
+  "a": "LIGO Scientific Collaboration",
+  "b": "Virgo Collaboration",
+  "category": "group",
+  "id": "grp-07",
+  "label": "different",
+  "note": "two different collaborations, both named on PhysRevLett 116.061102"
+ },
+ {
+  "a": "Gemini Team",
+  "b": "Gemini Patel",
+  "category": "group",
+  "id": "grp-08",
+  "label": "different",
+  "note": "a consortium is not a person"
+ },
+ {
+  "a": "Kushal Agrawal",
+  "b": "Kushal Aggarwal",
+  "category": "near_miss_surname",
+  "id": "near-01",
+  "label": "different",
+  "note": "Agrawal and Aggarwal are two large, unrelated families; this is the single most dangerous pair in the whole set"
+ },
+ {
+  "a": "John Smith",
+  "b": "John Smyth",
+  "category": "near_miss_surname",
+  "id": "near-02",
+  "label": "different",
+  "note": "Smyth is a historical spelling of Smith but a living Smyth is not a living Smith"
+ },
+ {
+  "a": "Wei Chen",
+  "b": "Wei Chan",
+  "category": "near_miss_surname",
+  "id": "near-03",
+  "label": "different",
+  "note": "Chen and Chan are separate surnames, often from different dialects"
+ },
+ {
+  "a": "Michael Johnson",
+  "b": "Michael Johnsen",
+  "category": "near_miss_surname",
+  "id": "near-04",
+  "label": "different",
+  "note": "Johnson and Johnsen are separate surnames"
+ },
+ {
+  "a": "Stig Petersen",
+  "b": "Stig Pedersen",
+  "category": "near_miss_surname",
+  "id": "near-05",
+  "label": "different",
+  "note": "Petersen and Pedersen are separate Danish surnames; Stig Petersen is a real AlphaFold author"
+ },
+ {
+  "a": "Carlos Reyes",
+  "b": "Carlos Reyez",
+  "category": "near_miss_surname",
+  "id": "near-06",
+  "label": "different",
+  "note": "Reyes is common and Reyez is a separate spelling; one is not the other"
+ },
+ {
+  "a": "Nilesh Shah",
+  "b": "Nilesh Sha",
+  "category": "near_miss_surname",
+  "id": "near-07",
+  "label": "different",
+  "note": "Shah and Sha are separate surnames"
+ },
+ {
+  "a": "Rahul Mehta",
+  "b": "Rahul Mehra",
+  "category": "near_miss_surname",
+  "id": "near-08",
+  "label": "different",
+  "note": "Mehta and Mehra are separate surnames"
+ },
+ {
+  "a": "Simran Kaur",
+  "b": "Simran Kaul",
+  "category": "near_miss_surname",
+  "id": "near-09",
+  "label": "different",
+  "note": "Kaur is a Sikh name element and Kaul is a Kashmiri surname; nothing connects them"
+ },
+ {
+  "a": "Minh Nguyen",
+  "b": "Minh Nguyan",
+  "category": "near_miss_surname",
+  "id": "near-10",
+  "label": "different",
+  "note": "Nguyen is the most common Vietnamese surname; Nguyan is not it"
+ },
+ {
+  "a": "David Silver",
+  "b": "David Silvers",
+  "category": "near_miss_surname",
+  "id": "near-11",
+  "label": "different",
+  "note": "Silver and Silvers are separate surnames; David Silver is a real AlphaGo author"
+ },
+ {
+  "a": "Oriol Vinyals",
+  "b": "Oriol Vinals",
+  "category": "near_miss_surname",
+  "id": "near-12",
+  "label": "different",
+  "note": "Vinyals and Vinals are separate Catalan surnames; Oriol Vinyals is a real AlphaFold author"
+ },
+ {
+  "a": "David Silver",
+  "b": "Demis Hassabis",
+  "category": "different_person",
+  "id": "diffp-01",
+  "label": "different",
+  "note": "two real, distinct AlphaGo authors"
+ },
+ {
+  "a": "John Jumper",
+  "b": "John Nham",
+  "category": "different_person",
+  "id": "diffp-02",
+  "label": "different",
+  "note": "shared given name, unrelated surnames; both are real DeepMind authors"
+ },
+ {
+  "a": "Kaiming He",
+  "b": "Jian Sun",
+  "category": "different_person",
+  "id": "diffp-03",
+  "label": "different",
+  "note": "two real, distinct ResNet authors"
+ },
+ {
+  "a": "Kushal Agrawal",
+  "b": "Andy Liu",
+  "category": "different_person",
+  "id": "diffp-04",
+  "label": "different",
+  "note": "two real, distinct authors of arXiv 2507.01413"
+ },
+ {
+  "a": "Daniel Fried",
+  "b": "Katia Sycara",
+  "category": "different_person",
+  "id": "diffp-05",
+  "label": "different",
+  "note": "two real CMU researchers, both of whom were falsely placed on arXiv 2507.01413 by the chimeric citation"
+ },
+ {
+  "a": "Verona Teo",
+  "b": "Vishak Srikanth",
+  "category": "different_person",
+  "id": "diffp-06",
+  "label": "different",
+  "note": "two real, distinct authors of arXiv 2507.01413"
+ },
+ {
+  "a": "Ashish Vaswani",
+  "b": "Noam Shazeer",
+  "category": "different_person",
+  "id": "diffp-07",
+  "label": "different",
+  "note": "two real, distinct Attention authors"
+ },
+ {
+  "a": "Koray Kavukcuoglu",
+  "b": "Pushmeet Kohli",
+  "category": "different_person",
+  "id": "diffp-08",
+  "label": "different",
+  "note": "two real, distinct AlphaFold authors"
+ },
+ {
+  "a": "Yoshua Bengio",
+  "b": "Yann LeCun",
+  "category": "different_person",
+  "id": "diffp-09",
+  "label": "different",
+  "note": "two real, distinct people, often cited side by side"
+ },
+ {
+  "a": "Alex Bridgland",
+  "b": "Alex Pritzel",
+  "category": "different_person",
+  "id": "diffp-10",
+  "label": "different",
+  "note": "shared given name, two real distinct AlphaFold authors"
+ },
+ {
+  "a": "Tim Green",
+  "b": "Tim Brown",
+  "category": "different_person",
+  "id": "diffp-11",
+  "label": "different",
+  "note": "shared given name, unrelated surnames"
+ },
+ {
+  "a": "Anna Potapenko",
+  "b": "Anna Pritzel",
+  "category": "different_person",
+  "id": "diffp-12",
+  "label": "different",
+  "note": "a chimera: Anna Potapenko and Alexander Pritzel are both real AlphaFold authors, Anna Pritzel is nobody"
+ },
+ {
+  "a": "John Smith",
+  "b": "Jane Smith",
+  "category": "same_surname_different_person",
+  "id": "samesur-01",
+  "label": "different",
+  "note": "same surname, two different given names written out in full"
+ },
+ {
+  "a": "David Silver",
+  "b": "Nathan Silver",
+  "category": "same_surname_different_person",
+  "id": "samesur-02",
+  "label": "different",
+  "note": "same surname, different given names"
+ },
+ {
+  "a": "An Yang",
+  "b": "Jian Yang",
+  "category": "same_surname_different_person",
+  "id": "samesur-03",
+  "label": "different",
+  "note": "two real, distinct Qwen2.5 contributors who share a surname"
+ },
+ {
+  "a": "Baosong Yang",
+  "b": "Jianxin Yang",
+  "category": "same_surname_different_person",
+  "id": "samesur-04",
+  "label": "different",
+  "note": "two real, distinct Qwen2.5 contributors who share a surname"
+ },
+ {
+  "a": "Jiaxi Yang",
+  "b": "Jian Yang",
+  "category": "same_surname_different_person",
+  "id": "samesur-05",
+  "label": "different",
+  "note": "two real, distinct Qwen2.5 contributors; the given names are close but not the same"
+ },
+ {
+  "a": "R. Abbott",
+  "b": "T. D. Abbott",
+  "category": "same_surname_different_person",
+  "id": "samesur-06",
+  "label": "different",
+  "note": "two real, distinct LIGO authors on PhysRevLett 116.061102"
+ },
+ {
+  "a": "B. P. Abbott",
+  "b": "R. Abbott",
+  "category": "same_surname_different_person",
+  "id": "samesur-07",
+  "label": "different",
+  "note": "two real, distinct LIGO authors; the initials settle it"
+ },
+ {
+  "a": "Zhenru Zhang",
+  "b": "Pei Zhang",
+  "category": "same_surname_different_person",
+  "id": "samesur-08",
+  "label": "different",
+  "note": "two real, distinct Qwen2.5 contributors"
+ },
+ {
+  "a": "Beichen Zhang",
+  "b": "Yichang Zhang",
+  "category": "same_surname_different_person",
+  "id": "samesur-09",
+  "label": "different",
+  "note": "two real, distinct Qwen2.5 contributors"
+ },
+ {
+  "a": "Alice Chen",
+  "b": "Bob Chen",
+  "category": "same_surname_different_person",
+  "id": "samesur-10",
+  "label": "different",
+  "note": "same surname, different given names"
+ },
+ {
+  "a": "J. Smith",
+  "b": "John Smith",
+  "category": "initial_collision",
+  "id": "coll-01",
+  "label": "same",
+  "note": "labelled same under the consistency rule stated in README-DATA.txt: an initial is a wildcard constrained to its letter, and J. Smith is the ordinary bibliographic abbreviation of John Smith"
+ },
+ {
+  "a": "J. Smith",
+  "b": "Jane Smith",
+  "category": "initial_collision",
+  "id": "coll-02",
+  "label": "same",
+  "note": "same rule as coll-01. Note that coll-01 and coll-02 cannot both be the same human: that is the point. The relation being labelled is consistency, which is not transitive"
+ },
+ {
+  "a": "J. Smith",
+  "b": "Robert Smith",
+  "category": "initial_collision",
+  "id": "coll-03",
+  "label": "different",
+  "note": "the initial contradicts the given name"
+ },
+ {
+  "a": "J. Yang",
+  "b": "Jian Yang",
+  "category": "initial_collision",
+  "id": "coll-04",
+  "label": "same",
+  "note": "consistent; Jian Yang is a real Qwen2.5 contributor"
+ },
+ {
+  "a": "J. Yang",
+  "b": "An Yang",
+  "category": "initial_collision",
+  "id": "coll-05",
+  "label": "different",
+  "note": "the initial contradicts the given name"
+ },
+ {
+  "a": "A. Yang",
+  "b": "An Yang",
+  "category": "initial_collision",
+  "id": "coll-06",
+  "label": "same",
+  "note": "consistent; An Yang is a real Qwen2.5 contributor"
+ },
+ {
+  "a": "D. Silver",
+  "b": "David Silver",
+  "category": "initial_collision",
+  "id": "coll-07",
+  "label": "same",
+  "note": "consistent, and the intended reading in practice"
+ },
+ {
+  "a": "D. Silver",
+  "b": "Demis Silver",
+  "category": "initial_collision",
+  "id": "coll-08",
+  "label": "same",
+  "note": "consistent under the stated rule, and genuinely uninformative: a checker that calls this a mismatch is guessing"
+ },
+ {
+  "a": "K. He",
+  "b": "Kaiming He",
+  "category": "initial_collision",
+  "id": "coll-09",
+  "label": "same",
+  "note": "consistent; the ResNet first author as many BibTeX files spell him"
+ },
+ {
+  "a": "R. Abbott",
+  "b": "B. P. Abbott",
+  "category": "initial_collision",
+  "id": "coll-10",
+  "label": "different",
+  "note": "two initial-only names whose first initials contradict each other"
+ }
+]

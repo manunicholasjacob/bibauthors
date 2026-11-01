@@ -1,0 +1,8278 @@
+{
+ "body": {
+  "group_by": [],
+  "meta": {
+   "cost_usd": 0.001,
+   "count": 22600,
+   "db_response_time_ms": 97,
+   "groups_count": null,
+   "notice": "[notice stripped by bibauthor]",
+   "page": 1,
+   "per_page": 5,
+   "x_query": {
+    "oql": "get works with (Qwen2.5 Technical Report) in the full text",
+    "oqo": {
+     "filter_rows": [
+      {
+       "column_id": "fulltext.search",
+       "operator": "has",
+       "value": "Qwen2.5 Technical Report"
+      }
+     ],
+     "get_rows": "works"
+    },
+    "order": "best matches first",
+    "order_default": true,
+    "url": "/works?filter=fulltext.search:Qwen2.5 Technical Report&per_page=5",
+    "x_new_oql": "get works with (Qwen2.5 Technical Report) in the full text"
+   }
+  },
+  "results": [
+   {
+    "abstract_inverted_index": {
+     "(LLMs)": [
+      13
+     ],
+     "(MoE)": [
+      146
+     ],
+     "1": [
+      81
+     ],
+     "18": [
+      54
+     ],
+     "2.5": [
+      24
+     ],
+     "5": [
+      205
+     ],
+     "7": [
+      50
+     ],
+     "Additionally,": [
+      222
+     ],
+     "Alibaba": [
+      154
+     ],
+     "Cloud": [
+      155
+     ],
+     "Compared": [
+      19
+     ],
+     "GPT-4o": [
+      220
+     ],
+     "GPT-4o-mini": [
+      218
+     ],
+     "In": [
+      0,
+      36,
+      70,
+      134
+     ],
+     "LLM": [
+      118
+     ],
+     "Llama-3-405B-Instruct,": [
+      201
+     ],
+     "Model": [
+      156
+     ],
+     "Open-weight": [
+      123
+     ],
+     "Post-training": [
+      90
+     ],
+     "QwQ,": [
+      239
+     ],
+     "Qwen": [
+      23
+     ],
+     "Qwen2.5": [
+      117,
+      158,
+      226
+     ],
+     "Qwen2.5,": [
+      5
+     ],
+     "Qwen2.5-72B-Instruct": [
+      183
+     ],
+     "Qwen2.5-Coder,": [
+      238
+     ],
+     "Qwen2.5-Math,": [
+      237
+     ],
+     "Qwen2.5-Plus": [
+      210
+     ],
+     "Qwen2.5-Plus,": [
+      150
+     ],
+     "Qwen2.5-Turbo": [
+      148,
+      208
+     ],
+     "Specifically,": [
+      179
+     ],
+     "Studio.": [
+      157
+     ],
+     "This": [
+      57
+     ],
+     "To": [
+      107
+     ],
+     "a": [
+      6,
+      59,
+      164,
+      185
+     ],
+     "addition,": [
+      135
+     ],
+     "against": [
+      217
+     ],
+     "alignment,": [
+      177
+     ],
+     "analysis,": [
+      103
+     ],
+     "and": [
+      33,
+      67,
+      95,
+      104,
+      110,
+      127,
+      149,
+      189,
+      192,
+      209,
+      219,
+      240
+     ],
+     "around": [
+      204
+     ],
+     "as": [
+      84,
+      86,
+      223,
+      236
+     ],
+     "available": [
+      152
+     ],
+     "available.": [
+      133
+     ],
+     "base": [
+      126
+     ],
+     "been": [
+      26,
+      229
+     ],
+     "benchmarks": [
+      168
+     ],
+     "both": [
+      30,
+      151
+     ],
+     "capabilities.": [
+      69
+     ],
+     "cases": [
+      113
+     ],
+     "coding,": [
+      174
+     ],
+     "common": [
+      63
+     ],
+     "competitive": [
+      194
+     ],
+     "competitively": [
+      216
+     ],
+     "comprehensive": [
+      7
+     ],
+     "cost-effectiveness": [
+      213
+     ],
+     "currently": [
+      142
+     ],
+     "data": [
+      102
+     ],
+     "datasets": [
+      46
+     ],
+     "demonstrated": [
+      160
+     ],
+     "demonstrates": [
+      193
+     ],
+     "designed": [
+      14
+     ],
+     "diverse": [
+      17,
+      109
+     ],
+     "during": [
+      29
+     ],
+     "effectively,": [
+      114
+     ],
+     "enhance": [
+      92
+     ],
+     "etc.": [
+      178
+     ],
+     "evaluating": [
+      169
+     ],
+     "expert": [
+      65
+     ],
+     "finetuning": [
+      78
+     ],
+     "flagship": [
+      182
+     ],
+     "following.": [
+      106
+     ],
+     "for": [
+      62,
+      136
+     ],
+     "foundation": [
+      61
+     ],
+     "foundation,": [
+      225
+     ],
+     "from": [
+      47,
+      153
+     ],
+     "generation,": [
+      100
+     ],
+     "handle": [
+      108
+     ],
+     "has": [
+      25,
+      159
+     ],
+     "have": [
+      41,
+      228
+     ],
+     "high-quality": [
+      44
+     ],
+     "hosted": [
+      137
+     ],
+     "human": [
+      93,
+      175
+     ],
+     "implement": [
+      75
+     ],
+     "improve": [
+      97
+     ],
+     "improved": [
+      28
+     ],
+     "in": [
+      120,
+      231
+     ],
+     "include": [
+      125,
+      143
+     ],
+     "instruction": [
+      105
+     ],
+     "instruction-tuned": [
+      128
+     ],
+     "instrumental": [
+      230
+     ],
+     "intricate": [
+      76
+     ],
+     "introduce": [
+      4
+     ],
+     "is": [
+      203
+     ],
+     "iterations,": [
+      22
+     ],
+     "knowledge,": [
+      66
+     ],
+     "language": [
+      11,
+      170
+     ],
+     "large": [
+      10
+     ],
+     "larger.": [
+      207
+     ],
+     "learning.": [
+      89
+     ],
+     "long": [
+      98
+     ],
+     "mathematics,": [
+      173
+     ],
+     "meet": [
+      16
+     ],
+     "million": [
+      82
+     ],
+     "mixture-of-experts": [
+      145
+     ],
+     "model,": [
+      200
+     ],
+     "models": [
+      12,
+      141,
+      191,
+      227,
+      234
+     ],
+     "models,": [
+      129
+     ],
+     "models.": [
+      242
+     ],
+     "multimodal": [
+      241
+     ],
+     "multistage": [
+      87
+     ],
+     "needs.": [
+      18
+     ],
+     "notably": [
+      96
+     ],
+     "number": [
+      186
+     ],
+     "of": [
+      9,
+      38,
+      72,
+      167,
+      187
+     ],
+     "offer": [
+      211
+     ],
+     "offerings": [
+      124
+     ],
+     "on": [
+      163
+     ],
+     "open": [
+      188
+     ],
+     "open-weight": [
+      181,
+      199
+     ],
+     "outperforms": [
+      184
+     ],
+     "over": [
+      80
+     ],
+     "performance": [
+      162,
+      195
+     ],
+     "performing": [
+      215
+     ],
+     "post-training": [
+      34
+     ],
+     "post-training,": [
+      73
+     ],
+     "pre-training": [
+      32,
+      45
+     ],
+     "pre-training,": [
+      39
+     ],
+     "preference": [
+      176
+     ],
+     "preference,": [
+      94
+     ],
+     "present": [
+      116
+     ],
+     "previous": [
+      21,
+      49
+     ],
+     "proprietary": [
+      140,
+      190
+     ],
+     "provides": [
+      58
+     ],
+     "quantized": [
+      131
+     ],
+     "range": [
+      166
+     ],
+     "reasoning": [
+      68
+     ],
+     "reasoning,": [
+      172
+     ],
+     "reinforcement": [
+      88
+     ],
+     "report,": [
+      2
+     ],
+     "respectively.": [
+      221
+     ],
+     "rich": [
+      121
+     ],
+     "samples,": [
+      83
+     ],
+     "scaled": [
+      42
+     ],
+     "sense,": [
+      64
+     ],
+     "series": [
+      8,
+      119
+     ],
+     "significantly": [
+      27
+     ],
+     "sizes.": [
+      122
+     ],
+     "solutions,": [
+      138
+     ],
+     "specialized": [
+      233
+     ],
+     "stages.": [
+      35
+     ],
+     "state-of-the-art": [
+      198
+     ],
+     "strong": [
+      60
+     ],
+     "structural": [
+      101
+     ],
+     "such": [
+      235
+     ],
+     "superior": [
+      212
+     ],
+     "supervised": [
+      77
+     ],
+     "techniques": [
+      91
+     ],
+     "terms": [
+      37,
+      71
+     ],
+     "text": [
+      99
+     ],
+     "the": [
+      31,
+      43,
+      48,
+      139,
+      180,
+      197,
+      224
+     ],
+     "this": [
+      1
+     ],
+     "times": [
+      206
+     ],
+     "to": [
+      15,
+      20,
+      53,
+      196
+     ],
+     "tokens": [
+      52
+     ],
+     "tokens.": [
+      56
+     ],
+     "top-tier": [
+      161
+     ],
+     "training": [
+      232
+     ],
+     "trillion": [
+      51,
+      55
+     ],
+     "two": [
+      144
+     ],
+     "understanding,": [
+      171
+     ],
+     "use": [
+      112
+     ],
+     "variants:": [
+      147
+     ],
+     "varied": [
+      111
+     ],
+     "versions": [
+      132
+     ],
+     "we": [
+      3,
+      40,
+      74,
+      115
+     ],
+     "well": [
+      85
+     ],
+     "which": [
+      202
+     ],
+     "while": [
+      214
+     ],
+     "wide": [
+      165
+     ],
+     "with": [
+      79,
+      130
+     ]
+    },
+    "apc_list": null,
+    "apc_paid": null,
+    "authorships": [
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Qwen",
+       "id": "https://openalex.org/A5115572560",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "first",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Qwen",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": ":",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": ":",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Yang An",
+       "id": "https://openalex.org/A5100459622",
+       "observed_orcids": [
+        "https://orcid.org/0000-0001-8838-3197"
+       ],
+       "orcid": "https://orcid.org/0000-0001-8838-3197"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Yang, An",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Baosong Yang",
+       "id": "https://openalex.org/A5028040391",
+       "observed_orcids": [
+        "https://orcid.org/0000-0001-5002-2409"
+       ],
+       "orcid": "https://orcid.org/0000-0001-5002-2409"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Yang, Baosong",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Beichen Zhang",
+       "id": "https://openalex.org/A5101849102",
+       "observed_orcids": [
+        "https://orcid.org/0009-0008-3746-0074",
+        "https://orcid.org/0000-0002-1226-1203"
+       ],
+       "orcid": "https://orcid.org/0009-0008-3746-0074"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Zhang, Beichen",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Binyuan Hui",
+       "id": "https://openalex.org/A5080628250",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-2160-7595"
+       ],
+       "orcid": "https://orcid.org/0000-0002-2160-7595"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Hui, Binyuan",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "B. Zheng",
+       "id": "https://openalex.org/A5050479679",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-6544-429X",
+        "https://orcid.org/0009-0009-1601-4734",
+        "https://orcid.org/0000-0003-4308-3742",
+        "https://orcid.org/0000-0002-4037-6315"
+       ],
+       "orcid": "https://orcid.org/0000-0002-6544-429X"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Zheng, Bo",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Bowen Yu",
+       "id": "https://openalex.org/A5085149388",
+       "observed_orcids": [
+        "https://orcid.org/0009-0007-7014-6434"
+       ],
+       "orcid": "https://orcid.org/0009-0007-7014-6434"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Yu, Bowen",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Chengyuan Li",
+       "id": "https://openalex.org/A5002944495",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-3084-5157"
+       ],
+       "orcid": "https://orcid.org/0000-0002-3084-5157"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Li, Chengyuan",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Dayiheng Liu",
+       "id": "https://openalex.org/A5062188134",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-8755-8941"
+       ],
+       "orcid": "https://orcid.org/0000-0002-8755-8941"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Liu, Dayiheng",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Fei Huang",
+       "id": "https://openalex.org/A5101488344",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-3709-5053",
+        "https://orcid.org/0000-0002-2795-3114",
+        "https://orcid.org/0009-0005-7670-5255"
+       ],
+       "orcid": "https://orcid.org/0000-0002-3709-5053"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Huang, Fei",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Haoran Wei",
+       "id": "https://openalex.org/A5107950823",
+       "observed_orcids": [
+        "https://orcid.org/0009-0003-4894-326X"
+       ],
+       "orcid": "https://orcid.org/0009-0003-4894-326X"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Wei, Haoran",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Lin, Huan",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Lin, Huan",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Jian Yang",
+       "id": "https://openalex.org/A5101503975",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-1963-712X"
+       ],
+       "orcid": "https://orcid.org/0000-0002-1963-712X"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Yang, Jian",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Jianhong Tu",
+       "id": "https://openalex.org/A5082583725",
+       "observed_orcids": [
+        "https://orcid.org/0009-0001-1554-1614"
+       ],
+       "orcid": "https://orcid.org/0009-0001-1554-1614"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Tu, Jianhong",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Jianwei Zhang",
+       "id": "https://openalex.org/A5100326965",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-3219-0801"
+       ],
+       "orcid": "https://orcid.org/0000-0002-3219-0801"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Zhang, Jianwei",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Jianxin Yang",
+       "id": "https://openalex.org/A5107900064",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Yang, Jianxin",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Jiaxi Yang",
+       "id": "https://openalex.org/A5008284896",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-4497-9615"
+       ],
+       "orcid": "https://orcid.org/0000-0002-4497-9615"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Yang, Jiaxi",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Jingren Zhou",
+       "id": "https://openalex.org/A5057864403",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-4220-2634"
+       ],
+       "orcid": "https://orcid.org/0000-0002-4220-2634"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Zhou, Jingren",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Junyang Lin",
+       "id": "https://openalex.org/A5100612233",
+       "observed_orcids": [
+        "https://orcid.org/0000-0001-9863-1887",
+        "https://orcid.org/0000-0001-9931-383X"
+       ],
+       "orcid": "https://orcid.org/0000-0001-9863-1887"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Lin, Junyang",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Kai Dang",
+       "id": "https://openalex.org/A5014400759",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Dang, Kai",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Keming Lu",
+       "id": "https://openalex.org/A5110849478",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Lu, Keming",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Keqin Bao",
+       "id": "https://openalex.org/A5013954858",
+       "observed_orcids": [
+        "https://orcid.org/0009-0001-5910-0204"
+       ],
+       "orcid": "https://orcid.org/0009-0001-5910-0204"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Bao, Keqin",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Kexin Yang",
+       "id": "https://openalex.org/A5075867408",
+       "observed_orcids": [
+        "https://orcid.org/0000-0003-4345-8188"
+       ],
+       "orcid": "https://orcid.org/0000-0003-4345-8188"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Yang, Kexin",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Le Yu",
+       "id": "https://openalex.org/A5102521102",
+       "observed_orcids": [
+        "https://orcid.org/0009-0007-5979-5986"
+       ],
+       "orcid": "https://orcid.org/0009-0007-5979-5986"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Yu, Le",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Li, Mei",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Li, Mei",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Mingfeng Xue",
+       "id": "https://openalex.org/A5004278931",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Xue, Mingfeng",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Pei Zhang",
+       "id": "https://openalex.org/A5112320629",
+       "observed_orcids": [
+        "https://orcid.org/0009-0002-9734-4311"
+       ],
+       "orcid": "https://orcid.org/0009-0002-9734-4311"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Zhang, Pei",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Zhu, Qin",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Zhu, Qin",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Rui Men",
+       "id": "https://openalex.org/A5004626105",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-4429-3461"
+       ],
+       "orcid": "https://orcid.org/0000-0002-4429-3461"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Men, Rui",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Runji Lin",
+       "id": "https://openalex.org/A5003991609",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Lin, Runji",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Tianhao Li",
+       "id": "https://openalex.org/A5016521877",
+       "observed_orcids": [
+        "https://orcid.org/0009-0002-9101-3490"
+       ],
+       "orcid": "https://orcid.org/0009-0002-9101-3490"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Li, Tianhao",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Tang, Tianyi",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Tang, Tianyi",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Xia, Tingyu",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Xia, Tingyu",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Xingzhang Ren",
+       "id": "https://openalex.org/A5054086732",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Ren, Xingzhang",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Xuancheng Ren",
+       "id": "https://openalex.org/A5049239373",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-6994-2114",
+        "https://orcid.org/0009-0009-6239-1266"
+       ],
+       "orcid": "https://orcid.org/0000-0002-6994-2114"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Ren, Xuancheng",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Fan, Yang",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Fan, Yang",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Su Yang",
+       "id": "https://openalex.org/A5101248866",
+       "observed_orcids": [
+        "https://orcid.org/0009-0005-4089-2378"
+       ],
+       "orcid": "https://orcid.org/0009-0005-4089-2378"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Su, Yang",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Yichang Zhang",
+       "id": "https://openalex.org/A5013763116",
+       "observed_orcids": [
+        "https://orcid.org/0000-0001-5388-6376"
+       ],
+       "orcid": "https://orcid.org/0000-0001-5388-6376"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Zhang, Yichang",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Wan, Yu",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Wan, Yu",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Yuqiong Liu",
+       "id": "https://openalex.org/A5001634411",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Liu, Yuqiong",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Zeyu Cui",
+       "id": "https://openalex.org/A5111209926",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Cui, Zeyu",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Zhenru Zhang",
+       "id": "https://openalex.org/A5032572801",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Zhang, Zhenru",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [],
+        "raw_affiliation_string": "additional authors not shown"
+       }
+      ],
+      "author": {
+       "display_name": "Zihan Qiu",
+       "id": "https://openalex.org/A5083808534",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "last",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "additional authors not shown"
+      ],
+      "raw_author_name": "Qiu, Zihan",
+      "raw_orcid": null
+     }
+    ],
+    "awards": [],
+    "best_oa_location": {
+     "doi": null,
+     "id": "pmh:oai:arXiv.org:2412.15115",
+     "is_accepted": false,
+     "is_oa": true,
+     "is_published": false,
+     "landing_page_url": "http://arxiv.org/abs/2412.15115",
+     "license": null,
+     "license_id": null,
+     "pdf_url": "https://arxiv.org/pdf/2412.15115",
+     "raw_source_name": null,
+     "raw_type": "text",
+     "source": {
+      "display_name": "arXiv (Cornell University)",
+      "host_organization": "https://openalex.org/I205783295",
+      "host_organization_lineage": [
+       "https://openalex.org/I205783295"
+      ],
+      "host_organization_lineage_names": [],
+      "host_organization_name": "Cornell University",
+      "id": "https://openalex.org/S4306400194",
+      "is_core": false,
+      "is_in_doaj": false,
+      "is_oa": true,
+      "issn": [
+       "2331-8422"
+      ],
+      "issn_l": "2331-8422",
+      "listed_in": [],
+      "type": "repository"
+     },
+     "version": "submittedVersion"
+    },
+    "biblio": {
+     "first_page": null,
+     "issue": null,
+     "last_page": null,
+     "volume": null
+    },
+    "citation_normalized_percentile": null,
+    "cited_by_count": 129,
+    "cited_by_percentile_year": null,
+    "concepts": [
+     {
+      "display_name": "Business",
+      "id": "https://openalex.org/C144133560",
+      "level": 0,
+      "score": 0.3713842034339905,
+      "wikidata": "https://www.wikidata.org/wiki/Q4830453"
+     },
+     {
+      "display_name": "Computer science",
+      "id": "https://openalex.org/C41008148",
+      "level": 0,
+      "score": 0.3437316417694092,
+      "wikidata": "https://www.wikidata.org/wiki/Q21198"
+     }
+    ],
+    "content_urls": {
+     "grobid_xml": "https://content.openalex.org/works/W4405655184.grobid-xml",
+     "pdf": "https://content.openalex.org/works/W4405655184.pdf"
+    },
+    "corresponding_author_ids": [],
+    "corresponding_institution_ids": [],
+    "countries_distinct_count": 0,
+    "counts_by_year": [
+     {
+      "cited_by_count": 85,
+      "year": 2026
+     },
+     {
+      "cited_by_count": 43,
+      "year": 2025
+     },
+     {
+      "cited_by_count": 1,
+      "year": 2024
+     }
+    ],
+    "created_date": "2024-12-21T00:00:00",
+    "display_name": "Qwen2.5 Technical Report",
+    "doi": "https://doi.org/10.48550/arxiv.2412.15115",
+    "funders": [],
+    "fwci": null,
+    "has_content": {
+     "grobid_xml": true,
+     "pdf": true
+    },
+    "has_fulltext": true,
+    "id": "https://openalex.org/W4405655184",
+    "ids": {
+     "doi": "https://doi.org/10.48550/arxiv.2412.15115",
+     "openalex": "https://openalex.org/W4405655184"
+    },
+    "indexed_in": [
+     "arxiv",
+     "datacite"
+    ],
+    "institutions": [],
+    "institutions_distinct_count": 0,
+    "is_paratext": false,
+    "is_retracted": false,
+    "is_xpac": false,
+    "keywords": [
+     {
+      "display_name": "Qwen2.5",
+      "id": "https://openalex.org/keywords/qwen2-5",
+      "score": 0.9980000257492065
+     },
+     {
+      "display_name": "large language models",
+      "id": "https://openalex.org/keywords/large-language-models",
+      "score": 0.9980000257492065
+     },
+     {
+      "display_name": "supervised fine-tuning",
+      "id": "https://openalex.org/keywords/supervised-fine-tuning",
+      "score": 0.8399999737739563
+     },
+     {
+      "display_name": "mixture of experts",
+      "id": "https://openalex.org/keywords/mixture-of-experts",
+      "score": 0.6470000147819519
+     },
+     {
+      "display_name": "instruction tuning",
+      "id": "https://openalex.org/keywords/instruction-tuning",
+      "score": 0.7760000228881836
+     },
+     {
+      "display_name": "long-form text generation",
+      "id": "https://openalex.org/keywords/long-text-generation",
+      "score": 0.847000002861023
+     },
+     {
+      "display_name": "instruction following",
+      "id": "https://openalex.org/keywords/instruction-following",
+      "score": 0.7369999885559082
+     },
+     {
+      "display_name": "human preference alignment",
+      "id": "https://openalex.org/keywords/human-preference-alignment",
+      "score": 0.8029999732971191
+     },
+     {
+      "display_name": "Qwen2.5-Coder",
+      "id": "https://openalex.org/keywords/qwen2-5-coder",
+      "score": 0.9909999966621399
+     },
+     {
+      "display_name": "multimodal models",
+      "id": "https://openalex.org/keywords/multimodal-models",
+      "score": 0.7379999756813049
+     },
+     {
+      "display_name": "open-weight models",
+      "id": "https://openalex.org/keywords/open-weight-models",
+      "score": 0.5789999961853027
+     },
+     {
+      "display_name": "quantized models",
+      "id": "https://openalex.org/keywords/quantized-models",
+      "score": 0.6759999990463257
+     }
+    ],
+    "language": "en",
+    "locations": [
+     {
+      "doi": null,
+      "id": "pmh:oai:arXiv.org:2412.15115",
+      "is_accepted": false,
+      "is_oa": true,
+      "is_published": false,
+      "landing_page_url": "http://arxiv.org/abs/2412.15115",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "https://arxiv.org/pdf/2412.15115",
+      "raw_source_name": null,
+      "raw_type": "text",
+      "source": {
+       "display_name": "arXiv (Cornell University)",
+       "host_organization": "https://openalex.org/I205783295",
+       "host_organization_lineage": [
+        "https://openalex.org/I205783295"
+       ],
+       "host_organization_lineage_names": [],
+       "host_organization_name": "Cornell University",
+       "id": "https://openalex.org/S4306400194",
+       "is_core": false,
+       "is_in_doaj": false,
+       "is_oa": true,
+       "issn": [
+        "2331-8422"
+       ],
+       "issn_l": "2331-8422",
+       "listed_in": [],
+       "type": "repository"
+      },
+      "version": "submittedVersion"
+     },
+     {
+      "doi": "https://doi.org/10.48550/arxiv.2412.15115",
+      "id": "doi:10.48550/arxiv.2412.15115",
+      "is_accepted": false,
+      "is_oa": true,
+      "is_published": false,
+      "landing_page_url": "https://doi.org/10.48550/arxiv.2412.15115",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": null,
+      "raw_type": "Preprint",
+      "source": {
+       "display_name": "arXiv (Cornell University)",
+       "host_organization": "https://openalex.org/I205783295",
+       "host_organization_lineage": [
+        "https://openalex.org/I205783295"
+       ],
+       "host_organization_lineage_names": [],
+       "host_organization_name": "Cornell University",
+       "id": "https://openalex.org/S4306400194",
+       "is_core": false,
+       "is_in_doaj": false,
+       "is_oa": true,
+       "issn": [
+        "2331-8422"
+       ],
+       "issn_l": "2331-8422",
+       "listed_in": [],
+       "type": "repository"
+      },
+      "version": null
+     }
+    ],
+    "locations_count": 2,
+    "mesh": [],
+    "open_access": {
+     "any_repository_has_fulltext": true,
+     "is_oa": true,
+     "oa_status": "green",
+     "oa_url": "https://arxiv.org/pdf/2412.15115"
+    },
+    "primary_location": {
+     "doi": null,
+     "id": "pmh:oai:arXiv.org:2412.15115",
+     "is_accepted": false,
+     "is_oa": true,
+     "is_published": false,
+     "landing_page_url": "http://arxiv.org/abs/2412.15115",
+     "license": null,
+     "license_id": null,
+     "pdf_url": "https://arxiv.org/pdf/2412.15115",
+     "raw_source_name": null,
+     "raw_type": "text",
+     "source": {
+      "display_name": "arXiv (Cornell University)",
+      "host_organization": "https://openalex.org/I205783295",
+      "host_organization_lineage": [
+       "https://openalex.org/I205783295"
+      ],
+      "host_organization_lineage_names": [],
+      "host_organization_name": "Cornell University",
+      "id": "https://openalex.org/S4306400194",
+      "is_core": false,
+      "is_in_doaj": false,
+      "is_oa": true,
+      "issn": [
+       "2331-8422"
+      ],
+      "issn_l": "2331-8422",
+      "listed_in": [],
+      "type": "repository"
+     },
+     "version": "submittedVersion"
+    },
+    "primary_topic": {
+     "display_name": "Topic Modeling",
+     "domain": {
+      "display_name": "Physical Sciences",
+      "id": "https://openalex.org/domains/3"
+     },
+     "field": {
+      "display_name": "Computer Science",
+      "id": "https://openalex.org/fields/17"
+     },
+     "id": "https://openalex.org/T10028",
+     "score": 0.9315999746322632,
+     "subfield": {
+      "display_name": "Artificial Intelligence",
+      "id": "https://openalex.org/subfields/1702"
+     }
+    },
+    "publication_date": "2024-12-19",
+    "publication_year": 2024,
+    "referenced_works": [],
+    "referenced_works_count": 0,
+    "related_works": [
+     "https://openalex.org/W4401660192",
+     "https://openalex.org/W4387225871",
+     "https://openalex.org/W7162761334",
+     "https://openalex.org/W7164385370",
+     "https://openalex.org/W4414939355",
+     "https://openalex.org/W4386942538",
+     "https://openalex.org/W4403746689",
+     "https://openalex.org/W7164336507",
+     "https://openalex.org/W4416403585",
+     "https://openalex.org/W7162953929"
+    ],
+    "relevance_score": 282.61356,
+    "study_designs": [],
+    "sustainable_development_goals": [],
+    "sustainable_development_goals_aurora": [],
+    "title": "Qwen2.5 Technical Report",
+    "topics": [
+     {
+      "display_name": "Topic Modeling",
+      "domain": {
+       "display_name": "Physical Sciences",
+       "id": "https://openalex.org/domains/3"
+      },
+      "field": {
+       "display_name": "Computer Science",
+       "id": "https://openalex.org/fields/17"
+      },
+      "id": "https://openalex.org/T10028",
+      "score": 0.9315999746322632,
+      "subfield": {
+       "display_name": "Artificial Intelligence",
+       "id": "https://openalex.org/subfields/1702"
+      }
+     },
+     {
+      "display_name": "Natural Language Processing Techniques",
+      "domain": {
+       "display_name": "Physical Sciences",
+       "id": "https://openalex.org/domains/3"
+      },
+      "field": {
+       "display_name": "Computer Science",
+       "id": "https://openalex.org/fields/17"
+      },
+      "id": "https://openalex.org/T10181",
+      "score": 0.054999999701976776,
+      "subfield": {
+       "display_name": "Artificial Intelligence",
+       "id": "https://openalex.org/subfields/1702"
+      }
+     },
+     {
+      "display_name": "Multimodal Machine Learning Applications",
+      "domain": {
+       "display_name": "Physical Sciences",
+       "id": "https://openalex.org/domains/3"
+      },
+      "field": {
+       "display_name": "Computer Science",
+       "id": "https://openalex.org/fields/17"
+      },
+      "id": "https://openalex.org/T11714",
+      "score": 0.005400000140070915,
+      "subfield": {
+       "display_name": "Computer Vision and Pattern Recognition",
+       "id": "https://openalex.org/subfields/1707"
+      }
+     }
+    ],
+    "type": "preprint",
+    "updated_date": "2026-11-01T11:40:01.658920",
+    "volume": null
+   },
+   {
+    "abstract_inverted_index": {
+     "(SOTA)": [
+      82
+     ],
+     "10": [
+      87
+     ],
+     "5.5": [
+      41
+     ],
+     "As": [
+      21
+     ],
+     "CodeQwen1.5.": [
+      14
+     ],
+     "In": [
+      0
+     ],
+     "Qwen2.5": [
+      30
+     ],
+     "Qwen2.5-Coder": [
+      6,
+      25,
+      56,
+      112
+     ],
+     "Qwen2.5-Coder-(0.5B/1.5B/3B/7B/14B/32B).": [
+      20
+     ],
+     "These": [
+      68
+     ],
+     "This": [
+      15
+     ],
+     "Through": [
+      44
+     ],
+     "We": [
+      105
+     ],
+     "a": [
+      8,
+      22,
+      36,
+      74
+     ],
+     "achieving": [
+      80
+     ],
+     "across": [
+      84
+     ],
+     "adoption": [
+      127
+     ],
+     "advance": [
+      115
+     ],
+     "and": [
+      32,
+      52,
+      65,
+      94
+     ],
+     "and,": [
+      120
+     ],
+     "applications.": [
+      132
+     ],
+     "architecture": [
+      31
+     ],
+     "balanced": [
+      53
+     ],
+     "been": [
+      71
+     ],
+     "believe": [
+      106
+     ],
+     "benchmarks,": [
+      88
+     ],
+     "built": [
+      27
+     ],
+     "by": [
+      128
+     ],
+     "capabilities": [
+      61
+     ],
+     "cleaning,": [
+      47
+     ],
+     "code": [
+      59,
+      90,
+      118
+     ],
+     "code-related": [
+      78
+     ],
+     "code-specific": [
+      23
+     ],
+     "completion,": [
+      92
+     ],
+     "consistently": [
+      96
+     ],
+     "continues": [
+      33
+     ],
+     "corpus": [
+      38
+     ],
+     "data": [
+      46,
+      50,
+      54
+     ],
+     "demonstrates": [
+      57
+     ],
+     "developers": [
+      129
+     ],
+     "evaluated": [
+      72
+     ],
+     "from": [
+      11
+     ],
+     "general": [
+      64
+     ],
+     "generation": [
+      60
+     ],
+     "generation,": [
+      51,
+      91
+     ],
+     "have": [
+      70
+     ],
+     "impressive": [
+      58
+     ],
+     "in": [
+      117,
+      130
+     ],
+     "includes": [
+      17
+     ],
+     "including": [
+      89
+     ],
+     "intelligence": [
+      119
+     ],
+     "introduce": [
+      4
+     ],
+     "is": [
+      26
+     ],
+     "its": [
+      12,
+      122
+     ],
+     "larger": [
+      98
+     ],
+     "licensing,": [
+      124
+     ],
+     "math": [
+      66
+     ],
+     "meticulous": [
+      45
+     ],
+     "mixing,": [
+      55
+     ],
+     "model": [
+      103
+     ],
+     "model,": [
+      24
+     ],
+     "models": [
+      69,
+      99
+     ],
+     "models:": [
+      19
+     ],
+     "more": [
+      85
+     ],
+     "of": [
+      39,
+      77,
+      100,
+      110
+     ],
+     "on": [
+      35,
+      73
+     ],
+     "outperforming": [
+      97
+     ],
+     "over": [
+      40
+     ],
+     "performance": [
+      83
+     ],
+     "permissive": [
+      123
+     ],
+     "predecessor,": [
+      13
+     ],
+     "pretrained": [
+      34
+     ],
+     "range": [
+      76
+     ],
+     "real-world": [
+      131
+     ],
+     "reasoning,": [
+      93
+     ],
+     "release": [
+      109
+     ],
+     "repair,": [
+      95
+     ],
+     "report,": [
+      2
+     ],
+     "research": [
+      116
+     ],
+     "retaining": [
+      63
+     ],
+     "same": [
+      102
+     ],
+     "scalable": [
+      48
+     ],
+     "series": [
+      16,
+      113
+     ],
+     "series,": [
+      7
+     ],
+     "significant": [
+      9
+     ],
+     "six": [
+      18
+     ],
+     "size.": [
+      104
+     ],
+     "skills.": [
+      67
+     ],
+     "state-of-the-art": [
+      81
+     ],
+     "support": [
+      125
+     ],
+     "synthetic": [
+      49
+     ],
+     "tasks,": [
+      79
+     ],
+     "than": [
+      86
+     ],
+     "that": [
+      107
+     ],
+     "the": [
+      5,
+      29,
+      101,
+      108,
+      111
+     ],
+     "this": [
+      1
+     ],
+     "tokens.": [
+      43
+     ],
+     "trillion": [
+      42
+     ],
+     "upgrade": [
+      10
+     ],
+     "upon": [
+      28
+     ],
+     "vast": [
+      37
+     ],
+     "we": [
+      3
+     ],
+     "while": [
+      62
+     ],
+     "wide": [
+      75
+     ],
+     "wider": [
+      126
+     ],
+     "will": [
+      114
+     ],
+     "with": [
+      121
+     ]
+    },
+    "apc_list": null,
+    "apc_paid": null,
+    "authorships": [
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Binyuan Hui",
+       "id": "https://openalex.org/A5080628250",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-2160-7595"
+       ],
+       "orcid": "https://orcid.org/0000-0002-2160-7595"
+      },
+      "author_position": "first",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Hui, Binyuan",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Jian Yang",
+       "id": "https://openalex.org/A5087117028",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-3390-5127",
+        "https://orcid.org/0000-0002-7329-4738",
+        "https://orcid.org/0009-0009-7148-3584",
+        "https://orcid.org/0009-0009-9803-6477",
+        "https://orcid.org/0000-0002-3961-8233"
+       ],
+       "orcid": "https://orcid.org/0000-0002-3390-5127"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Yang, Jian",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Cui, Zeyu",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Cui, Zeyu",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Jiaxi Yang",
+       "id": "https://openalex.org/A5101154869",
+       "observed_orcids": [
+        "https://orcid.org/0000-0001-7277-0715"
+       ],
+       "orcid": "https://orcid.org/0000-0001-7277-0715"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Yang, Jiaxi",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Dayiheng Liu",
+       "id": "https://openalex.org/A5062188134",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-8755-8941"
+       ],
+       "orcid": "https://orcid.org/0000-0002-8755-8941"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Liu, Dayiheng",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Lei Zhang",
+       "id": "https://openalex.org/A5008550633",
+       "observed_orcids": [
+        "https://orcid.org/0000-0003-1186-8852"
+       ],
+       "orcid": "https://orcid.org/0000-0003-1186-8852"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Zhang, Lei",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Tianyu Liu",
+       "id": "https://openalex.org/A5100379419",
+       "observed_orcids": [
+        "https://orcid.org/0000-0001-8107-8587"
+       ],
+       "orcid": "https://orcid.org/0000-0001-8107-8587"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Liu, Tianyu",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Jiajun Zhang",
+       "id": "https://openalex.org/A5100319572",
+       "observed_orcids": [
+        "https://orcid.org/0000-0001-5293-7434"
+       ],
+       "orcid": "https://orcid.org/0000-0001-5293-7434"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Zhang, Jiajun",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Bowen Yu",
+       "id": "https://openalex.org/A5082698786",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-5864-1025"
+       ],
+       "orcid": "https://orcid.org/0000-0002-5864-1025"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Yu, Bowen",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Lu, Keming",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Lu, Keming",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Kai Dang",
+       "id": "https://openalex.org/A5114418953",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Dang, Kai",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Fan, Yang",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Fan, Yang",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Zhang, Yichang",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Zhang, Yichang",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Yang, An",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Yang, An",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Rui Men",
+       "id": "https://openalex.org/A5004626105",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-4429-3461"
+       ],
+       "orcid": "https://orcid.org/0000-0002-4429-3461"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Men, Rui",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Fei Huang",
+       "id": "https://openalex.org/A5101488344",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-3709-5053",
+        "https://orcid.org/0000-0002-2795-3114",
+        "https://orcid.org/0009-0005-7670-5255"
+       ],
+       "orcid": "https://orcid.org/0000-0002-3709-5053"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Huang, Fei",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Zheng, Bo",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Zheng, Bo",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Miao, Yibo",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Miao, Yibo",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Quan, Shanghaoran",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Quan, Shanghaoran",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Feng, Yunlong",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Feng, Yunlong",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Xingzhang Ren",
+       "id": "https://openalex.org/A5054086732",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Ren, Xingzhang",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Xuancheng Ren",
+       "id": "https://openalex.org/A5049239373",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-6994-2114",
+        "https://orcid.org/0009-0009-6239-1266"
+       ],
+       "orcid": "https://orcid.org/0000-0002-6994-2114"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Ren, Xuancheng",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Jingren Zhou",
+       "id": "https://openalex.org/A5057864403",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-4220-2634"
+       ],
+       "orcid": "https://orcid.org/0000-0002-4220-2634"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Zhou, Jingren",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Lin, Junyang",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "last",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team Alibaba Group"
+      ],
+      "raw_author_name": "Lin, Junyang",
+      "raw_orcid": null
+     }
+    ],
+    "awards": [],
+    "best_oa_location": {
+     "doi": null,
+     "id": "pmh:oai:arXiv.org:2409.12186",
+     "is_accepted": false,
+     "is_oa": true,
+     "is_published": false,
+     "landing_page_url": "http://arxiv.org/abs/2409.12186",
+     "license": null,
+     "license_id": null,
+     "pdf_url": "https://arxiv.org/pdf/2409.12186",
+     "raw_source_name": null,
+     "raw_type": "text",
+     "source": {
+      "display_name": "arXiv (Cornell University)",
+      "host_organization": "https://openalex.org/I205783295",
+      "host_organization_lineage": [
+       "https://openalex.org/I205783295"
+      ],
+      "host_organization_lineage_names": [],
+      "host_organization_name": "Cornell University",
+      "id": "https://openalex.org/S4306400194",
+      "is_core": false,
+      "is_in_doaj": false,
+      "is_oa": true,
+      "issn": [
+       "2331-8422"
+      ],
+      "issn_l": "2331-8422",
+      "listed_in": [],
+      "type": "repository"
+     },
+     "version": "submittedVersion"
+    },
+    "biblio": {
+     "first_page": null,
+     "issue": null,
+     "last_page": null,
+     "volume": null
+    },
+    "citation_normalized_percentile": null,
+    "cited_by_count": 65,
+    "cited_by_percentile_year": null,
+    "concepts": [
+     {
+      "display_name": "Computer science",
+      "id": "https://openalex.org/C41008148",
+      "level": 0,
+      "score": 0.5339421629905701,
+      "wikidata": "https://www.wikidata.org/wiki/Q21198"
+     }
+    ],
+    "content_urls": {
+     "grobid_xml": "https://content.openalex.org/works/W4403796339.grobid-xml",
+     "pdf": "https://content.openalex.org/works/W4403796339.pdf"
+    },
+    "corresponding_author_ids": [],
+    "corresponding_institution_ids": [
+     "https://openalex.org/I45928872"
+    ],
+    "countries_distinct_count": 1,
+    "counts_by_year": [
+     {
+      "cited_by_count": 38,
+      "year": 2026
+     },
+     {
+      "cited_by_count": 27,
+      "year": 2025
+     }
+    ],
+    "created_date": "2024-10-27T00:00:00",
+    "display_name": "Qwen2.5-Coder Technical Report",
+    "doi": "https://doi.org/10.48550/arxiv.2409.12186",
+    "funders": [],
+    "fwci": null,
+    "has_content": {
+     "grobid_xml": true,
+     "pdf": true
+    },
+    "has_fulltext": true,
+    "id": "https://openalex.org/W4403796339",
+    "ids": {
+     "doi": "https://doi.org/10.48550/arxiv.2409.12186",
+     "openalex": "https://openalex.org/W4403796339"
+    },
+    "indexed_in": [
+     "arxiv",
+     "datacite"
+    ],
+    "institutions": [],
+    "institutions_distinct_count": 1,
+    "is_paratext": false,
+    "is_retracted": false,
+    "is_xpac": false,
+    "keywords": [
+     {
+      "display_name": "Qwen2.5-Coder",
+      "id": "https://openalex.org/keywords/qwen2-5-coder",
+      "score": 0.9980000257492065
+     },
+     {
+      "display_name": "code generation",
+      "id": "https://openalex.org/keywords/code-generation",
+      "score": 0.9449999928474426
+     },
+     {
+      "display_name": "code completion",
+      "id": "https://openalex.org/keywords/code-completion",
+      "score": 0.9900000095367432
+     },
+     {
+      "display_name": "code reasoning",
+      "id": "https://openalex.org/keywords/code-reasoning",
+      "score": 0.9670000076293945
+     },
+     {
+      "display_name": "code repair",
+      "id": "https://openalex.org/keywords/code-repair",
+      "score": 0.9929999709129333
+     },
+     {
+      "display_name": "synthetic data generation",
+      "id": "https://openalex.org/keywords/synthetic-data-generation",
+      "score": 0.7639999985694885
+     },
+     {
+      "display_name": "code intelligence",
+      "id": "https://openalex.org/keywords/code-intelligence",
+      "score": 0.4950000047683716
+     },
+     {
+      "display_name": "large language models",
+      "id": "https://openalex.org/keywords/large-language-models",
+      "score": 0.6690000295639038
+     },
+     {
+      "display_name": "Qwen2.5",
+      "id": "https://openalex.org/keywords/qwen2-5",
+      "score": 0.7509999871253967
+     }
+    ],
+    "language": "en",
+    "locations": [
+     {
+      "doi": null,
+      "id": "pmh:oai:arXiv.org:2409.12186",
+      "is_accepted": false,
+      "is_oa": true,
+      "is_published": false,
+      "landing_page_url": "http://arxiv.org/abs/2409.12186",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "https://arxiv.org/pdf/2409.12186",
+      "raw_source_name": null,
+      "raw_type": "text",
+      "source": {
+       "display_name": "arXiv (Cornell University)",
+       "host_organization": "https://openalex.org/I205783295",
+       "host_organization_lineage": [
+        "https://openalex.org/I205783295"
+       ],
+       "host_organization_lineage_names": [],
+       "host_organization_name": "Cornell University",
+       "id": "https://openalex.org/S4306400194",
+       "is_core": false,
+       "is_in_doaj": false,
+       "is_oa": true,
+       "issn": [
+        "2331-8422"
+       ],
+       "issn_l": "2331-8422",
+       "listed_in": [],
+       "type": "repository"
+      },
+      "version": "submittedVersion"
+     },
+     {
+      "doi": "https://doi.org/10.48550/arxiv.2409.12186",
+      "id": "doi:10.48550/arxiv.2409.12186",
+      "is_accepted": false,
+      "is_oa": true,
+      "is_published": false,
+      "landing_page_url": "https://doi.org/10.48550/arxiv.2409.12186",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": null,
+      "raw_type": "Preprint",
+      "source": {
+       "display_name": "arXiv (Cornell University)",
+       "host_organization": "https://openalex.org/I205783295",
+       "host_organization_lineage": [
+        "https://openalex.org/I205783295"
+       ],
+       "host_organization_lineage_names": [],
+       "host_organization_name": "Cornell University",
+       "id": "https://openalex.org/S4306400194",
+       "is_core": false,
+       "is_in_doaj": false,
+       "is_oa": true,
+       "issn": [
+        "2331-8422"
+       ],
+       "issn_l": "2331-8422",
+       "listed_in": [],
+       "type": "repository"
+      },
+      "version": null
+     }
+    ],
+    "locations_count": 2,
+    "mesh": [],
+    "open_access": {
+     "any_repository_has_fulltext": true,
+     "is_oa": true,
+     "oa_status": "green",
+     "oa_url": "https://arxiv.org/pdf/2409.12186"
+    },
+    "primary_location": {
+     "doi": null,
+     "id": "pmh:oai:arXiv.org:2409.12186",
+     "is_accepted": false,
+     "is_oa": true,
+     "is_published": false,
+     "landing_page_url": "http://arxiv.org/abs/2409.12186",
+     "license": null,
+     "license_id": null,
+     "pdf_url": "https://arxiv.org/pdf/2409.12186",
+     "raw_source_name": null,
+     "raw_type": "text",
+     "source": {
+      "display_name": "arXiv (Cornell University)",
+      "host_organization": "https://openalex.org/I205783295",
+      "host_organization_lineage": [
+       "https://openalex.org/I205783295"
+      ],
+      "host_organization_lineage_names": [],
+      "host_organization_name": "Cornell University",
+      "id": "https://openalex.org/S4306400194",
+      "is_core": false,
+      "is_in_doaj": false,
+      "is_oa": true,
+      "issn": [
+       "2331-8422"
+      ],
+      "issn_l": "2331-8422",
+      "listed_in": [],
+      "type": "repository"
+     },
+     "version": "submittedVersion"
+    },
+    "primary_topic": {
+     "display_name": "Software Engineering Research",
+     "domain": {
+      "display_name": "Physical Sciences",
+      "id": "https://openalex.org/domains/3"
+     },
+     "field": {
+      "display_name": "Computer Science",
+      "id": "https://openalex.org/fields/17"
+     },
+     "id": "https://openalex.org/T10260",
+     "score": 0.9976000189781189,
+     "subfield": {
+      "display_name": "Information Systems",
+      "id": "https://openalex.org/subfields/1710"
+     }
+    },
+    "publication_date": "2024-09-18",
+    "publication_year": 2024,
+    "referenced_works": [],
+    "referenced_works_count": 0,
+    "related_works": [
+     "https://openalex.org/W7163756584",
+     "https://openalex.org/W4391272793",
+     "https://openalex.org/W7118012046",
+     "https://openalex.org/W4417092530",
+     "https://openalex.org/W4399836663",
+     "https://openalex.org/W4389519352",
+     "https://openalex.org/W4409047658",
+     "https://openalex.org/W4403570469",
+     "https://openalex.org/W4415013320",
+     "https://openalex.org/W7153290859"
+    ],
+    "relevance_score": 129.33554,
+    "study_designs": [],
+    "sustainable_development_goals": [],
+    "sustainable_development_goals_aurora": [],
+    "title": "Qwen2.5-Coder Technical Report",
+    "topics": [
+     {
+      "display_name": "Software Engineering Research",
+      "domain": {
+       "display_name": "Physical Sciences",
+       "id": "https://openalex.org/domains/3"
+      },
+      "field": {
+       "display_name": "Computer Science",
+       "id": "https://openalex.org/fields/17"
+      },
+      "id": "https://openalex.org/T10260",
+      "score": 0.9976000189781189,
+      "subfield": {
+       "display_name": "Information Systems",
+       "id": "https://openalex.org/subfields/1710"
+      }
+     },
+     {
+      "display_name": "Topic Modeling",
+      "domain": {
+       "display_name": "Physical Sciences",
+       "id": "https://openalex.org/domains/3"
+      },
+      "field": {
+       "display_name": "Computer Science",
+       "id": "https://openalex.org/fields/17"
+      },
+      "id": "https://openalex.org/T10028",
+      "score": 0.001500000013038516,
+      "subfield": {
+       "display_name": "Artificial Intelligence",
+       "id": "https://openalex.org/subfields/1702"
+      }
+     },
+     {
+      "display_name": "Teaching and Learning Programming",
+      "domain": {
+       "display_name": "Physical Sciences",
+       "id": "https://openalex.org/domains/3"
+      },
+      "field": {
+       "display_name": "Computer Science",
+       "id": "https://openalex.org/fields/17"
+      },
+      "id": "https://openalex.org/T10533",
+      "score": 9.999999747378752e-05,
+      "subfield": {
+       "display_name": "Computer Science Applications",
+       "id": "https://openalex.org/subfields/1706"
+      }
+     }
+    ],
+    "type": "preprint",
+    "updated_date": "2026-10-31T12:09:11.096373",
+    "volume": null
+   },
+   {
+    "abstract_inverted_index": {
+     "(ViT)": [
+      144
+     ],
+     "(up": [
+      112
+     ],
+     "3.5": [
+      224
+     ],
+     "A": [
+      48
+     ],
+     "AI": [
+      209
+     ],
+     "Additionally,": [
+      233
+     ],
+     "As": [
+      159
+     ],
+     "Attention,": [
+      150
+     ],
+     "By": [
+      137
+     ],
+     "Claude": [
+      223
+     ],
+     "GPT-4o": [
+      221
+     ],
+     "It": [
+      65
+     ],
+     "LLM.": [
+      247
+     ],
+     "Qwen": [
+      8
+     ],
+     "Qwen2.5": [
+      246
+     ],
+     "Qwen2.5-VL": [
+      22,
+      52,
+      90,
+      162,
+      197,
+      234
+     ],
+     "Qwen2.5-VL,": [
+      2
+     ],
+     "Qwen2.5-VL-72B": [
+      215
+     ],
+     "Sonnet,": [
+      225
+     ],
+     "The": [
+      213
+     ],
+     "This": [
+      119
+     ],
+     "To": [
+      86
+     ],
+     "Transformer": [
+      143
+     ],
+     "Vision": [
+      142
+     ],
+     "We": [
+      0
+     ],
+     "Window": [
+      149
+     ],
+     "a": [
+      24,
+      139,
+      160
+     ],
+     "ability": [
+      55
+     ],
+     "absolute": [
+      96
+     ],
+     "accurately.": [
+      64
+     ],
+     "achieves": [
+      23
+     ],
+     "addressing": [
+      203
+     ],
+     "advancements": [
+      14
+     ],
+     "agent": [
+      178
+     ],
+     "allows": [
+      120
+     ],
+     "also": [
+      173
+     ],
+     "an": [
+      175
+     ],
+     "analysis": [
+      80
+     ],
+     "and": [
+      19,
+      30,
+      45,
+      74,
+      84,
+      95,
+      107,
+      128,
+      147,
+      169,
+      184,
+      194,
+      222,
+      230
+     ],
+     "as": [
+      76,
+      78,
+      174,
+      191
+     ],
+     "available": [
+      199
+     ],
+     "both": [
+      16
+     ],
+     "bounding": [
+      60
+     ],
+     "boxes": [
+      61
+     ],
+     "but": [
+      172
+     ],
+     "capabilities": [
+      18
+     ],
+     "capable": [
+      179
+     ],
+     "cases": [
+      206
+     ],
+     "charts,": [
+      82
+     ],
+     "competencies": [
+      243
+     ],
+     "complex": [
+      88
+     ],
+     "comprehension.": [
+      47
+     ],
+     "computational": [
+      153
+     ],
+     "computers": [
+      193
+     ],
+     "computing.": [
+      212
+     ],
+     "core": [
+      241
+     ],
+     "data": [
+      69
+     ],
+     "demonstrates": [
+      12
+     ],
+     "detailed": [
+      79
+     ],
+     "devices.": [
+      196
+     ],
+     "diagram": [
+      231
+     ],
+     "diagrams,": [
+      83
+     ],
+     "diverse": [
+      204
+     ],
+     "document": [
+      43,
+      170,
+      229
+     ],
+     "durations": [
+      111
+     ],
+     "dynamic": [
+      92
+     ],
+     "dynamic-resolution": [
+      141
+     ],
+     "dynamics": [
+      130
+     ],
+     "edge": [
+      208
+     ],
+     "enabling": [
+      99
+     ],
+     "encoding,": [
+      98
+     ],
+     "enhanced": [
+      36
+     ],
+     "event": [
+      117
+     ],
+     "excelling": [
+      227
+     ],
+     "excels": [
+      163
+     ],
+     "execution": [
+      186
+     ],
+     "extended": [
+      110
+     ],
+     "extraction": [
+      70
+     ],
+     "feature": [
+      50
+     ],
+     "flagship": [
+      5,
+      214
+     ],
+     "forms,": [
+      73
+     ],
+     "forward": [
+      27
+     ],
+     "foundational": [
+      17
+     ],
+     "from": [
+      71,
+      145,
+      207
+     ],
+     "functionalities.": [
+      21
+     ],
+     "handle": [
+      87
+     ],
+     "high-performance": [
+      211
+     ],
+     "hours)": [
+      114
+     ],
+     "image": [
+      168
+     ],
+     "images": [
+      103
+     ],
+     "in": [
+      15,
+      28,
+      166,
+      187,
+      200,
+      228
+     ],
+     "incorporating": [
+      148
+     ],
+     "innovative": [
+      20
+     ],
+     "inputs,": [
+      89
+     ],
+     "interacting": [
+      31
+     ],
+     "interactive": [
+      176
+     ],
+     "introduce": [
+      1
+     ],
+     "introduces": [
+      91
+     ],
+     "invoices,": [
+      72
+     ],
+     "is": [
+      53,
+      198
+     ],
+     "it": [
+      100
+     ],
+     "its": [
+      54
+     ],
+     "language": [
+      242
+     ],
+     "latest": [
+      4
+     ],
+     "layouts.": [
+      85
+     ],
+     "leap": [
+      26
+     ],
+     "like": [
+      220
+     ],
+     "linguistic": [
+      237
+     ],
+     "localization,": [
+      41
+     ],
+     "localization.": [
+      118
+     ],
+     "localize": [
+      57
+     ],
+     "long-video": [
+      46
+     ],
+     "maintaining": [
+      156
+     ],
+     "maintains": [
+      235
+     ],
+     "major": [
+      25
+     ],
+     "matches": [
+      217
+     ],
+     "mobile": [
+      195
+     ],
+     "model": [
+      6,
+      122,
+      216
+     ],
+     "models": [
+      219
+     ],
+     "native": [
+      140,
+      157
+     ],
+     "natively": [
+      124
+     ],
+     "normalization": [
+      135
+     ],
+     "not": [
+      164
+     ],
+     "object": [
+      40
+     ],
+     "objects": [
+      58
+     ],
+     "of": [
+      7,
+      51,
+      81,
+      104,
+      109,
+      180,
+      244
+     ],
+     "on": [
+      133
+     ],
+     "only": [
+      165
+     ],
+     "operating": [
+      192
+     ],
+     "or": [
+      62
+     ],
+     "overhead": [
+      154
+     ],
+     "parsing,": [
+      44
+     ],
+     "particularly": [
+      226
+     ],
+     "perceive": [
+      125
+     ],
+     "performance,": [
+      238
+     ],
+     "points": [
+      63
+     ],
+     "precise": [
+      39
+     ],
+     "preserving": [
+      239
+     ],
+     "process": [
+      102
+     ],
+     "processing": [
+      94
+     ],
+     "provides": [
+      66
+     ],
+     "real-world": [
+      188
+     ],
+     "reasoning,": [
+      181
+     ],
+     "recognition,": [
+      38
+     ],
+     "reduce": [
+      152
+     ],
+     "relying": [
+      132
+     ],
+     "resolution": [
+      93
+     ],
+     "resolution.": [
+      158
+     ],
+     "result,": [
+      161
+     ],
+     "robust": [
+      42,
+      67,
+      236
+     ],
+     "scales": [
+      127
+     ],
+     "scenarios": [
+      189
+     ],
+     "scratch": [
+      146
+     ],
+     "second-level": [
+      116
+     ],
+     "series,": [
+      10
+     ],
+     "significant": [
+      13
+     ],
+     "sizes": [
+      106
+     ],
+     "sizes,": [
+      202
+     ],
+     "spatial": [
+      126
+     ],
+     "standout": [
+      49
+     ],
+     "state-of-the-art": [
+      218
+     ],
+     "static": [
+      167
+     ],
+     "structured": [
+      68
+     ],
+     "such": [
+      190
+     ],
+     "tables,": [
+      75
+     ],
+     "task": [
+      185
+     ],
+     "techniques.": [
+      136
+     ],
+     "temporal": [
+      129
+     ],
+     "the": [
+      3,
+      33,
+      121,
+      240,
+      245
+     ],
+     "three": [
+      201
+     ],
+     "through": [
+      35
+     ],
+     "time": [
+      97
+     ],
+     "to": [
+      56,
+      101,
+      113,
+      123,
+      210
+     ],
+     "tool": [
+      182
+     ],
+     "traditional": [
+      134
+     ],
+     "training": [
+      138
+     ],
+     "understanding": [
+      29,
+      171
+     ],
+     "understanding.": [
+      232
+     ],
+     "usage,": [
+      183
+     ],
+     "use": [
+      205
+     ],
+     "using": [
+      59
+     ],
+     "varying": [
+      105
+     ],
+     "videos": [
+      108
+     ],
+     "vision-language": [
+      9
+     ],
+     "visual": [
+      37,
+      177
+     ],
+     "we": [
+      151
+     ],
+     "well": [
+      77
+     ],
+     "which": [
+      11
+     ],
+     "while": [
+      155
+     ],
+     "with": [
+      32,
+      115
+     ],
+     "without": [
+      131
+     ],
+     "world": [
+      34
+     ]
+    },
+    "apc_list": null,
+    "apc_paid": null,
+    "authorships": [
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Bai, Shuai",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "first",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Bai, Shuai",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Keqin Chen",
+       "id": "https://openalex.org/A5030987813",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-9091-8258"
+       ],
+       "orcid": "https://orcid.org/0000-0002-9091-8258"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Chen, Keqin",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Xuejing Liu",
+       "id": "https://openalex.org/A5101944063",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-5082-2315"
+       ],
+       "orcid": "https://orcid.org/0000-0002-5082-2315"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Liu, Xuejing",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Jialin Wang",
+       "id": "https://openalex.org/A5101557898",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-3147-8619"
+       ],
+       "orcid": "https://orcid.org/0000-0002-3147-8619"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Wang, Jialin",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Wenbin Ge",
+       "id": "https://openalex.org/A5013425805",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Ge, Wenbin",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Sibo Song",
+       "id": "https://openalex.org/A5102334026",
+       "observed_orcids": [
+        "https://orcid.org/0009-0000-0516-167X"
+       ],
+       "orcid": "https://orcid.org/0009-0000-0516-167X"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Song, Sibo",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Kai Dang",
+       "id": "https://openalex.org/A5014400759",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Dang, Kai",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Wang, Peng",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Wang, Peng",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Shijie Wang",
+       "id": "https://openalex.org/A5100374844",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-2175-4309"
+       ],
+       "orcid": "https://orcid.org/0000-0002-2175-4309"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Wang, Shijie",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Jun Tang",
+       "id": "https://openalex.org/A5103106936",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-4748-3527"
+       ],
+       "orcid": "https://orcid.org/0000-0002-4748-3527"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Tang, Jun",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Zhong, Humen",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Zhong, Humen",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Yuanzhi Zhu",
+       "id": "https://openalex.org/A5100750949",
+       "observed_orcids": [
+        "https://orcid.org/0000-0003-0900-1379"
+       ],
+       "orcid": "https://orcid.org/0000-0003-0900-1379"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Zhu, Yuanzhi",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Mingkun Yang",
+       "id": "https://openalex.org/A5062346032",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-9210-4098",
+        "https://orcid.org/0009-0007-0086-1715"
+       ],
+       "orcid": "https://orcid.org/0000-0002-9210-4098"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Yang, Mingkun",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Zhaohai Li",
+       "id": "https://openalex.org/A5112985512",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Li, Zhaohai",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Jianqiang Wan",
+       "id": "https://openalex.org/A5111582686",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Wan, Jianqiang",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Pengfei Wang",
+       "id": "https://openalex.org/A5100399575",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-9081-3683",
+        "https://orcid.org/0009-0004-6886-1090"
+       ],
+       "orcid": "https://orcid.org/0000-0002-9081-3683"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Wang, Pengfei",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Ding, Wei",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Ding, Wei",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Fu, Zheren",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Fu, Zheren",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Xu, Yiheng",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Xu, Yiheng",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Jiabo Ye",
+       "id": "https://openalex.org/A5091465907",
+       "observed_orcids": [
+        "https://orcid.org/0009-0009-5451-8984"
+       ],
+       "orcid": "https://orcid.org/0009-0009-5451-8984"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Ye, Jiabo",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "X.-C. Zhang",
+       "id": "https://openalex.org/A5087184425",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-7187-1829"
+       ],
+       "orcid": "https://orcid.org/0000-0002-7187-1829"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Zhang, Xi",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Xie, Tianbao",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Xie, Tianbao",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Cheng, Zesen",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Cheng, Zesen",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Zhang Hang",
+       "id": "https://openalex.org/A5062819361",
+       "observed_orcids": [
+        "https://orcid.org/0000-0001-9236-372X"
+       ],
+       "orcid": "https://orcid.org/0000-0001-9236-372X"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Zhang, Hang",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Zhibo Yang",
+       "id": "https://openalex.org/A5052757063",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-4637-7175"
+       ],
+       "orcid": "https://orcid.org/0000-0002-4637-7175"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Yang, Zhibo",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Xu, Haiyang",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Xu, Haiyang",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Lin, Junyang",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "last",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Lin, Junyang",
+      "raw_orcid": null
+     }
+    ],
+    "awards": [],
+    "best_oa_location": {
+     "doi": null,
+     "id": "pmh:oai:arXiv.org:2502.13923",
+     "is_accepted": false,
+     "is_oa": true,
+     "is_published": false,
+     "landing_page_url": "http://arxiv.org/abs/2502.13923",
+     "license": null,
+     "license_id": null,
+     "pdf_url": "https://arxiv.org/pdf/2502.13923",
+     "raw_source_name": null,
+     "raw_type": "text",
+     "source": {
+      "display_name": "arXiv (Cornell University)",
+      "host_organization": "https://openalex.org/I205783295",
+      "host_organization_lineage": [
+       "https://openalex.org/I205783295"
+      ],
+      "host_organization_lineage_names": [],
+      "host_organization_name": "Cornell University",
+      "id": "https://openalex.org/S4306400194",
+      "is_core": false,
+      "is_in_doaj": false,
+      "is_oa": true,
+      "issn": [
+       "2331-8422"
+      ],
+      "issn_l": "2331-8422",
+      "listed_in": [],
+      "type": "repository"
+     },
+     "version": "submittedVersion"
+    },
+    "biblio": {
+     "first_page": null,
+     "issue": null,
+     "last_page": null,
+     "volume": null
+    },
+    "citation_normalized_percentile": null,
+    "cited_by_count": 93,
+    "cited_by_percentile_year": null,
+    "concepts": [
+     {
+      "display_name": "Business",
+      "id": "https://openalex.org/C144133560",
+      "level": 0,
+      "score": 0.38680779933929443,
+      "wikidata": "https://www.wikidata.org/wiki/Q4830453"
+     }
+    ],
+    "content_urls": null,
+    "corresponding_author_ids": [],
+    "corresponding_institution_ids": [],
+    "countries_distinct_count": 0,
+    "counts_by_year": [
+     {
+      "cited_by_count": 58,
+      "year": 2026
+     },
+     {
+      "cited_by_count": 35,
+      "year": 2025
+     }
+    ],
+    "created_date": "2025-02-21T00:00:00",
+    "display_name": "Qwen2.5-VL Technical Report",
+    "doi": "https://doi.org/10.48550/arxiv.2502.13923",
+    "funders": [],
+    "fwci": null,
+    "has_content": {
+     "grobid_xml": false,
+     "pdf": false
+    },
+    "has_fulltext": false,
+    "id": "https://openalex.org/W4407794264",
+    "ids": {
+     "doi": "https://doi.org/10.48550/arxiv.2502.13923",
+     "openalex": "https://openalex.org/W4407794264"
+    },
+    "indexed_in": [
+     "arxiv",
+     "datacite"
+    ],
+    "institutions": [],
+    "institutions_distinct_count": 0,
+    "is_paratext": false,
+    "is_retracted": false,
+    "is_xpac": false,
+    "keywords": [
+     {
+      "display_name": "Qwen2.5-VL",
+      "id": "https://openalex.org/keywords/qwen2-5-vl",
+      "score": 0.9629999995231628
+     },
+     {
+      "display_name": "vision-language models",
+      "id": "https://openalex.org/keywords/vision-language-models",
+      "score": 0.902999997138977
+     },
+     {
+      "display_name": "object localization",
+      "id": "https://openalex.org/keywords/object-localization",
+      "score": 0.781000018119812
+     },
+     {
+      "display_name": "document parsing",
+      "id": "https://openalex.org/keywords/document-parsing",
+      "score": 0.8149999976158142
+     },
+     {
+      "display_name": "window attention",
+      "id": "https://openalex.org/keywords/window-attention",
+      "score": 0.9089999794960022
+     },
+     {
+      "display_name": "structured data extraction",
+      "id": "https://openalex.org/keywords/structured-information-extraction",
+      "score": 0.703000009059906
+     },
+     {
+      "display_name": "tool use",
+      "id": "https://openalex.org/keywords/tool-use",
+      "score": 0.5529999732971191
+     },
+     {
+      "display_name": "bounding box localization",
+      "id": "https://openalex.org/keywords/bounding-box-localization",
+      "score": 0.4869999885559082
+     }
+    ],
+    "language": "en",
+    "locations": [
+     {
+      "doi": null,
+      "id": "pmh:oai:arXiv.org:2502.13923",
+      "is_accepted": false,
+      "is_oa": true,
+      "is_published": false,
+      "landing_page_url": "http://arxiv.org/abs/2502.13923",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "https://arxiv.org/pdf/2502.13923",
+      "raw_source_name": null,
+      "raw_type": "text",
+      "source": {
+       "display_name": "arXiv (Cornell University)",
+       "host_organization": "https://openalex.org/I205783295",
+       "host_organization_lineage": [
+        "https://openalex.org/I205783295"
+       ],
+       "host_organization_lineage_names": [],
+       "host_organization_name": "Cornell University",
+       "id": "https://openalex.org/S4306400194",
+       "is_core": false,
+       "is_in_doaj": false,
+       "is_oa": true,
+       "issn": [
+        "2331-8422"
+       ],
+       "issn_l": "2331-8422",
+       "listed_in": [],
+       "type": "repository"
+      },
+      "version": "submittedVersion"
+     },
+     {
+      "doi": "https://doi.org/10.48550/arxiv.2502.13923",
+      "id": "doi:10.48550/arxiv.2502.13923",
+      "is_accepted": false,
+      "is_oa": true,
+      "is_published": false,
+      "landing_page_url": "https://doi.org/10.48550/arxiv.2502.13923",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": null,
+      "raw_type": "Preprint",
+      "source": {
+       "display_name": "arXiv (Cornell University)",
+       "host_organization": "https://openalex.org/I205783295",
+       "host_organization_lineage": [
+        "https://openalex.org/I205783295"
+       ],
+       "host_organization_lineage_names": [],
+       "host_organization_name": "Cornell University",
+       "id": "https://openalex.org/S4306400194",
+       "is_core": false,
+       "is_in_doaj": false,
+       "is_oa": true,
+       "issn": [
+        "2331-8422"
+       ],
+       "issn_l": "2331-8422",
+       "listed_in": [],
+       "type": "repository"
+      },
+      "version": null
+     }
+    ],
+    "locations_count": 2,
+    "mesh": [],
+    "open_access": {
+     "any_repository_has_fulltext": true,
+     "is_oa": true,
+     "oa_status": "green",
+     "oa_url": "https://arxiv.org/pdf/2502.13923"
+    },
+    "primary_location": {
+     "doi": null,
+     "id": "pmh:oai:arXiv.org:2502.13923",
+     "is_accepted": false,
+     "is_oa": true,
+     "is_published": false,
+     "landing_page_url": "http://arxiv.org/abs/2502.13923",
+     "license": null,
+     "license_id": null,
+     "pdf_url": "https://arxiv.org/pdf/2502.13923",
+     "raw_source_name": null,
+     "raw_type": "text",
+     "source": {
+      "display_name": "arXiv (Cornell University)",
+      "host_organization": "https://openalex.org/I205783295",
+      "host_organization_lineage": [
+       "https://openalex.org/I205783295"
+      ],
+      "host_organization_lineage_names": [],
+      "host_organization_name": "Cornell University",
+      "id": "https://openalex.org/S4306400194",
+      "is_core": false,
+      "is_in_doaj": false,
+      "is_oa": true,
+      "issn": [
+       "2331-8422"
+      ],
+      "issn_l": "2331-8422",
+      "listed_in": [],
+      "type": "repository"
+     },
+     "version": "submittedVersion"
+    },
+    "primary_topic": {
+     "display_name": "Multimodal Machine Learning Applications",
+     "domain": {
+      "display_name": "Physical Sciences",
+      "id": "https://openalex.org/domains/3"
+     },
+     "field": {
+      "display_name": "Computer Science",
+      "id": "https://openalex.org/fields/17"
+     },
+     "id": "https://openalex.org/T11714",
+     "score": 0.9994999766349792,
+     "subfield": {
+      "display_name": "Computer Vision and Pattern Recognition",
+      "id": "https://openalex.org/subfields/1707"
+     }
+    },
+    "publication_date": "2025-02-19",
+    "publication_year": 2025,
+    "referenced_works": [],
+    "referenced_works_count": 0,
+    "related_works": [
+     "https://openalex.org/W4403853618",
+     "https://openalex.org/W4386185600",
+     "https://openalex.org/W4416780398",
+     "https://openalex.org/W4416331536",
+     "https://openalex.org/W7152513768",
+     "https://openalex.org/W4413259061",
+     "https://openalex.org/W7202259987",
+     "https://openalex.org/W7083843687",
+     "https://openalex.org/W4405434026",
+     "https://openalex.org/W7155057048"
+    ],
+    "relevance_score": 125.32375,
+    "study_designs": [],
+    "sustainable_development_goals": [],
+    "sustainable_development_goals_aurora": [],
+    "title": "Qwen2.5-VL Technical Report",
+    "topics": [
+     {
+      "display_name": "Multimodal Machine Learning Applications",
+      "domain": {
+       "display_name": "Physical Sciences",
+       "id": "https://openalex.org/domains/3"
+      },
+      "field": {
+       "display_name": "Computer Science",
+       "id": "https://openalex.org/fields/17"
+      },
+      "id": "https://openalex.org/T11714",
+      "score": 0.9994999766349792,
+      "subfield": {
+       "display_name": "Computer Vision and Pattern Recognition",
+       "id": "https://openalex.org/subfields/1707"
+      }
+     },
+     {
+      "display_name": "Advanced Neural Network Applications",
+      "domain": {
+       "display_name": "Physical Sciences",
+       "id": "https://openalex.org/domains/3"
+      },
+      "field": {
+       "display_name": "Computer Science",
+       "id": "https://openalex.org/fields/17"
+      },
+      "id": "https://openalex.org/T10036",
+      "score": 0.00019999999494757503,
+      "subfield": {
+       "display_name": "Computer Vision and Pattern Recognition",
+       "id": "https://openalex.org/subfields/1707"
+      }
+     },
+     {
+      "display_name": "Handwritten Text Recognition Techniques",
+      "domain": {
+       "display_name": "Physical Sciences",
+       "id": "https://openalex.org/domains/3"
+      },
+      "field": {
+       "display_name": "Computer Science",
+       "id": "https://openalex.org/fields/17"
+      },
+      "id": "https://openalex.org/T10601",
+      "score": 0.0,
+      "subfield": {
+       "display_name": "Computer Vision and Pattern Recognition",
+       "id": "https://openalex.org/subfields/1707"
+      }
+     }
+    ],
+    "type": "preprint",
+    "updated_date": "2026-11-01T11:40:01.658920",
+    "volume": null
+   },
+   {
+    "abstract_inverted_index": {
+     "1": [
+      13,
+      171
+     ],
+     "128K": [
+      20
+     ],
+     "3x": [
+      163
+     ],
+     "7x": [
+      165
+     ],
+     "API-accessed": [
+      209
+     ],
+     "Additionally,": [
+      129
+     ],
+     "By": [
+      152
+     ],
+     "Compared": [
+      16
+     ],
+     "Evaluations": [
+      212
+     ],
+     "GPT-4o-mini": [
+      236
+     ],
+     "Key": [
+      35
+     ],
+     "Qwen2.5-14B-Instruct-1M": [
+      232
+     ],
+     "Qwen2.5-14B-Instruct-1M,": [
+      204
+     ],
+     "Qwen2.5-1M": [
+      23,
+      158,
+      195,
+      215
+     ],
+     "Qwen2.5-1M,": [
+      2
+     ],
+     "Qwen2.5-7B-Instruct-1M": [
+      202
+     ],
+     "Qwen2.5-Turbo.": [
+      211
+     ],
+     "Specifically,": [
+      230
+     ],
+     "The": [
+      194
+     ],
+     "This": [
+      78,
+      176
+     ],
+     "To": [
+      59,
+      103
+     ],
+     "We": [
+      0
+     ],
+     "a": [
+      3,
+      67,
+      81,
+      109,
+      122,
+      161
+     ],
+     "achieve": [
+      160
+     ],
+     "additional": [
+      101
+     ],
+     "along": [
+      113
+     ],
+     "among": [
+      66
+     ],
+     "an": [
+      179
+     ],
+     "and": [
+      33,
+      44,
+      73,
+      121,
+      143,
+      181,
+      203,
+      240
+     ],
+     "applications": [
+      186
+     ],
+     "are": [
+      48
+     ],
+     "as": [
+      38,
+      205,
+      207
+     ],
+     "at": [
+      93
+     ],
+     "attention": [
+      111
+     ],
+     "base,": [
+      70
+     ],
+     "been": [
+      218
+     ],
+     "broader": [
+      68
+     ],
+     "by": [
+      92
+     ],
+     "can": [
+      86
+     ],
+     "capabilities": [
+      29
+     ],
+     "chunked": [
+      115
+     ],
+     "compromising": [
+      225
+     ],
+     "context": [
+      10,
+      90
+     ],
+     "context.": [
+      175
+     ],
+     "contexts": [
+      242
+     ],
+     "costs,": [
+      106
+     ],
+     "costs.": [
+      58
+     ],
+     "currently": [
+      197
+     ],
+     "data": [
+      40
+     ],
+     "deployment": [
+      119
+     ],
+     "detail": [
+      131
+     ],
+     "developing": [
+      185
+     ],
+     "effectively": [
+      51
+     ],
+     "efficient": [
+      180
+     ],
+     "eight": [
+      243
+     ],
+     "employed": [
+      49
+     ],
+     "engine,": [
+      137
+     ],
+     "enhance": [
+      52,
+      148
+     ],
+     "enhanced": [
+      27
+     ],
+     "even": [
+      98
+     ],
+     "expand": [
+      87
+     ],
+     "extend": [
+      8
+     ],
+     "extrapolation": [
+      83
+     ],
+     "fine-tuning": [
+      47
+     ],
+     "for": [
+      118,
+      184
+     ],
+     "four": [
+      95
+     ],
+     "framework": [
+      79,
+      177
+     ],
+     "framework,": [
+      156
+     ],
+     "framework.": [
+      77
+     ],
+     "greatly": [
+      219
+     ],
+     "have": [
+      25,
+      217
+     ],
+     "implement": [
+      108
+     ],
+     "improve": [
+      127
+     ],
+     "improved": [
+      220
+     ],
+     "in": [
+      134,
+      168,
+      221,
+      227,
+      237
+     ],
+     "includes": [
+      80,
+      198
+     ],
+     "including": [
+      138
+     ],
+     "inference": [
+      76,
+      105,
+      136,
+      150,
+      155
+     ],
+     "introduce": [
+      1
+     ],
+     "kernel": [
+      139
+     ],
+     "least": [
+      94
+     ],
+     "length": [
+      11,
+      82
+     ],
+     "lengths": [
+      91
+     ],
+     "leveraging": [
+      153
+     ],
+     "long": [
+      39
+     ],
+     "long-context": [
+      28,
+      31,
+      53,
+      64,
+      189,
+      222,
+      238
+     ],
+     "longer.": [
+      245
+     ],
+     "method": [
+      84,
+      112,
+      125
+     ],
+     "million": [
+      14,
+      172
+     ],
+     "model": [
+      89,
+      210,
+      233
+     ],
+     "models": [
+      6,
+      65,
+      159,
+      201,
+      216
+     ],
+     "models.": [
+      193
+     ],
+     "more,": [
+      99
+     ],
+     "multi-stage": [
+      45
+     ],
+     "of": [
+      5,
+      63,
+      174
+     ],
+     "open-source": [
+      74,
+      192,
+      200
+     ],
+     "optimization": [
+      117
+     ],
+     "optimization,": [
+      140,
+      145
+     ],
+     "optimizations": [
+      133
+     ],
+     "or": [
+      97
+     ],
+     "our": [
+      75,
+      132,
+      154
+     ],
+     "outperforms": [
+      235
+     ],
+     "overall": [
+      149
+     ],
+     "parallelism,": [
+      142
+     ],
+     "performance": [
+      54,
+      226
+     ],
+     "performance.": [
+      151
+     ],
+     "pipeline": [
+      141
+     ],
+     "post-training.": [
+      34
+     ],
+     "powerful": [
+      182
+     ],
+     "pre-training": [
+      32
+     ],
+     "pre-training,": [
+      43
+     ],
+     "precision.": [
+      128
+     ],
+     "prefill": [
+      116,
+      166
+     ],
+     "present": [
+      72
+     ],
+     "previous": [
+      19
+     ],
+     "processing": [
+      190
+     ],
+     "progressive": [
+      42
+     ],
+     "promote": [
+      60
+     ],
+     "provides": [
+      178
+     ],
+     "reduce": [
+      104
+     ],
+     "reducing": [
+      56
+     ],
+     "refinement": [
+      124
+     ],
+     "remarkable": [
+      162
+     ],
+     "require": [
+      188
+     ],
+     "scenarios": [
+      120,
+      169
+     ],
+     "scenarios.": [
+      229
+     ],
+     "scheduling": [
+      144
+     ],
+     "series": [
+      4,
+      24,
+      196
+     ],
+     "short-context": [
+      228
+     ],
+     "show": [
+      213
+     ],
+     "significantly": [
+      26,
+      147,
+      234
+     ],
+     "solution": [
+      183
+     ],
+     "sparse": [
+      110
+     ],
+     "sparsity": [
+      123
+     ],
+     "speedup": [
+      167
+     ],
+     "such": [
+      37
+     ],
+     "supervised": [
+      46
+     ],
+     "supports": [
+      241
+     ],
+     "synthesis,": [
+      41
+     ],
+     "tasks": [
+      223,
+      239
+     ],
+     "techniques": [
+      36
+     ],
+     "that": [
+      7,
+      85,
+      187,
+      214
+     ],
+     "the": [
+      9,
+      18,
+      22,
+      61,
+      88,
+      135,
+      157,
+      199,
+      208,
+      231
+     ],
+     "through": [
+      30
+     ],
+     "times": [
+      244
+     ],
+     "times,": [
+      96
+     ],
+     "to": [
+      12,
+      17,
+      50,
+      126,
+      164
+     ],
+     "tokens": [
+      173
+     ],
+     "tokens.": [
+      15
+     ],
+     "training": [
+      57
+     ],
+     "training.": [
+      102
+     ],
+     "use": [
+      62
+     ],
+     "user": [
+      69
+     ],
+     "using": [
+      191
+     ],
+     "version,": [
+      21
+     ],
+     "we": [
+      71,
+      107,
+      130
+     ],
+     "well": [
+      206
+     ],
+     "which": [
+      146
+     ],
+     "while": [
+      55
+     ],
+     "with": [
+      114,
+      170
+     ],
+     "without": [
+      100,
+      224
+     ]
+    },
+    "apc_list": null,
+    "apc_paid": null,
+    "authorships": [
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Yang An",
+       "id": "https://openalex.org/A5100459632",
+       "observed_orcids": [
+        "https://orcid.org/0000-0003-1527-033X"
+       ],
+       "orcid": "https://orcid.org/0000-0003-1527-033X"
+      },
+      "author_position": "first",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Yang, An",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "B. X. Yu",
+       "id": "https://openalex.org/A5109790389",
+       "observed_orcids": [
+        "https://orcid.org/0009-0004-6964-9083"
+       ],
+       "orcid": "https://orcid.org/0009-0004-6964-9083"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Yu, Bowen",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Chengyuan Li",
+       "id": "https://openalex.org/A5101417093",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-4422-6584",
+        "https://orcid.org/0009-0002-1148-9289",
+        "https://orcid.org/0009-0006-7551-4868"
+       ],
+       "orcid": "https://orcid.org/0000-0002-4422-6584"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Li, Chengyuan",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Dayiheng Liu",
+       "id": "https://openalex.org/A5062188134",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-8755-8941"
+       ],
+       "orcid": "https://orcid.org/0000-0002-8755-8941"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Liu, Dayiheng",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Fei Huang",
+       "id": "https://openalex.org/A5101488344",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-3709-5053",
+        "https://orcid.org/0000-0002-2795-3114",
+        "https://orcid.org/0009-0005-7670-5255"
+       ],
+       "orcid": "https://orcid.org/0000-0002-3709-5053"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Huang, Fei",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Haoyan Huang",
+       "id": "https://openalex.org/A5101869974",
+       "observed_orcids": [
+        "https://orcid.org/0000-0001-7753-7242"
+       ],
+       "orcid": "https://orcid.org/0000-0001-7753-7242"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Huang, Haoyan",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Jian\u2010Dong Jiang",
+       "id": "https://openalex.org/A5040166779",
+       "observed_orcids": [
+        "https://orcid.org/0000-0003-1173-685X"
+       ],
+       "orcid": "https://orcid.org/0000-0003-1173-685X"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Jiang, Jiandong",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Jianhong Tu",
+       "id": "https://openalex.org/A5082583725",
+       "observed_orcids": [
+        "https://orcid.org/0009-0001-1554-1614"
+       ],
+       "orcid": "https://orcid.org/0009-0001-1554-1614"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Tu, Jianhong",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Jianwei Zhang",
+       "id": "https://openalex.org/A5100326965",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-3219-0801"
+       ],
+       "orcid": "https://orcid.org/0000-0002-3219-0801"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Zhang, Jianwei",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Zhou, Jingren",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Zhou, Jingren",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Junyang Lin",
+       "id": "https://openalex.org/A5100612233",
+       "observed_orcids": [
+        "https://orcid.org/0000-0001-9863-1887",
+        "https://orcid.org/0000-0001-9931-383X"
+       ],
+       "orcid": "https://orcid.org/0000-0001-9863-1887"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Lin, Junyang",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Kai Dang",
+       "id": "https://openalex.org/A5014400759",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Dang, Kai",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Kexin Yang",
+       "id": "https://openalex.org/A5031587199",
+       "observed_orcids": [
+        "https://orcid.org/0000-0003-2333-2406",
+        "https://orcid.org/0009-0003-5777-2036"
+       ],
+       "orcid": "https://orcid.org/0000-0003-2333-2406"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Yang, Kexin",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Le Yu",
+       "id": "https://openalex.org/A5102663692",
+       "observed_orcids": [
+        "https://orcid.org/0009-0008-7613-946X"
+       ],
+       "orcid": "https://orcid.org/0009-0008-7613-946X"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Yu, Le",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Li, Mei",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Li, Mei",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Minmin Sun",
+       "id": "https://openalex.org/A5101927978",
+       "observed_orcids": [
+        "https://orcid.org/0000-0003-1923-5208"
+       ],
+       "orcid": "https://orcid.org/0000-0003-1923-5208"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Sun, Minmin",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Qin Zhu",
+       "id": "https://openalex.org/A5100519680",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Zhu, Qin",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Rui Men",
+       "id": "https://openalex.org/A5004626105",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-4429-3461"
+       ],
+       "orcid": "https://orcid.org/0000-0002-4429-3461"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Men, Rui",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "He, Tao",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "He, Tao",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Weijia Xu",
+       "id": "https://openalex.org/A5101883722",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-5134-6381"
+       ],
+       "orcid": "https://orcid.org/0000-0002-5134-6381"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Xu, Weijia",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Wenbiao Yin",
+       "id": "https://openalex.org/A5004964825",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Yin, Wenbiao",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Wenyuan Yu",
+       "id": "https://openalex.org/A5003234054",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-6204-8136"
+       ],
+       "orcid": "https://orcid.org/0000-0002-6204-8136"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Yu, Wenyuan",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Xiafei Qiu",
+       "id": "https://openalex.org/A5060222465",
+       "observed_orcids": [
+        "https://orcid.org/0009-0008-8803-928X"
+       ],
+       "orcid": "https://orcid.org/0009-0008-8803-928X"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Qiu, Xiafei",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Xingzhang Ren",
+       "id": "https://openalex.org/A5054086732",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Ren, Xingzhang",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Xinlong Yang",
+       "id": "https://openalex.org/A5109640507",
+       "observed_orcids": [
+        "https://orcid.org/0009-0004-8056-2042"
+       ],
+       "orcid": "https://orcid.org/0009-0004-8056-2042"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Yang, Xinlong",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Yongping Li",
+       "id": "https://openalex.org/A5100720497",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-3253-4088",
+        "https://orcid.org/0000-0001-5617-1659"
+       ],
+       "orcid": "https://orcid.org/0000-0002-3253-4088"
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Li, Yong",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Xu, Zhiying",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Xu, Zhiying",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [
+       {
+        "institution_ids": [
+         "https://openalex.org/I45928872"
+        ],
+        "raw_affiliation_string": "Qwen Team , Alibaba Group"
+       }
+      ],
+      "author": {
+       "display_name": "Zipeng Zhang",
+       "id": "https://openalex.org/A5100722636",
+       "observed_orcids": [
+        "https://orcid.org/0000-0003-4529-8704",
+        "https://orcid.org/0009-0000-2286-8159"
+       ],
+       "orcid": "https://orcid.org/0000-0003-4529-8704"
+      },
+      "author_position": "last",
+      "countries": [
+       "CN"
+      ],
+      "institutions": [
+       {
+        "country_code": "CN",
+        "display_name": "Alibaba Group (China)",
+        "id": "https://openalex.org/I45928872",
+        "lineage": [
+         "https://openalex.org/I45928872"
+        ],
+        "ror": "https://ror.org/00k642b80",
+        "type": "company"
+       }
+      ],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [
+       "Qwen Team , Alibaba Group"
+      ],
+      "raw_author_name": "Zhang, Zipeng",
+      "raw_orcid": null
+     }
+    ],
+    "awards": [],
+    "best_oa_location": {
+     "doi": null,
+     "id": "pmh:oai:arXiv.org:2501.15383",
+     "is_accepted": false,
+     "is_oa": true,
+     "is_published": false,
+     "landing_page_url": "http://arxiv.org/abs/2501.15383",
+     "license": null,
+     "license_id": null,
+     "pdf_url": "https://arxiv.org/pdf/2501.15383",
+     "raw_source_name": null,
+     "raw_type": "text",
+     "source": {
+      "display_name": "arXiv (Cornell University)",
+      "host_organization": "https://openalex.org/I205783295",
+      "host_organization_lineage": [
+       "https://openalex.org/I205783295"
+      ],
+      "host_organization_lineage_names": [],
+      "host_organization_name": "Cornell University",
+      "id": "https://openalex.org/S4306400194",
+      "is_core": false,
+      "is_in_doaj": false,
+      "is_oa": true,
+      "issn": [
+       "2331-8422"
+      ],
+      "issn_l": "2331-8422",
+      "listed_in": [],
+      "type": "repository"
+     },
+     "version": "submittedVersion"
+    },
+    "biblio": {
+     "first_page": null,
+     "issue": null,
+     "last_page": null,
+     "volume": null
+    },
+    "citation_normalized_percentile": null,
+    "cited_by_count": 12,
+    "cited_by_percentile_year": null,
+    "concepts": [
+     {
+      "display_name": "Computer science",
+      "id": "https://openalex.org/C41008148",
+      "level": 0,
+      "score": 0.33645880222320557,
+      "wikidata": "https://www.wikidata.org/wiki/Q21198"
+     }
+    ],
+    "content_urls": {
+     "grobid_xml": "https://content.openalex.org/works/W4406880389.grobid-xml",
+     "pdf": "https://content.openalex.org/works/W4406880389.pdf"
+    },
+    "corresponding_author_ids": [],
+    "corresponding_institution_ids": [
+     "https://openalex.org/I45928872"
+    ],
+    "countries_distinct_count": 1,
+    "counts_by_year": [
+     {
+      "cited_by_count": 5,
+      "year": 2026
+     },
+     {
+      "cited_by_count": 7,
+      "year": 2025
+     }
+    ],
+    "created_date": "2025-01-29T00:00:00",
+    "display_name": "Qwen2.5-1M Technical Report",
+    "doi": "https://doi.org/10.48550/arxiv.2501.15383",
+    "funders": [],
+    "fwci": null,
+    "has_content": {
+     "grobid_xml": true,
+     "pdf": true
+    },
+    "has_fulltext": true,
+    "id": "https://openalex.org/W4406880389",
+    "ids": {
+     "doi": "https://doi.org/10.48550/arxiv.2501.15383",
+     "openalex": "https://openalex.org/W4406880389"
+    },
+    "indexed_in": [
+     "arxiv",
+     "datacite"
+    ],
+    "institutions": [],
+    "institutions_distinct_count": 1,
+    "is_paratext": false,
+    "is_retracted": false,
+    "is_xpac": false,
+    "keywords": [
+     {
+      "display_name": "long-context language models",
+      "id": "https://openalex.org/keywords/long-context-language-models",
+      "score": 0.7429999709129333
+     },
+     {
+      "display_name": "length extrapolation",
+      "id": "https://openalex.org/keywords/length-extrapolation",
+      "score": 0.7649999856948853
+     },
+     {
+      "display_name": "sparse attention",
+      "id": "https://openalex.org/keywords/sparse-attention",
+      "score": 0.9860000014305115
+     },
+     {
+      "display_name": "pipeline parallelism",
+      "id": "https://openalex.org/keywords/pipeline-parallelism",
+      "score": 0.9110000133514404
+     },
+     {
+      "display_name": "open-source large language models",
+      "id": "https://openalex.org/keywords/open-source-large-language-models",
+      "score": 0.6890000104904175
+     }
+    ],
+    "language": "en",
+    "locations": [
+     {
+      "doi": null,
+      "id": "pmh:oai:arXiv.org:2501.15383",
+      "is_accepted": false,
+      "is_oa": true,
+      "is_published": false,
+      "landing_page_url": "http://arxiv.org/abs/2501.15383",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "https://arxiv.org/pdf/2501.15383",
+      "raw_source_name": null,
+      "raw_type": "text",
+      "source": {
+       "display_name": "arXiv (Cornell University)",
+       "host_organization": "https://openalex.org/I205783295",
+       "host_organization_lineage": [
+        "https://openalex.org/I205783295"
+       ],
+       "host_organization_lineage_names": [],
+       "host_organization_name": "Cornell University",
+       "id": "https://openalex.org/S4306400194",
+       "is_core": false,
+       "is_in_doaj": false,
+       "is_oa": true,
+       "issn": [
+        "2331-8422"
+       ],
+       "issn_l": "2331-8422",
+       "listed_in": [],
+       "type": "repository"
+      },
+      "version": "submittedVersion"
+     },
+     {
+      "doi": "https://doi.org/10.48550/arxiv.2501.15383",
+      "id": "doi:10.48550/arxiv.2501.15383",
+      "is_accepted": false,
+      "is_oa": true,
+      "is_published": false,
+      "landing_page_url": "https://doi.org/10.48550/arxiv.2501.15383",
+      "license": null,
+      "license_id": null,
+      "pdf_url": null,
+      "raw_source_name": null,
+      "raw_type": "Preprint",
+      "source": {
+       "display_name": "arXiv (Cornell University)",
+       "host_organization": "https://openalex.org/I205783295",
+       "host_organization_lineage": [
+        "https://openalex.org/I205783295"
+       ],
+       "host_organization_lineage_names": [],
+       "host_organization_name": "Cornell University",
+       "id": "https://openalex.org/S4306400194",
+       "is_core": false,
+       "is_in_doaj": false,
+       "is_oa": true,
+       "issn": [
+        "2331-8422"
+       ],
+       "issn_l": "2331-8422",
+       "listed_in": [],
+       "type": "repository"
+      },
+      "version": null
+     }
+    ],
+    "locations_count": 2,
+    "mesh": [],
+    "open_access": {
+     "any_repository_has_fulltext": true,
+     "is_oa": true,
+     "oa_status": "green",
+     "oa_url": "https://arxiv.org/pdf/2501.15383"
+    },
+    "primary_location": {
+     "doi": null,
+     "id": "pmh:oai:arXiv.org:2501.15383",
+     "is_accepted": false,
+     "is_oa": true,
+     "is_published": false,
+     "landing_page_url": "http://arxiv.org/abs/2501.15383",
+     "license": null,
+     "license_id": null,
+     "pdf_url": "https://arxiv.org/pdf/2501.15383",
+     "raw_source_name": null,
+     "raw_type": "text",
+     "source": {
+      "display_name": "arXiv (Cornell University)",
+      "host_organization": "https://openalex.org/I205783295",
+      "host_organization_lineage": [
+       "https://openalex.org/I205783295"
+      ],
+      "host_organization_lineage_names": [],
+      "host_organization_name": "Cornell University",
+      "id": "https://openalex.org/S4306400194",
+      "is_core": false,
+      "is_in_doaj": false,
+      "is_oa": true,
+      "issn": [
+       "2331-8422"
+      ],
+      "issn_l": "2331-8422",
+      "listed_in": [],
+      "type": "repository"
+     },
+     "version": "submittedVersion"
+    },
+    "primary_topic": {
+     "display_name": "Topic Modeling",
+     "domain": {
+      "display_name": "Physical Sciences",
+      "id": "https://openalex.org/domains/3"
+     },
+     "field": {
+      "display_name": "Computer Science",
+      "id": "https://openalex.org/fields/17"
+     },
+     "id": "https://openalex.org/T10028",
+     "score": 0.9014000296592712,
+     "subfield": {
+      "display_name": "Artificial Intelligence",
+      "id": "https://openalex.org/subfields/1702"
+     }
+    },
+    "publication_date": "2025-01-26",
+    "publication_year": 2025,
+    "referenced_works": [],
+    "referenced_works_count": 0,
+    "related_works": [
+     "https://openalex.org/W4407571389",
+     "https://openalex.org/W4394782277",
+     "https://openalex.org/W4403851694",
+     "https://openalex.org/W4414895249",
+     "https://openalex.org/W6891821720",
+     "https://openalex.org/W4417089464",
+     "https://openalex.org/W7165385035",
+     "https://openalex.org/W4417464835",
+     "https://openalex.org/W4415797534",
+     "https://openalex.org/W4404451423"
+    ],
+    "relevance_score": 109.20844,
+    "study_designs": [],
+    "sustainable_development_goals": [],
+    "sustainable_development_goals_aurora": [],
+    "title": "Qwen2.5-1M Technical Report",
+    "topics": [
+     {
+      "display_name": "Topic Modeling",
+      "domain": {
+       "display_name": "Physical Sciences",
+       "id": "https://openalex.org/domains/3"
+      },
+      "field": {
+       "display_name": "Computer Science",
+       "id": "https://openalex.org/fields/17"
+      },
+      "id": "https://openalex.org/T10028",
+      "score": 0.9014000296592712,
+      "subfield": {
+       "display_name": "Artificial Intelligence",
+       "id": "https://openalex.org/subfields/1702"
+      }
+     },
+     {
+      "display_name": "Natural Language Processing Techniques",
+      "domain": {
+       "display_name": "Physical Sciences",
+       "id": "https://openalex.org/domains/3"
+      },
+      "field": {
+       "display_name": "Computer Science",
+       "id": "https://openalex.org/fields/17"
+      },
+      "id": "https://openalex.org/T10181",
+      "score": 0.05770000070333481,
+      "subfield": {
+       "display_name": "Artificial Intelligence",
+       "id": "https://openalex.org/subfields/1702"
+      }
+     },
+     {
+      "display_name": "Advanced Neural Network Applications",
+      "domain": {
+       "display_name": "Physical Sciences",
+       "id": "https://openalex.org/domains/3"
+      },
+      "field": {
+       "display_name": "Computer Science",
+       "id": "https://openalex.org/fields/17"
+      },
+      "id": "https://openalex.org/T10036",
+      "score": 0.014600000344216824,
+      "subfield": {
+       "display_name": "Computer Vision and Pattern Recognition",
+       "id": "https://openalex.org/subfields/1707"
+      }
+     }
+    ],
+    "type": "preprint",
+    "updated_date": "2026-10-16T09:59:22.235173",
+    "volume": null
+   },
+   {
+    "abstract_inverted_index": {
+     "As": [
+      223
+     ],
+     "Both": [
+      135
+     ],
+     "DiT": [
+      164
+     ],
+     "For": [
+      152
+     ],
+     "Furthermore,": [
+      188
+     ],
+     "GSM8K.": [
+      222
+     ],
+     "In": [
+      0,
+      99
+     ],
+     "MMLU": [
+      220
+     ],
+     "Multimodal": [
+      80
+     ],
+     "Notably,": [
+      198
+     ],
+     "Omni-Bench.": [
+      197
+     ],
+     "Qwen2-Audio.": [
+      187
+     ],
+     "Qwen2.5-Omni": [
+      177,
+      189
+     ],
+     "Qwen2.5-Omni's": [
+      199,
+      227
+     ],
+     "Qwen2.5-Omni,": [
+      5
+     ],
+     "Qwen2.5-VL": [
+      184
+     ],
+     "RoPE).": [
+      81
+     ],
+     "TMRoPE(Time-aligned": [
+      79
+     ],
+     "Talker": [
+      114,
+      139,
+      229
+     ],
+     "Thinker": [
+      102,
+      128,
+      137
+     ],
+     "To": [
+      33,
+      51,
+      82
+     ],
+     "\\textbf{Thinker-Talker}": [
+      97
+     ],
+     "a": [
+      30,
+      47,
+      73,
+      105,
+      116,
+      157,
+      162
+     ],
+     "achieves": [
+      190
+     ],
+     "aiming": [
+      170
+     ],
+     "alternatives": [
+      236
+     ],
+     "an": [
+      6,
+      68,
+      149
+     ],
+     "and": [
+      19,
+      25,
+      43,
+      64,
+      71,
+      86,
+      138,
+      146,
+      185,
+      221,
+      234,
+      239
+     ],
+     "approach,": [
+      77
+     ],
+     "approach.": [
+      50
+     ],
+     "architecture.": [
+      98
+     ],
+     "are": [
+      141
+     ],
+     "as": [
+      104,
+      133,
+      214,
+      219
+     ],
+     "audio": [
+      42,
+      63,
+      131,
+      154
+     ],
+     "audio,": [
+      18,
+      59
+     ],
+     "autoregressive": [
+      118
+     ],
+     "avoiding": [
+      89
+     ],
+     "be": [
+      144
+     ],
+     "benchmarks": [
+      195,
+      217
+     ],
+     "between": [
+      91
+     ],
+     "block-wise": [
+      48
+     ],
+     "both": [
+      41
+     ],
+     "by": [
+      216
+     ],
+     "capabilities": [
+      210
+     ],
+     "comparable": [
+      179,
+      207
+     ],
+     "concurrently": [
+      83
+     ],
+     "decoding": [
+      153
+     ],
+     "delay.": [
+      176
+     ],
+     "designed": [
+      10,
+      142
+     ],
+     "directly": [
+      121
+     ],
+     "diverse": [
+      13
+     ],
+     "dual-track": [
+      117
+     ],
+     "embedding": [
+      76
+     ],
+     "enable": [
+      34
+     ],
+     "encoders": [
+      45
+     ],
+     "end-to-end": [
+      7,
+      150,
+      202
+     ],
+     "evidenced": [
+      215
+     ],
+     "existing": [
+      232
+     ],
+     "field,": [
+      169
+     ],
+     "following": [
+      205
+     ],
+     "for": [
+      224
+     ],
+     "framework,": [
+      101
+     ],
+     "from": [
+      126
+     ],
+     "functions": [
+      103
+     ],
+     "generate": [
+      84
+     ],
+     "generating": [
+      23
+     ],
+     "generation,": [
+      112,
+      226
+     ],
+     "hidden": [
+      124
+     ],
+     "images,": [
+      17
+     ],
+     "in": [
+      29,
+      67,
+      148,
+      156,
+      201,
+      237
+     ],
+     "including": [
+      15
+     ],
+     "inferred": [
+      147
+     ],
+     "information": [
+      39
+     ],
+     "initial": [
+      174
+     ],
+     "inputs": [
+      57
+     ],
+     "inputs,": [
+      40,
+      213
+     ],
+     "instruction": [
+      204
+     ],
+     "interference": [
+      90
+     ],
+     "interleaved": [
+      69
+     ],
+     "introduce": [
+      161
+     ],
+     "is": [
+      115,
+      178,
+      206
+     ],
+     "its": [
+      209
+     ],
+     "language": [
+      107
+     ],
+     "large": [
+      106
+     ],
+     "like": [
+      196
+     ],
+     "manner": [
+      70
+     ],
+     "manner,": [
+      159
+     ],
+     "manner.": [
+      32,
+      151
+     ],
+     "modalities,": [
+      14,
+      94
+     ],
+     "model": [
+      9,
+      108,
+      119
+     ],
+     "models": [
+      140
+     ],
+     "most": [
+      231
+     ],
+     "multimodal": [
+      8,
+      38,
+      194
+     ],
+     "named": [
+      78
+     ],
+     "natural": [
+      26
+     ],
+     "naturalness.": [
+      240
+     ],
+     "non-streaming": [
+      235
+     ],
+     "novel": [
+      74
+     ],
+     "of": [
+      37,
+      55
+     ],
+     "on": [
+      193
+     ],
+     "organize": [
+      61
+     ],
+     "outperforms": [
+      186,
+      230
+     ],
+     "output.": [
+      134
+     ],
+     "package": [
+      175
+     ],
+     "perceive": [
+      12
+     ],
+     "performance": [
+      192,
+      200
+     ],
+     "position": [
+      75
+     ],
+     "present": [
+      4
+     ],
+     "processing": [
+      49
+     ],
+     "produce": [
+      130
+     ],
+     "propose": [
+      72,
+      96
+     ],
+     "receptive": [
+      168
+     ],
+     "reduce": [
+      172
+     ],
+     "report,": [
+      2
+     ],
+     "representations": [
+      125
+     ],
+     "responses": [
+      28
+     ],
+     "restricts": [
+      166
+     ],
+     "robustness": [
+      238
+     ],
+     "sequentially": [
+      66
+     ],
+     "similarly": [
+      182
+     ],
+     "simultaneously": [
+      22
+     ],
+     "sized": [
+      183
+     ],
+     "sliding-window": [
+      163
+     ],
+     "speech": [
+      27,
+      87,
+      203,
+      225
+     ],
+     "state-of-the-art": [
+      191
+     ],
+     "streaming": [
+      31,
+      36,
+      158,
+      228,
+      233
+     ],
+     "such": [
+      218
+     ],
+     "synchronize": [
+      52
+     ],
+     "tasked": [
+      109
+     ],
+     "text": [
+      24,
+      85,
+      111,
+      212
+     ],
+     "text,": [
+      16
+     ],
+     "that": [
+      120,
+      165
+     ],
+     "the": [
+      35,
+      53,
+      62,
+      92,
+      123,
+      127,
+      136,
+      167,
+      173,
+      181
+     ],
+     "this": [
+      1,
+      100
+     ],
+     "timestamps": [
+      54
+     ],
+     "to": [
+      11,
+      129,
+      143,
+      171,
+      208
+     ],
+     "tokens": [
+      132,
+      155
+     ],
+     "trained": [
+      145
+     ],
+     "two": [
+      93
+     ],
+     "utilize": [
+      46
+     ],
+     "utilizes": [
+      122
+     ],
+     "video": [
+      56,
+      65
+     ],
+     "video,": [
+      20
+     ],
+     "visual": [
+      44
+     ],
+     "we": [
+      3,
+      60,
+      95,
+      160
+     ],
+     "while": [
+      21,
+      88,
+      113
+     ],
+     "with": [
+      58,
+      110,
+      180,
+      211
+     ]
+    },
+    "apc_list": null,
+    "apc_paid": null,
+    "authorships": [
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Jin Hong Xu",
+       "id": "https://openalex.org/A5042068248",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-6522-6989"
+       ],
+       "orcid": "https://orcid.org/0000-0002-6522-6989"
+      },
+      "author_position": "first",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Xu, Jin",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Zihan Guo",
+       "id": "https://openalex.org/A5112409461",
+       "observed_orcids": [
+        "https://orcid.org/0009-0006-3122-1641"
+       ],
+       "orcid": "https://orcid.org/0009-0006-3122-1641"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Guo, Zhifang",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "He, Jinzheng",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "He, Jinzheng",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Hu, Hangrui",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Hu, Hangrui",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Tingchao He",
+       "id": "https://openalex.org/A5079426299",
+       "observed_orcids": [
+        "https://orcid.org/0000-0003-1040-0596"
+       ],
+       "orcid": "https://orcid.org/0000-0003-1040-0596"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "He, Ting",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Shuai Bai",
+       "id": "https://openalex.org/A5101014470",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-6896-8590"
+       ],
+       "orcid": "https://orcid.org/0000-0002-6896-8590"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Bai, Shuai",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Keqin Chen",
+       "id": "https://openalex.org/A5101609559",
+       "observed_orcids": [
+        "https://orcid.org/0000-0003-3497-5132"
+       ],
+       "orcid": "https://orcid.org/0000-0003-3497-5132"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Chen, Keqin",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Jialin Wang",
+       "id": "https://openalex.org/A5100430889",
+       "observed_orcids": [
+        "https://orcid.org/0000-0001-5387-8210"
+       ],
+       "orcid": "https://orcid.org/0000-0001-5387-8210"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Wang, Jialin",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Fan, Yang",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Fan, Yang",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Kai Dang",
+       "id": "https://openalex.org/A5014400759",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Dang, Kai",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Bin Zhang",
+       "id": "https://openalex.org/A5116868326",
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Zhang, Bin",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Xiong Wang",
+       "id": "https://openalex.org/A5101967555",
+       "observed_orcids": [
+        "https://orcid.org/0000-0002-9932-6400"
+       ],
+       "orcid": "https://orcid.org/0000-0002-9932-6400"
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Wang, Xiong",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Chu, Yunfei",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "middle",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Chu, Yunfei",
+      "raw_orcid": null
+     },
+     {
+      "affiliations": [],
+      "author": {
+       "display_name": "Lin, Junyang",
+       "id": null,
+       "observed_orcids": [],
+       "orcid": null
+      },
+      "author_position": "last",
+      "countries": [],
+      "institutions": [],
+      "is_corresponding": false,
+      "raw_affiliation_strings": [],
+      "raw_author_name": "Lin, Junyang",
+      "raw_orcid": null
+     }
+    ],
+    "awards": [],
+    "best_oa_location": {
+     "doi": null,
+     "id": "pmh:oai:arXiv.org:2503.20215",
+     "is_accepted": false,
+     "is_oa": true,
+     "is_published": false,
+     "landing_page_url": "http://arxiv.org/abs/2503.20215",
+     "license": null,
+     "license_id": null,
+     "pdf_url": "https://arxiv.org/pdf/2503.20215",
+     "raw_source_name": null,
+     "raw_type": "text",
+     "source": {
+      "display_name": "arXiv (Cornell University)",
+      "host_organization": "https://openalex.org/I205783295",
+      "host_organization_lineage": [
+       "https://openalex.org/I205783295"
+      ],
+      "host_organization_lineage_names": [],
+      "host_organization_name": "Cornell University",
+      "id": "https://openalex.org/S4306400194",
+      "is_core": false,
+      "is_in_doaj": false,
+      "is_oa": true,
+      "issn": [
+       "2331-8422"
+      ],
+      "issn_l": "2331-8422",
+      "listed_in": [],
+      "type": "repository"
+     },
+     "version": "submittedVersion"
+    },
+    "biblio": {
+     "first_page": null,
+     "issue": null,
+     "last_page": null,
+     "volume": null
+    },
+    "citation_normalized_percentile": null,
+    "cited_by_count": 14,
+    "cited_by_percentile_year": null,
+    "concepts": [
+     {
+      "display_name": "Computer science",
+      "id": "https://openalex.org/C41008148",
+      "level": 0,
+      "score": 0.30579429864883423,
+      "wikidata": "https://www.wikidata.org/wiki/Q21198"
+     }
+    ],
+    "content_urls": null,
+    "corresponding_author_ids": [],
+    "corresponding_institution_ids": [],
+    "countries_distinct_count": 0,
+    "counts_by_year": [
+     {
+      "cited_by_count": 11,
+      "year": 2026
+     },
+     {
+      "cited_by_count": 3,
+      "year": 2025
+     }
+    ],
+    "created_date": "2025-04-02T00:00:00",
+    "display_name": "Qwen2.5-Omni Technical Report",
+    "doi": "https://doi.org/10.48550/arxiv.2503.20215",
+    "funders": [],
+    "fwci": null,
+    "has_content": {
+     "grobid_xml": false,
+     "pdf": false
+    },
+    "has_fulltext": false,
+    "id": "https://openalex.org/W4409051416",
+    "ids": {
+     "doi": "https://doi.org/10.48550/arxiv.2503.20215",
+     "openalex": "https://openalex.org/W4409051416"
+    },
+    "indexed_in": [
+     "arxiv",
+     "datacite"
+    ],
+    "institutions": [],
+    "institutions_distinct_count": 0,
+    "is_paratext": false,
+    "is_retracted": false,
+    "is_xpac": false,
+    "keywords": [
+     {
+      "display_name": "multimodal large language models",
+      "id": "https://openalex.org/keywords/multimodal-large-language-models",
+      "score": 0.8539999723434448
+     },
+     {
+      "display_name": "positional encoding",
+      "id": "https://openalex.org/keywords/positional-encoding",
+      "score": 0.5640000104904175
+     },
+     {
+      "display_name": "multisensory perception",
+      "id": "https://openalex.org/keywords/multisensory-perception",
+      "score": 0.4000000059604645
+     }
+    ],
+    "language": "en",
+    "locations": [
+     {
+      "doi": null,
+      "id": "pmh:oai:arXiv.org:2503.20215",
+      "is_accepted": false,
+      "is_oa": true,
+      "is_published": false,
+      "landing_page_url": "http://arxiv.org/abs/2503.20215",
+      "license": null,
+      "license_id": null,
+      "pdf_url": "https://arxiv.org/pdf/2503.20215",
+      "raw_source_name": null,
+      "raw_type": "text",
+      "source": {
+       "display_name": "arXiv (Cornell University)",
+       "host_organization": "https://openalex.org/I205783295",
+       "host_organization_lineage": [
+        "https://openalex.org/I205783295"
+       ],
+       "host_organization_lineage_names": [],
+       "host_organization_name": "Cornell University",
+       "id": "https://openalex.org/S4306400194",
+       "is_core": false,
+       "is_in_doaj": false,
+       "is_oa": true,
+       "issn": [
+        "2331-8422"
+       ],
+       "issn_l": "2331-8422",
+       "listed_in": [],
+       "type": "repository"
+      },
+      "version": "submittedVersion"
+     },
+     {
+      "doi": "https://doi.org/10.48550/arxiv.2503.20215",
+      "id": "doi:10.48550/arxiv.2503.20215",
+      "is_accepted": false,
+      "is_oa": true,
+      "is_published": false,
+      "landing_page_url": "https://doi.org/10.48550/arxiv.2503.20215",
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "pdf_url": null,
+      "raw_source_name": null,
+      "raw_type": "Preprint",
+      "source": {
+       "display_name": "arXiv (Cornell University)",
+       "host_organization": "https://openalex.org/I205783295",
+       "host_organization_lineage": [
+        "https://openalex.org/I205783295"
+       ],
+       "host_organization_lineage_names": [],
+       "host_organization_name": "Cornell University",
+       "id": "https://openalex.org/S4306400194",
+       "is_core": false,
+       "is_in_doaj": false,
+       "is_oa": true,
+       "issn": [
+        "2331-8422"
+       ],
+       "issn_l": "2331-8422",
+       "listed_in": [],
+       "type": "repository"
+      },
+      "version": null
+     }
+    ],
+    "locations_count": 2,
+    "mesh": [],
+    "open_access": {
+     "any_repository_has_fulltext": true,
+     "is_oa": true,
+     "oa_status": "green",
+     "oa_url": "https://arxiv.org/pdf/2503.20215"
+    },
+    "primary_location": {
+     "doi": null,
+     "id": "pmh:oai:arXiv.org:2503.20215",
+     "is_accepted": false,
+     "is_oa": true,
+     "is_published": false,
+     "landing_page_url": "http://arxiv.org/abs/2503.20215",
+     "license": null,
+     "license_id": null,
+     "pdf_url": "https://arxiv.org/pdf/2503.20215",
+     "raw_source_name": null,
+     "raw_type": "text",
+     "source": {
+      "display_name": "arXiv (Cornell University)",
+      "host_organization": "https://openalex.org/I205783295",
+      "host_organization_lineage": [
+       "https://openalex.org/I205783295"
+      ],
+      "host_organization_lineage_names": [],
+      "host_organization_name": "Cornell University",
+      "id": "https://openalex.org/S4306400194",
+      "is_core": false,
+      "is_in_doaj": false,
+      "is_oa": true,
+      "issn": [
+       "2331-8422"
+      ],
+      "issn_l": "2331-8422",
+      "listed_in": [],
+      "type": "repository"
+     },
+     "version": "submittedVersion"
+    },
+    "primary_topic": {
+     "display_name": "Multimodal Machine Learning Applications",
+     "domain": {
+      "display_name": "Physical Sciences",
+      "id": "https://openalex.org/domains/3"
+     },
+     "field": {
+      "display_name": "Computer Science",
+      "id": "https://openalex.org/fields/17"
+     },
+     "id": "https://openalex.org/T11714",
+     "score": 0.9980000257492065,
+     "subfield": {
+      "display_name": "Computer Vision and Pattern Recognition",
+      "id": "https://openalex.org/subfields/1707"
+     }
+    },
+    "publication_date": "2025-03-26",
+    "publication_year": 2025,
+    "referenced_works": [],
+    "referenced_works_count": 0,
+    "related_works": [
+     "https://openalex.org/W4415255153",
+     "https://openalex.org/W7154947098",
+     "https://openalex.org/W4406880404",
+     "https://openalex.org/W4417308118",
+     "https://openalex.org/W4415337830",
+     "https://openalex.org/W7133744391",
+     "https://openalex.org/W4416043362",
+     "https://openalex.org/W7125822453",
+     "https://openalex.org/W7202294052",
+     "https://openalex.org/W7124452862"
+    ],
+    "relevance_score": 107.90416,
+    "study_designs": [],
+    "sustainable_development_goals": [],
+    "sustainable_development_goals_aurora": [],
+    "title": "Qwen2.5-Omni Technical Report",
+    "topics": [
+     {
+      "display_name": "Multimodal Machine Learning Applications",
+      "domain": {
+       "display_name": "Physical Sciences",
+       "id": "https://openalex.org/domains/3"
+      },
+      "field": {
+       "display_name": "Computer Science",
+       "id": "https://openalex.org/fields/17"
+      },
+      "id": "https://openalex.org/T11714",
+      "score": 0.9980000257492065,
+      "subfield": {
+       "display_name": "Computer Vision and Pattern Recognition",
+       "id": "https://openalex.org/subfields/1707"
+      }
+     },
+     {
+      "display_name": "Speech and dialogue systems",
+      "domain": {
+       "display_name": "Physical Sciences",
+       "id": "https://openalex.org/domains/3"
+      },
+      "field": {
+       "display_name": "Computer Science",
+       "id": "https://openalex.org/fields/17"
+      },
+      "id": "https://openalex.org/T12031",
+      "score": 0.0007999999797903001,
+      "subfield": {
+       "display_name": "Artificial Intelligence",
+       "id": "https://openalex.org/subfields/1702"
+      }
+     },
+     {
+      "display_name": "Speech Recognition and Synthesis",
+      "domain": {
+       "display_name": "Physical Sciences",
+       "id": "https://openalex.org/domains/3"
+      },
+      "field": {
+       "display_name": "Computer Science",
+       "id": "https://openalex.org/fields/17"
+      },
+      "id": "https://openalex.org/T10201",
+      "score": 0.00039999998989515007,
+      "subfield": {
+       "display_name": "Artificial Intelligence",
+       "id": "https://openalex.org/subfields/1702"
+      }
+     }
+    ],
+    "type": "preprint",
+    "updated_date": "2026-10-14T16:39:01.820549",
+    "volume": null
+   }
+  ]
+ },
+ "content_type": "application/json",
+ "params": {
+  "per-page": 5,
+  "search": "Qwen2.5 Technical Report"
+ },
+ "recorded_at": "2026-11-01T17:21:10Z",
+ "status": 200,
+ "url": "https://api.openalex.org/works"
+}
