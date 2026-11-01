@@ -43,7 +43,7 @@ jobs:
           - os: ubuntu-24.04
             python-version: "3.9"
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-python@v5
         with:
@@ -117,7 +117,7 @@ jobs:
     name: Action self-test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       # The clean path. clean.bib has nothing fabricated in it, so the Action
       # must come back with no mismatch. fail-on: never is used because the
