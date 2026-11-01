@@ -34,7 +34,7 @@ class CacheMiss(Exception):
     """Raised when a request is not in the cache.
 
     In offline mode this propagates out of the HTTP client and the providers
-    turn it into :class:`bibauthor.providers.ProviderUnavailable`, which the
+    turn it into :class:`bibauthors.providers.ProviderUnavailable`, which the
     verifier reports as "could not ask" rather than "not found". The
     distinction matters: a missing record is weak evidence about a citation,
     while a missing cache entry is no evidence at all.

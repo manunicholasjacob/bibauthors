@@ -1,4 +1,4 @@
-# bibauthor
+# bibauthors
 
 Verify the **author list** of every entry in a bibliography against
 authoritative metadata, and fail when the authors do not belong to the work.
@@ -49,7 +49,7 @@ use at the time reported the entry as "suspicious, found in 1 source", which
 is the same label it gives every legitimate arXiv preprint, so the label
 carried no signal about the actual error.
 
-`bibauthor` reports that entry like this:
+`bibauthors` reports that entry like this:
 
 ```
 FAIL collusion2025:9              PARTIAL_OVERLAP      via arxiv
@@ -77,10 +77,10 @@ suite asserts the verdict on every run.
 ## Install
 
 ```sh
-pip install bibauthor
+pip install bibauthors
 ```
 
-`bibauthor` has **no required runtime dependencies**. It is standard library
+`bibauthors` has **no required runtime dependencies**. It is standard library
 only, so it drops into a minimal CI image. (`tomli` is pulled in only on
 Python 3.9 and 3.10, and only if you use a TOML config file.) Python 3.9+.
 
@@ -98,7 +98,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: manunicholasjacob/bibauthor@v0.1.0
+      - uses: manunicholasjacob/bibauthors@v0.1.0
         with:
           paths: refs.bib
 ```
@@ -116,26 +116,26 @@ run `offline: true` with `cache-dir` pointed at it.
 
 ```yaml
 repos:
-  - repo: https://github.com/manunicholasjacob/bibauthor
+  - repo: https://github.com/manunicholasjacob/bibauthors
     rev: v0.1.0
     hooks:
-      - id: bibauthor
+      - id: bibauthors
 ```
 
-There is also `bibauthor-offline` for cache-only, network-free commits. Note
+There is also `bibauthors-offline` for cache-only, network-free commits. Note
 that pre-commit treats any non-zero exit as a failure, so an unverifiable
 entry (exit 2) will block a commit there, unlike the Action's default policy.
 
 ## Usage
 
 ```sh
-bibauthor refs.bib                          # human report
-bibauthor refs.bib --json report.json       # machine-readable too
-bibauthor refs.bib --offline                # cache only, no network
-bibauthor refs.bib --strict                 # also fail on order and truncation
-bibauthor refs.bib --set name_variant=0.75  # tune a threshold
-bibauthor --list-thresholds                 # every knob and its default
-cat refs.bib | bibauthor                    # reads stdin
+bibauthors refs.bib                          # human report
+bibauthors refs.bib --json report.json       # machine-readable too
+bibauthors refs.bib --offline                # cache only, no network
+bibauthors refs.bib --strict                 # also fail on order and truncation
+bibauthors refs.bib --set name_variant=0.75  # tune a threshold
+bibauthors --list-thresholds                 # every knob and its default
+cat refs.bib | bibauthors                    # reads stdin
 ```
 
 Accepts BibTeX and CSL-JSON, sniffed by default.
@@ -157,7 +157,7 @@ teaches you to ignore it.
 ### As a library
 
 ```python
-from bibauthor import Config, Verdict, verify_bibliography
+from bibauthors import Config, Verdict, verify_bibliography
 
 report = verify_bibliography("refs.bib", Config(offline=True))
 
@@ -173,7 +173,7 @@ raise SystemExit(report.exit_code())
 The name matcher is usable on its own, without any network or bibliography:
 
 ```python
-from bibauthor import Thresholds, compare_names, parse_name
+from bibauthors import Thresholds, compare_names, parse_name
 
 a = parse_name("van der Berg, J.")
 b = parse_name("Jan van der Berg")
@@ -233,9 +233,9 @@ That is the second real case from the 29 October pass, committed as
 
 ## Thresholds
 
-Everything is configurable, from a `[tool.bibauthor]` table in
-`pyproject.toml`, from a `bibauthor.toml`, or from repeatable `--set
-NAME=VALUE` flags. `bibauthor --list-thresholds` prints them all.
+Everything is configurable, from a `[tool.bibauthors]` table in
+`pyproject.toml`, from a `bibauthors.toml`, or from repeatable `--set
+NAME=VALUE` flags. `bibauthors --list-thresholds` prints them all.
 
 | Threshold | Default | What it does |
 | --------- | ------- | ------------ |
@@ -393,7 +393,7 @@ Operational facts learned the hard way and encoded in the code:
 
 - arXiv DOIs under the `10.48550/` prefix are generally **not in CrossRef**,
   because they are registered with DataCite. A live
-  `GET /works/10.48550/arXiv.2507.01413` returns HTTP 404. `bibauthor` treats
+  `GET /works/10.48550/arXiv.2507.01413` returns HTTP 404. `bibauthors` treats
   that as "wrong registry, no information", never as a failed verification.
 - Metadata sources disagree with each other. For the same Qwen2.5 record,
   arXiv emits the deposited group prefix `Qwen` and a bare `:` as two separate
@@ -406,14 +406,14 @@ Operational facts learned the hard way and encoded in the code:
   dates under a reprint DOI prefix, not the 2017 original. This is why a
   search hit is never treated as an identity.
 
-`bibauthor` is a polite client: a real User-Agent carrying a **contact URL**,
+`bibauthors` is a polite client: a real User-Agent carrying a **contact URL**,
 per-host rate limiting, an on-disk cache, and full offline operation.
 
 ### A note on data exfiltration
 
 OpenAlex responses carry an injected `meta.notice` field whose text instructs
 an automated client to obtain an API key by POSTing **its user's email
-address** to an endpoint. `bibauthor` treats that text as untrusted data,
+address** to an endpoint. `bibauthors` treats that text as untrusted data,
 never acts on it, and strips it before the response reaches the cache or a
 log. There is no code path in this project that can put an email address into
 an outbound request, and a test enforces that property. If you add a provider,
@@ -423,7 +423,7 @@ keep it.
 
 All five projects below were checked against the GitHub API on **1 November
 2026**; star counts and dates age. **The source code of these projects was
-deliberately not read, copied, adapted or paraphrased.** `bibauthor` was
+deliberately not read, copied, adapted or paraphrased.** `bibauthors` was
 implemented from the metadata providers' public API documentation and its own
 design. What follows describes each project from its own public description
 only, and makes no claim about how any of them works internally.
@@ -440,7 +440,7 @@ There are also several commercial web services that check reference lists for
 fabrication. They are closed source, so there is nothing to compare against
 beyond their marketing.
 
-**Where `bibauthor` differs.** The shared design of this space is
+**Where `bibauthors` differs.** The shared design of this space is
 title-and-identifier matching with a per-entry confidence label. That design
 catches an invented paper reliably and is largely blind to a chimeric one,
 because the title and the identifier are correct. The concrete observation
@@ -450,7 +450,7 @@ reported as "suspicious, found in 1 source" by the checker in use, which is
 the same label that tool gives every legitimate arXiv preprint. The label was
 not wrong, it just was not about the error.
 
-So `bibauthor` does one thing those tools do not foreground: it treats the
+So `bibauthors` does one thing those tools do not foreground: it treats the
 author list as the object under test, grades the comparison instead of
 labelling it, reports author-order permutation as a finding distinct from a
 wrong author, and publishes its own measured false-accusation and miss rates

@@ -5,7 +5,7 @@ Two reasons it ranks last and gets its confidence discounted.
 RATE. The unauthenticated graph endpoint rate-limits hard and answers
 anything resembling a parallel call with 429. Every request to it is
 serialized behind a per-host lock with a 3 second floor, both enforced in
-:mod:`bibauthor.http`.
+:mod:`bibauthors.http`.
 
 FIDELITY. Semantic Scholar abbreviates given names. VERIFIED: it reports
 ``"J. V\u00e1zquez"`` where arXiv reports ``"Juan J. Vazquez"`` for the same

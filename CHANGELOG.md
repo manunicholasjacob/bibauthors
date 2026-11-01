@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to bibauthor are recorded here. The format follows
+All notable changes to bibauthors are recorded here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
@@ -21,7 +21,7 @@ First release. Not yet published to PyPI; see `RELEASE_CHECKLIST.md`.
 - Author-list verification for BibTeX and CSL-JSON bibliographies, with a
   graded verdict per entry: `MATCH`, `MATCH_WITH_VARIANTS`, `ORDER_DIFFERS`,
   `TRUNCATED`, `PARTIAL_OVERLAP`, `DISJOINT`, `UNVERIFIABLE`.
-- A name-matching engine (`bibauthor.names`) covering initials against full
+- A name-matching engine (`bibauthors.names`) covering initials against full
   given names, present and absent middle names, particles and compound
   surnames, Mc/Mac, apostrophes, hyphenation, diacritics and their ASCII
   folds, German `ue` expansion, a deliberately conservative transliteration
@@ -30,8 +30,8 @@ First release. Not yet published to PyPI; see `RELEASE_CHECKLIST.md`.
   suffixes, and whole-list order permutation.
 - Author-order permutation reported as `ORDER_DIFFERS`, a finding distinct
   from a wrong author.
-- Configurable thresholds (`bibauthor.Thresholds`), settable from a
-  `[tool.bibauthor]` TOML table, a `bibauthor.toml`, or repeatable `--set
+- Configurable thresholds (`bibauthors.Thresholds`), settable from a
+  `[tool.bibauthors]` TOML table, a `bibauthors.toml`, or repeatable `--set
   NAME=VALUE` flags. `--list-thresholds` prints them all.
 - Metadata providers: CrossRef (by DOI, and by `query.bibliographic` without
   one), OpenAlex, arXiv, and Semantic Scholar as a serialized secondary
@@ -61,7 +61,7 @@ First release. Not yet published to PyPI; see `RELEASE_CHECKLIST.md`.
 ### Security
 
 - OpenAlex responses carry an injected `meta.notice` asking the caller to
-  obtain an API key by POSTing the end user's email address. bibauthor treats
+  obtain an API key by POSTing the end user's email address. bibauthors treats
   that text as untrusted data, never acts on it, and strips it before the
   response reaches the cache or a log. There is no code path in this project
   that can put an email address into an outbound request, and a test enforces
@@ -74,5 +74,5 @@ First release. Not yet published to PyPI; see `RELEASE_CHECKLIST.md`.
   metadata providers disagree with each other and with the published record;
   and the transliteration handling is narrow by design.
 
-[Unreleased]: https://github.com/manunicholasjacob/bibauthor/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/manunicholasjacob/bibauthor/releases/tag/v0.1.0
+[Unreleased]: https://github.com/manunicholasjacob/bibauthors/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/manunicholasjacob/bibauthors/releases/tag/v0.1.0

@@ -1,4 +1,4 @@
-# bibauthor design and internal contracts
+# bibauthors design and internal contracts
 
 This file is the contract between the modules. Keep the dataclass fields and
 function signatures below stable; everything else is an implementation detail.
@@ -14,7 +14,7 @@ non-ASCII characters as Python `\u` escapes or JSON `\u` escapes.
 
 ## Layout
 
-    src/bibauthor/
+    src/bibauthors/
       __init__.py        public API re-exports
       entry.py           Entry, Author source record from a bibliography
       names.py           name parsing and the matching engine

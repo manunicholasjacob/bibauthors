@@ -12,16 +12,16 @@ import os
 
 import pytest
 
-from bibauthor.entry import Entry
-from bibauthor.latex import (
+from bibauthors.entry import Entry
+from bibauthors.latex import (
     decode_latex,
     is_brace_protected,
     strip_braces,
     strip_braces_report,
 )
-from bibauthor.parsers import ParseError, load_bibliography, sniff_format
-from bibauthor.parsers.bibtex import parse_bibtex
-from bibauthor.parsers.csljson import parse_csl_json
+from bibauthors.parsers import ParseError, load_bibliography, sniff_format
+from bibauthors.parsers.bibtex import parse_bibtex
+from bibauthors.parsers.csljson import parse_csl_json
 
 FIXTURES = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixtures")
 BIB = os.path.join(FIXTURES, "bib")

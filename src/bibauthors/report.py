@@ -83,7 +83,7 @@ def format_text(report: Report, verbose: bool = False, color: bool = False) -> s
     lines: List[str] = []
     counts = report.counts()
 
-    lines.append("bibauthor: author-list verification")
+    lines.append("bibauthors: author-list verification")
     if report.sources:
         lines.append("  sources: %s" % ", ".join(report.sources))
     lines.append(
@@ -295,7 +295,7 @@ def to_dict(report: Report) -> Dict[str, Any]:
 
     return {
         "schema_version": SCHEMA_VERSION,
-        "tool": "bibauthor",
+        "tool": "bibauthors",
         "started_at": report.started_at,
         "finished_at": report.finished_at,
         "sources": list(report.sources),
@@ -365,7 +365,7 @@ def format_github_annotations(report: Report) -> str:
         for finding in result.year_findings:
             message += " Year: %s." % finding.message
         lines.append(
-            "::%s %stitle=bibauthor::%s"
+            "::%s %stitle=bibauthors::%s"
             % (level, location, message.replace("\n", " "))
         )
     return "\n".join(lines) + ("\n" if lines else "")

@@ -90,7 +90,7 @@ class Entry:
     ``authors`` holds one raw display string per author in the order cited,
     with LaTeX escapes already decoded and outer braces stripped. The word
     order inside each string is left alone, so ``"Jacob, Manu"`` stays in that
-    form; :func:`bibauthor.names.parse_name` understands both orders.
+    form; :func:`bibauthors.names.parse_name` understands both orders.
     """
 
     key: str

@@ -1,16 +1,16 @@
-# bibauthor as a composite GitHub Action.
+# bibauthors as a composite GitHub Action.
 #
 # Minimal use in a paper repository:
 #
 #     - uses: actions/checkout@v4
-#     - uses: manunicholasjacob/bibauthor@v0.1.0
+#     - uses: manunicholasjacob/bibauthors@v0.1.0
 #       with:
 #         paths: refs.bib
 #
 # No email address appears anywhere in this file. Contact for this project is
-# the issue tracker at https://github.com/manunicholasjacob/bibauthor/issues
+# the issue tracker at https://github.com/manunicholasjacob/bibauthors/issues
 
-name: bibauthor
+name: bibauthors
 description: >-
   Verify the AUTHOR LIST of every bibliography entry against authoritative
   metadata (CrossRef, arXiv, OpenAlex, Semantic Scholar), so a chimeric
@@ -42,7 +42,7 @@ inputs:
       Where the HTTP cache lives. Point this at a committed directory, or at a
       path you restore with actions/cache, to cut provider traffic.
     required: false
-    default: ".bibauthor-cache"
+    default: ".bibauthors-cache"
   providers:
     description: >-
       Comma-separated subset of crossref,arxiv,openalex,semanticscholar. Empty
@@ -52,11 +52,11 @@ inputs:
   fail-on:
     description: >-
       Failure policy. "mismatch" fails the job when an author mismatch is
-      found (bibauthor exit code 1). "unverifiable" also fails when an entry
+      found (bibauthors exit code 1). "unverifiable" also fails when an entry
       could not be checked at all (exit code 1 or 2). "never" always succeeds,
       and still writes annotations and the JSON report, which is what you want
       while you are first adopting the check. A usage or input error from
-      bibauthor itself (exit code 3) fails under "mismatch" and
+      bibauthors itself (exit code 3) fails under "mismatch" and
       "unverifiable", and is annotated but not failed under "never".
     required: false
     default: "mismatch"
@@ -71,7 +71,7 @@ inputs:
       Path for the machine-readable JSON report. Set it to an empty string to
       write no report, which also skips the artifact upload.
     required: false
-    default: "bibauthor-report.json"
+    default: "bibauthors-report.json"
   annotations:
     description: >-
       Pass --github, which emits GitHub Actions workflow commands so findings
@@ -84,11 +84,11 @@ inputs:
     default: "3.x"
   version:
     description: >-
-      Leave this empty (the default) and the Action installs the bibauthor
+      Leave this empty (the default) and the Action installs the bibauthors
       copy inside its own checkout, which is the only supported path today:
       the package is NOT published on any index yet, so a non-empty value will
       fail to install until a release exists. Once it is published, set this
-      to a version string and the Action installs bibauthor==<version> from
+      to a version string and the Action installs bibauthors==<version> from
       PyPI instead of its own checkout.
     required: false
     default: ""
@@ -96,7 +96,7 @@ inputs:
 outputs:
   exit-code:
     description: >-
-      bibauthor's own exit code: 0 clean, 1 author mismatch, 2 unverifiable
+      bibauthors's own exit code: 0 clean, 1 author mismatch, 2 unverifiable
       entries present, 3 usage or input error. This is reported whatever the
       fail-on policy decides, so a later step can act on it.
     value: ${{ steps.run.outputs.exit-code }}
@@ -122,29 +122,29 @@ runs:
       with:
         python-version: ${{ inputs.python-version }}
 
-    - name: Install bibauthor
+    - name: Install bibauthors
       shell: bash
       env:
         ACTION_PATH: ${{ github.action_path }}
-        BIBAUTHOR_VERSION: ${{ inputs.version }}
+        BIBAUTHORS_VERSION: ${{ inputs.version }}
       run: |
         set -e
         python -m pip install --disable-pip-version-check --upgrade pip
-        if [ -n "$BIBAUTHOR_VERSION" ]; then
-          echo "installing bibauthor==$BIBAUTHOR_VERSION from the index"
-          python -m pip install "bibauthor==$BIBAUTHOR_VERSION"
+        if [ -n "$BIBAUTHORS_VERSION" ]; then
+          echo "installing bibauthors==$BIBAUTHORS_VERSION from the index"
+          python -m pip install "bibauthors==$BIBAUTHORS_VERSION"
         else
-          echo "installing bibauthor from the checkout of this action at $ACTION_PATH"
+          echo "installing bibauthors from the checkout of this action at $ACTION_PATH"
           python -m pip install "$ACTION_PATH"
         fi
-        bibauthor --version
+        bibauthors --version
 
     # This step NEVER fails. A composite action aborts the moment any of its
-    # run steps exits non-zero, which would make bibauthor's graded exit codes
+    # run steps exits non-zero, which would make bibauthors's graded exit codes
     # unusable: exit 2 would kill the job before the fail-on policy was ever
     # consulted. So the real exit code is captured into a step output and the
     # step itself always exits 0. The policy is applied by the last step.
-    - name: Run bibauthor
+    - name: Run bibauthors
       id: run
       shell: bash
       env:
@@ -157,7 +157,7 @@ runs:
         INPUT_JSON_REPORT: ${{ inputs['json-report'] }}
       run: |
         set -o pipefail
-        FILE_LIST="${RUNNER_TEMP:-.}/bibauthor-file-list.txt"
+        FILE_LIST="${RUNNER_TEMP:-.}/bibauthors-file-list.txt"
         export FILE_LIST
 
         # Glob expansion lives in Python, not in the shell: bash on the macOS
@@ -190,14 +190,14 @@ runs:
                     seen.add(hit)
                     found.append(hit)
         # newline="\n" matters: Python text mode on a Windows runner would write
-        # CRLF, and the shell loop below would then hand bibauthor a path with a
+        # CRLF, and the shell loop below would then hand bibauthors a path with a
         # trailing carriage return and get a spurious "no such file".
         with open(os.environ["FILE_LIST"], "w", encoding="utf-8", newline="\n") as handle:
             for hit in found:
                 handle.write(hit + "\n")
         for token in missing:
-            print("::warning title=bibauthor::no bibliography file matched %s" % token)
-        print("bibauthor will check %d file(s)" % len(found))
+            print("::warning title=bibauthors::no bibliography file matched %s" % token)
+        print("bibauthors will check %d file(s)" % len(found))
         for hit in found:
             print("  " + hit)
         PY
@@ -212,7 +212,7 @@ runs:
         fi
 
         if [ ${#files[@]} -eq 0 ]; then
-          echo "::warning title=bibauthor::no bibliography file to check; nothing was verified"
+          echo "::warning title=bibauthors::no bibliography file to check; nothing was verified"
           echo "exit-code=0" >> "$GITHUB_OUTPUT"
           exit 0
         fi
@@ -239,12 +239,12 @@ runs:
         fi
 
         set +e
-        bibauthor "${args[@]}" "${files[@]}"
+        bibauthors "${args[@]}" "${files[@]}"
         code=$?
         set -e
 
         echo "exit-code=$code" >> "$GITHUB_OUTPUT"
-        echo "bibauthor exited $code"
+        echo "bibauthors exited $code"
         exit 0
 
     - name: Summarize the report
@@ -278,7 +278,7 @@ runs:
             handle.write("mismatches=%d\n" % mismatches)
             handle.write("unverifiable=%d\n" % unverifiable)
             handle.write("report-path=%s\n" % path)
-            handle.write("artifact-name=bibauthor-report-%s-%s\n" % (stem, suffix))
+            handle.write("artifact-name=bibauthors-report-%s-%s\n" % (stem, suffix))
         print(
             "mismatches=%d unverifiable=%d report=%s"
             % (mismatches, unverifiable, path or "(none)")
@@ -305,45 +305,45 @@ runs:
         UNVERIFIABLE: ${{ steps.parse.outputs.unverifiable }}
       run: |
         code="${CODE:-0}"
-        echo "bibauthor exit code $code, fail-on=$FAIL_ON, mismatches=$MISMATCHES, unverifiable=$UNVERIFIABLE"
+        echo "bibauthors exit code $code, fail-on=$FAIL_ON, mismatches=$MISMATCHES, unverifiable=$UNVERIFIABLE"
         case "$FAIL_ON" in
           never)
             if [ "$code" != "0" ]; then
-              echo "::notice title=bibauthor::bibauthor exited $code; fail-on=never, so the job is not failed"
+              echo "::notice title=bibauthors::bibauthors exited $code; fail-on=never, so the job is not failed"
             fi
             exit 0
             ;;
           mismatch)
             if [ "$code" = "1" ]; then
-              echo "::error title=bibauthor::author mismatch found; see the annotations above"
+              echo "::error title=bibauthors::author mismatch found; see the annotations above"
               exit 1
             fi
             if [ "$code" = "3" ]; then
-              echo "::error title=bibauthor::bibauthor could not run (usage or input error)"
+              echo "::error title=bibauthors::bibauthors could not run (usage or input error)"
               exit 1
             fi
             if [ "$code" = "2" ]; then
-              echo "::warning title=bibauthor::some entries could not be verified; fail-on=mismatch, so the job passes"
+              echo "::warning title=bibauthors::some entries could not be verified; fail-on=mismatch, so the job passes"
             fi
             exit 0
             ;;
           unverifiable)
             if [ "$code" = "1" ]; then
-              echo "::error title=bibauthor::author mismatch found; see the annotations above"
+              echo "::error title=bibauthors::author mismatch found; see the annotations above"
               exit 1
             fi
             if [ "$code" = "2" ]; then
-              echo "::error title=bibauthor::some entries could not be verified and fail-on=unverifiable"
+              echo "::error title=bibauthors::some entries could not be verified and fail-on=unverifiable"
               exit 1
             fi
             if [ "$code" = "3" ]; then
-              echo "::error title=bibauthor::bibauthor could not run (usage or input error)"
+              echo "::error title=bibauthors::bibauthors could not run (usage or input error)"
               exit 1
             fi
             exit 0
             ;;
           *)
-            echo "::error title=bibauthor::unknown fail-on value '$FAIL_ON' (use mismatch, unverifiable or never)"
+            echo "::error title=bibauthors::unknown fail-on value '$FAIL_ON' (use mismatch, unverifiable or never)"
             exit 1
             ;;
         esac

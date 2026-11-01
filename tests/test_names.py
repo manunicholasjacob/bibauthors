@@ -23,7 +23,7 @@ import time
 
 import pytest
 
-from bibauthor.names import (
+from bibauthors.names import (
     ListComparison,
     NameComparison,
     PersonName,
@@ -33,7 +33,7 @@ from bibauthor.names import (
     parse_name,
     parse_names,
 )
-from bibauthor.verdict import Thresholds, Verdict
+from bibauthors.verdict import Thresholds, Verdict
 
 TH = Thresholds()
 

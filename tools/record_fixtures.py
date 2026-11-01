@@ -11,7 +11,7 @@ What it does and does not do:
 
   * Read-only HTTP GETs to four public metadata APIs. Nothing else. No POST,
     no authentication, no API key, and no contact address of any kind in any
-    request. See :mod:`bibauthor.http` for why.
+    request. See :mod:`bibauthors.http` for why.
   * Serial, never parallel, with at least one second between calls to a host
     and at least three seconds for Semantic Scholar, which is the limit that
     service documents for unauthenticated callers.
@@ -42,14 +42,14 @@ SRC = os.path.join(ROOT, "src")
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from bibauthor.cache import Cache, utc_now_stamp  # noqa: E402
-from bibauthor.entry import Entry, normalize_doi  # noqa: E402
-from bibauthor.http import HttpClient, HttpError, sanitize_json  # noqa: E402
-from bibauthor.providers import arxiv as arxiv_provider  # noqa: E402
-from bibauthor.providers import build_providers  # noqa: E402
-from bibauthor.providers import crossref as crossref_provider  # noqa: E402
-from bibauthor.providers import openalex as openalex_provider  # noqa: E402
-from bibauthor.providers import semanticscholar as s2_provider  # noqa: E402
+from bibauthors.cache import Cache, utc_now_stamp  # noqa: E402
+from bibauthors.entry import Entry, normalize_doi  # noqa: E402
+from bibauthors.http import HttpClient, HttpError, sanitize_json  # noqa: E402
+from bibauthors.providers import arxiv as arxiv_provider  # noqa: E402
+from bibauthors.providers import build_providers  # noqa: E402
+from bibauthors.providers import crossref as crossref_provider  # noqa: E402
+from bibauthors.providers import openalex as openalex_provider  # noqa: E402
+from bibauthors.providers import semanticscholar as s2_provider  # noqa: E402
 
 FIXTURE_DIR = os.path.join(ROOT, "tests", "fixtures", "cache")
 INDEX_PATH = os.path.join(FIXTURE_DIR, "INDEX.json")

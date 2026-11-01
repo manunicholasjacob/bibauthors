@@ -1,4 +1,4 @@
-"""bibauthor: verify bibliography AUTHOR LISTS against authoritative metadata.
+"""bibauthors: verify bibliography AUTHOR LISTS against authoritative metadata.
 
 Every citation checker matches on title and DOI. This one checks the author
 list, because the most dangerous hallucinated citation is the chimeric one: a
@@ -7,7 +7,7 @@ a title-matching checker with a clean report and it looks real at a glance.
 
 The short version of the API:
 
-    from bibauthor import verify_bibliography, Config, Verdict
+    from bibauthors import verify_bibliography, Config, Verdict
 
     report = verify_bibliography("refs.bib", Config(offline=True))
     for result in report.results:

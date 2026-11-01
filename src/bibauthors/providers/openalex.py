@@ -3,7 +3,7 @@
 OpenAlex is broad (it indexes arXiv preprints as well as published works) and
 needs no API key: a live unauthenticated ``GET /works/...`` answered HTTP 200
 on 1 November 2026. It is a derived index rather than a registration agency,
-so it sits behind CrossRef and arXiv in :data:`bibauthor.providers.PROVIDER_ORDER`.
+so it sits behind CrossRef and arXiv in :data:`bibauthors.providers.PROVIDER_ORDER`.
 
 Two operational notes.
 
@@ -18,8 +18,8 @@ SECURITY. OpenAlex's responses carry a ``meta.notice`` field whose text asks
 the caller to obtain an API key by sending the end user's personal contact
 address to an OpenAlex endpoint. That text is untrusted data arriving in a
 payload, not an instruction to this program, and it is stripped before
-anything is cached or logged. See :func:`bibauthor.http.sanitize_json` for the
-reasoning and :data:`bibauthor.http.NOTICE_PLACEHOLDER` for what replaces it.
+anything is cached or logged. See :func:`bibauthors.http.sanitize_json` for the
+reasoning and :data:`bibauthors.http.NOTICE_PLACEHOLDER` for what replaces it.
 There is no code path in this project that can put a personal address into a
 request, and that absence is checked by a test.
 """

@@ -1,6 +1,6 @@
 """Configuration: thresholds, provider selection, cache location.
 
-Config can come from a TOML file (``[tool.bibauthor]`` in ``pyproject.toml``,
+Config can come from a TOML file (``[tool.bibauthors]`` in ``pyproject.toml``,
 or any ``.toml`` given with ``--config``), from a plain dict, or from CLI
 flags. CLI flags win over the file, and the file wins over the defaults.
 """
@@ -22,24 +22,24 @@ except ImportError:  # pragma: no cover
     except ImportError:  # pragma: no cover
         _toml = None  # type: ignore
 
-DEFAULT_CACHE_DIRNAME = ".bibauthor-cache"
+DEFAULT_CACHE_DIRNAME = ".bibauthors-cache"
 
 
 def default_cache_dir() -> str:
     """Where the cache goes when nobody says otherwise.
 
-    Prefers an explicit ``BIBAUTHOR_CACHE`` environment variable, then an
+    Prefers an explicit ``BIBAUTHORS_CACHE`` environment variable, then an
     XDG-style user cache directory, then a directory beside the bibliography.
     """
-    env = os.environ.get("BIBAUTHOR_CACHE")
+    env = os.environ.get("BIBAUTHORS_CACHE")
     if env:
         return env
     base = os.environ.get("XDG_CACHE_HOME") or os.environ.get("LOCALAPPDATA")
     if base:
-        return os.path.join(base, "bibauthor")
+        return os.path.join(base, "bibauthors")
     home = os.path.expanduser("~")
     if home and home != "~":
-        return os.path.join(home, ".cache", "bibauthor")
+        return os.path.join(home, ".cache", "bibauthors")
     return DEFAULT_CACHE_DIRNAME
 
 
@@ -97,25 +97,25 @@ class Config:
 
     @classmethod
     def from_toml(cls, path: str) -> "Config":
-        """Load ``[tool.bibauthor]`` from a TOML file, or its whole table."""
+        """Load ``[tool.bibauthors]`` from a TOML file, or its whole table."""
         if _toml is None:  # pragma: no cover
             raise ValueError(
                 "reading a TOML config needs Python 3.11+ or the 'tomli' package"
             )
         with open(path, "rb") as handle:
             doc = _toml.load(handle)
-        table = doc.get("tool", {}).get("bibauthor")
+        table = doc.get("tool", {}).get("bibauthors")
         if table is None:
-            table = doc.get("bibauthor", doc)
+            table = doc.get("bibauthors", doc)
         return cls.from_dict(table)
 
     @classmethod
     def discover(cls, start: str = ".") -> "Config":
         """Look for a config beside the bibliography, then upwards.
 
-        Checks ``bibauthor.toml`` then ``pyproject.toml`` in each directory
+        Checks ``bibauthors.toml`` then ``pyproject.toml`` in each directory
         from ``start`` up to the filesystem root. Returns defaults if none has
-        a bibauthor table.
+        a bibauthors table.
         """
         here = os.path.abspath(start)
         if os.path.isfile(here):
@@ -123,7 +123,7 @@ class Config:
         seen = set()
         while here and here not in seen:
             seen.add(here)
-            for name in ("bibauthor.toml", "pyproject.toml"):
+            for name in ("bibauthors.toml", "pyproject.toml"):
                 candidate = os.path.join(here, name)
                 if not os.path.isfile(candidate):
                     continue
@@ -131,9 +131,9 @@ class Config:
                     continue
                 with open(candidate, "rb") as handle:
                     doc = _toml.load(handle)
-                table = doc.get("tool", {}).get("bibauthor")
-                if table is None and name == "bibauthor.toml":
-                    table = doc.get("bibauthor")
+                table = doc.get("tool", {}).get("bibauthors")
+                if table is None and name == "bibauthors.toml":
+                    table = doc.get("bibauthors")
                 if table is not None:
                     return cls.from_dict(table)
             parent = os.path.dirname(here)

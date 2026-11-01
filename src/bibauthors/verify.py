@@ -8,7 +8,7 @@ Flow for one entry:
    exists because comparing an author list against the wrong paper is the
    fastest way to manufacture a false accusation.
 3. Pick the best record: highest confidence, ties broken by provider order.
-4. Compare the author lists with :func:`bibauthor.names.compare_author_lists`.
+4. Compare the author lists with :func:`bibauthors.names.compare_author_lists`.
 5. Note any year disagreement separately, including the arXiv v1 case.
 
 An entry with no usable record is UNVERIFIABLE. That is a distinct outcome

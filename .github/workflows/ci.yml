@@ -1,4 +1,4 @@
-# Continuous integration for bibauthor.
+# Continuous integration for bibauthors.
 #
 # Two jobs, and nothing else. "test" runs the unit suite on every supported
 # platform and Python. "selftest" runs the composite Action in this repository
@@ -111,7 +111,7 @@ jobs:
 
       # The clean path. clean.bib has nothing fabricated in it, so the Action
       # must come back with no mismatch. fail-on: never is used because the
-      # fixture also contains entries that have no cached record (bibauthor
+      # fixture also contains entries that have no cached record (bibauthors
       # exit code 2), and that is not what this step is testing.
       - name: Run the Action on the clean fixture
         id: clean
@@ -121,7 +121,7 @@ jobs:
           offline: "true"
           cache-dir: tests/fixtures/cache
           fail-on: never
-          json-report: bibauthor-selftest-clean.json
+          json-report: bibauthors-selftest-clean.json
 
       - name: Assert the clean report exists and parses
         shell: bash
@@ -131,15 +131,15 @@ jobs:
           REPORT_PATH: ${{ steps.clean.outputs.report-path }}
         run: |
           set -e
-          test -f bibauthor-selftest-clean.json
+          test -f bibauthors-selftest-clean.json
           python - <<'PY'
           import json
           import os
 
-          with open("bibauthor-selftest-clean.json", encoding="utf-8") as handle:
+          with open("bibauthors-selftest-clean.json", encoding="utf-8") as handle:
               data = json.load(handle)
 
-          assert data["tool"] == "bibauthor", data.get("tool")
+          assert data["tool"] == "bibauthors", data.get("tool")
           assert data["schema_version"], "no schema_version in the report"
           assert data["offline"] is True, data["offline"]
           assert isinstance(data["entries"], list) and data["entries"], "no entries"
@@ -147,7 +147,7 @@ jobs:
           assert "exit_code" in data, sorted(data)
 
           assert os.environ["MISMATCHES"] == "0", os.environ["MISMATCHES"]
-          assert os.environ["REPORT_PATH"] == "bibauthor-selftest-clean.json", (
+          assert os.environ["REPORT_PATH"] == "bibauthors-selftest-clean.json", (
               os.environ["REPORT_PATH"]
           )
           print(
@@ -168,7 +168,7 @@ jobs:
           offline: "true"
           cache-dir: tests/fixtures/cache
           fail-on: never
-          json-report: bibauthor-selftest-chimeric.json
+          json-report: bibauthors-selftest-chimeric.json
 
       - name: Assert the chimeric report records exactly one mismatch
         shell: bash
@@ -177,12 +177,12 @@ jobs:
           MISMATCHES: ${{ steps.chimeric.outputs.mismatches }}
         run: |
           set -e
-          test -f bibauthor-selftest-chimeric.json
+          test -f bibauthors-selftest-chimeric.json
           python - <<'PY'
           import json
           import os
 
-          with open("bibauthor-selftest-chimeric.json", encoding="utf-8") as handle:
+          with open("bibauthors-selftest-chimeric.json", encoding="utf-8") as handle:
               data = json.load(handle)
 
           assert data["totals"]["mismatches"] == 1, data["totals"]

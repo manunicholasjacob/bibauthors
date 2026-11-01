@@ -1,52 +1,52 @@
-# pre-commit hook definitions for bibauthor.
+# pre-commit hook definitions for bibauthors.
 #
 # Paste this into your repository's .pre-commit-config.yaml:
 #
 #     repos:
-#       - repo: https://github.com/manunicholasjacob/bibauthor
+#       - repo: https://github.com/manunicholasjacob/bibauthors
 #         rev: v0.1.0
 #         hooks:
-#           - id: bibauthor
+#           - id: bibauthors
 #
-# Or, for a repository that commits its bibauthor cache and wants commits to
+# Or, for a repository that commits its bibauthors cache and wants commits to
 # work with no network at all:
 #
 #     repos:
-#       - repo: https://github.com/manunicholasjacob/bibauthor
+#       - repo: https://github.com/manunicholasjacob/bibauthors
 #         rev: v0.1.0
 #         hooks:
-#           - id: bibauthor-offline
-#             args: ["--offline", "--cache-dir", ".bibauthor-cache"]
+#           - id: bibauthors-offline
+#             args: ["--offline", "--cache-dir", ".bibauthors-cache"]
 #
-# Both hooks exit non-zero on an author mismatch (bibauthor exit code 1) and
+# Both hooks exit non-zero on an author mismatch (bibauthors exit code 1) and
 # on a usage error (3), and also on an unverifiable entry (2), because
 # pre-commit treats any non-zero exit as a failure. Add "--ignore-key KEY" or
 # "--set name_variant=0.65" to args to tune that, the same as on the command
 # line.
 #
 # No email address appears anywhere in this file. Contact for this project is
-# the issue tracker at https://github.com/manunicholasjacob/bibauthor/issues
+# the issue tracker at https://github.com/manunicholasjacob/bibauthors/issues
 
-- id: bibauthor
+- id: bibauthors
   name: Verify bibliography author lists
   description: >-
     Check the author list of every entry in the staged .bib files against
     authoritative metadata, so a chimeric citation with a real title and an
     invented author list does not reach the manuscript.
-  entry: bibauthor
+  entry: bibauthors
   language: python
   files: \.bib$
   types: [file]
   pass_filenames: true
 
-- id: bibauthor-offline
+- id: bibauthors-offline
   name: Verify bibliography author lists (cache only)
   description: >-
-    The cache-only variant, for a repository that commits its bibauthor cache
+    The cache-only variant, for a repository that commits its bibauthors cache
     and wants hermetic, network-free commits. Entries with no cached record
     come back UNVERIFIABLE rather than reaching out, so refresh the cache with
     an online run before relying on this hook.
-  entry: bibauthor
+  entry: bibauthors
   args: ["--offline"]
   language: python
   files: \.bib$

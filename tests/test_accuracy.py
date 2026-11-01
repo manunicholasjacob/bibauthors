@@ -2,7 +2,7 @@
 
 This module is an evaluation harness, not a unit-test file. It loads two
 hand-labelled fixture sets, runs the shipped code over them with the default
-:class:`bibauthor.verdict.Thresholds`, and reports what it finds.
+:class:`bibauthors.verdict.Thresholds`, and reports what it finds.
 
 Three rules govern everything here, and they are the point of the file:
 
@@ -31,11 +31,11 @@ from typing import Any, Dict, List, Optional
 
 import pytest
 
-from bibauthor.config import Config
-from bibauthor.names import compare_names, parse_name
-from bibauthor.parsers import load_bibliography
-from bibauthor.verdict import MISMATCH_VERDICTS, Thresholds, Verdict
-from bibauthor.verify import Verifier
+from bibauthors.config import Config
+from bibauthors.names import compare_names, parse_name
+from bibauthors.parsers import load_bibliography
+from bibauthors.verdict import MISMATCH_VERDICTS, Thresholds, Verdict
+from bibauthors.verify import Verifier
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 EVAL_DIR = os.path.join(HERE, "fixtures", "eval")
@@ -271,7 +271,7 @@ def evaluate_name_pairs(thresholds: Optional[Thresholds] = None) -> Dict[str, An
 
     A pair is predicted "same" when the score reaches ``name_variant``, which
     is the decision the list matcher itself makes in
-    :func:`bibauthor.names.compare_author_lists`.
+    :func:`bibauthors.names.compare_author_lists`.
 
     The returned dict holds ``rows`` (one per pair, with the score and the
     variant tags), ``overall``, ``by_category`` and ``disagreements``.

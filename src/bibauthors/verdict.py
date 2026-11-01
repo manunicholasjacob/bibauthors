@@ -10,7 +10,7 @@ The cost asymmetry is explicit and it is encoded in the defaults: wrongly
 telling a researcher that a real citation is fabricated is worse than failing
 to flag a fabricated one, because the first costs trust in the tool and can
 cost an accusation against a colleague. DISJOINT is therefore hard to reach:
-see :func:`bibauthor.names.compare_author_lists` and the README.
+see :func:`bibauthors.names.compare_author_lists` and the README.
 """
 
 from __future__ import annotations

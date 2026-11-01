@@ -16,11 +16,11 @@ htmlcov/
 .venv/
 venv/
 
-# bibauthor's own outputs
-.bibauthor-cache/
-bibauthor-report.json
+# bibauthors's own outputs
+.bibauthors-cache/
+bibauthors-report.json
 # written by the Action self-test job in .github/workflows/ci.yml
-bibauthor-selftest-*.json
+bibauthors-selftest-*.json
 
 # NOT ignored, on purpose: tests/fixtures/cache/ is committed so the whole
 # test suite runs offline. If those recorded HTTP responses go missing, every

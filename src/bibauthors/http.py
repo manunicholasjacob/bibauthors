@@ -12,7 +12,7 @@ Design constraints, in the order that they constrained the code:
    could reach a request, because the tool is run over other people's
    bibliographies and leaking the operator's address into four third-party
    access logs is not a trade the operator was asked to make.
-3. Cache first, network second. See :mod:`bibauthor.cache`.
+3. Cache first, network second. See :mod:`bibauthors.cache`.
 4. Rate limit per host, with a stricter serialized limit for Semantic
    Scholar, which answers parallel calls with 429.
 """
@@ -36,9 +36,9 @@ from .cache import Cache, CacheMiss
 #: address that these APIs would prefer. A URL is reachable by a human who
 #: wants to complain about traffic, which is the actual purpose of the
 #: convention, and it identifies the software rather than a person.
-CONTACT_URL = "https://github.com/manunicholasjacob/bibauthor"
+CONTACT_URL = "https://github.com/manunicholasjacob/bibauthors"
 
-DEFAULT_USER_AGENT = "bibauthor/0.1.0 (+%s)" % CONTACT_URL
+DEFAULT_USER_AGENT = "bibauthors/0.1.0 (+%s)" % CONTACT_URL
 
 #: Default seconds between requests to one host.
 DEFAULT_MIN_INTERVAL = 1.0
@@ -58,7 +58,7 @@ SERIALIZED_HOSTS = ("api.semanticscholar.org",)
 RETRY_STATUSES = (429, 500, 502, 503, 504)
 
 #: Replacement for any ``notice`` field found in a response body.
-NOTICE_PLACEHOLDER = "[notice stripped by bibauthor]"
+NOTICE_PLACEHOLDER = "[notice stripped by bibauthors]"
 
 _MAX_SANITIZE_DEPTH = 12
 

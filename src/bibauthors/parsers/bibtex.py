@@ -1,6 +1,6 @@
 """A tolerant tokenizing BibTeX reader.
 
-``parse_bibtex(text)`` returns one :class:`bibauthor.entry.Entry` per entry in
+``parse_bibtex(text)`` returns one :class:`bibauthors.entry.Entry` per entry in
 the file, in file order. The whole point of this module is survival: a real
 bibliography is hand-edited, concatenated from several sources, and often
 broken, and a citation checker that dies on the first stray brace checks

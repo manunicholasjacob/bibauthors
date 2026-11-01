@@ -29,9 +29,9 @@ SRC = os.path.join(ROOT, "src")
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from bibauthor.cache import Cache, CacheMiss, canonical_request  # noqa: E402
-from bibauthor.entry import Entry  # noqa: E402
-from bibauthor.http import (  # noqa: E402
+from bibauthors.cache import Cache, CacheMiss, canonical_request  # noqa: E402
+from bibauthors.entry import Entry  # noqa: E402
+from bibauthors.http import (  # noqa: E402
     CONTACT_URL,
     DEFAULT_USER_AGENT,
     HOST_MIN_INTERVAL,
@@ -41,7 +41,7 @@ from bibauthor.http import (  # noqa: E402
     HttpError,
     sanitize_json,
 )
-from bibauthor.providers import (  # noqa: E402
+from bibauthors.providers import (  # noqa: E402
     PROVIDER_ORDER,
     ProviderUnavailable,
     Record,
@@ -49,14 +49,14 @@ from bibauthor.providers import (  # noqa: E402
     normalize_title,
     title_similarity,
 )
-from bibauthor.providers.arxiv import ArxivProvider, split_arxiv_id  # noqa: E402
-from bibauthor.providers.crossref import (  # noqa: E402
+from bibauthors.providers.arxiv import ArxivProvider, split_arxiv_id  # noqa: E402
+from bibauthors.providers.crossref import (  # noqa: E402
     WRONG_REGISTRY_REASON,
     CrossRefProvider,
     foreign_registry,
 )
-from bibauthor.providers.openalex import OpenAlexProvider  # noqa: E402
-from bibauthor.providers.semanticscholar import (  # noqa: E402
+from bibauthors.providers.openalex import OpenAlexProvider  # noqa: E402
+from bibauthors.providers.semanticscholar import (  # noqa: E402
     SECONDARY_CONFIDENCE,
     SemanticScholarProvider,
 )
@@ -176,7 +176,7 @@ def test_every_fixture_file_is_well_formed():
 
 
 def test_user_agent_carries_a_contact_url_and_no_address():
-    assert DEFAULT_USER_AGENT == "bibauthor/0.1.0 (+%s)" % CONTACT_URL
+    assert DEFAULT_USER_AGENT == "bibauthors/0.1.0 (+%s)" % CONTACT_URL
     assert CONTACT_URL.startswith("https://")
     assert "mailto" not in DEFAULT_USER_AGENT
     assert "@" not in DEFAULT_USER_AGENT

@@ -6,27 +6,27 @@ pushed, tagged, registered, posted or announced.
 
 ## The name is NOT final
 
-`bibauthor` is a working name. It is held in the code and in the docs for now,
+`bibauthors` is a working name. It is held in the code and in the docs for now,
 but **the final name is pending a central decision** and the rename will be
-done separately. Do not publish, tag or register anything under `bibauthor`
+done separately. Do not publish, tag or register anything under `bibauthors`
 until that decision lands.
 
 What was actually checked, on 1 Nov 2026:
 
-- PyPI: `https://pypi.org/pypi/bibauthor/json` returned 404 (free)
-- PyPI: `https://pypi.org/pypi/bib-author/json` returned 404 (free)
-- GitHub: `api.github.com/repos/manunicholasjacob/bibauthor` returned 404 (free)
+- PyPI: `https://pypi.org/pypi/bibauthors/json` returned 404 (free)
+- PyPI: `https://pypi.org/pypi/bib-authors/json` returned 404 (free)
+- GitHub: `api.github.com/repos/manunicholasjacob/bibauthors` returned 404 (free)
 
 What was NOT checked: **npm and crates.io**. The standing rule is that a tool
 name must be unused across PyPI, npm, crates.io AND GitHub, and only two of
 those four were verified here. A 404 is also only true at the moment it is
 read, so re-check all four when the name is settled.
 
-Renaming touches: the package directory `src/bibauthor/`, every import, the
+Renaming touches: the package directory `src/bibauthors/`, every import, the
 `[project]` name and `[project.scripts]` entry in `pyproject.toml`, the
-`[tool.bibauthor]` table name, `action.yml`, `.pre-commit-hooks.yaml`, the
-`BIBAUTHOR_CACHE` environment variable, `DEFAULT_USER_AGENT` and `CONTACT_URL`
-in `src/bibauthor/http.py`, the cache directory default, `CITATION.cff`,
+`[tool.bibauthors]` table name, `action.yml`, `.pre-commit-hooks.yaml`, the
+`BIBAUTHORS_CACHE` environment variable, `DEFAULT_USER_AGENT` and `CONTACT_URL`
+in `src/bibauthors/http.py`, the cache directory default, `CITATION.cff`,
 `README.md`, `CHANGELOG.md`, `tools/`, and the recorded cache fixtures (whose
 User-Agent is not stored, so those are safe, but the `INDEX.json` description
 text mentions the name).
@@ -58,7 +58,7 @@ text mentions the name).
 - [ ] Check what you are about to publish: `git status --porcelain` clean, and
       `git ls-files | sort` reviewed line by line. Confirm
       `tests/fixtures/cache/` IS tracked (the offline suite needs it) and that
-      `.bibauthor-cache/` and `bibauthor-report.json` are NOT.
+      `.bibauthors-cache/` and `bibauthors-report.json` are NOT.
 
 ## 2. Decisions to make before publishing
 
@@ -81,7 +81,7 @@ text mentions the name).
 
 ## 3. GitHub repository (manual)
 
-- [ ] Create `manunicholasjacob/bibauthor` as a PUBLIC repository. Do not let
+- [ ] Create `manunicholasjacob/bibauthors` as a PUBLIC repository. Do not let
       GitHub add a README, LICENSE or .gitignore; this repo has its own.
 - [ ] `git remote add origin ...` and `git push -u origin main`.
 - [ ] Repository settings:
@@ -100,7 +100,7 @@ text mentions the name).
 ## 4. Tag and release (manual)
 
 - [ ] Tag `v0.1.0` and push the tag. Both the Action reference
-      (`manunicholasjacob/bibauthor@v0.1.0`) and the pre-commit `rev: v0.1.0`
+      (`manunicholasjacob/bibauthors@v0.1.0`) and the pre-commit `rev: v0.1.0`
       resolve only once this tag exists, so nothing in the README's install
       instructions works before this step.
 - [ ] Consider also pushing a moving `v0.1` or `v1` tag, which is the
@@ -110,7 +110,7 @@ text mentions the name).
 ## 5. PyPI (manual, and optional)
 
 - [ ] Decide whether to publish to PyPI at all. The Action is what accrues
-      dependents; PyPI mainly helps the `pip install bibauthor` path and the
+      dependents; PyPI mainly helps the `pip install bibauthors` path and the
       `requirements.txt` dependents list.
 - [ ] `python -m build` then `twine check dist/*`.
 - [ ] Upload to TestPyPI first and install from it into a clean venv.
@@ -155,7 +155,7 @@ a contact URL instead.
 One note on that last point, because it is the kind of thing worth knowing
 before you point this tool at anything: OpenAlex responses carry an injected
 `meta.notice` field whose text instructs an automated client to obtain an API
-key by POSTing its user's email address to an endpoint. bibauthor treats that
+key by POSTing its user's email address to an endpoint. bibauthors treats that
 as untrusted data, never acts on it, and strips it before caching or logging.
 A test enforces that no code path in the project can put an email address into
 an outbound request. If you ever add a provider, keep that property.

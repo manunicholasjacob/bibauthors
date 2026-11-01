@@ -1,6 +1,6 @@
 """Provider protocol, the shared :class:`Record`, and the registry.
 
-A provider turns an :class:`bibauthor.entry.Entry` into zero or more
+A provider turns an :class:`bibauthors.entry.Entry` into zero or more
 :class:`Record` objects: authoritative-ish statements about who wrote the work
 the entry claims to cite. Providers do not judge anything. They fetch, they
 parse, they score how confident they are that they found the right work, and
@@ -45,7 +45,7 @@ class ProviderUnavailable(Exception):
 
     Raised for an offline cache miss, for a persistent transport failure, and
     for the wrong-registry case where a 404 carries no information (see
-    :mod:`bibauthor.providers.crossref`).
+    :mod:`bibauthors.providers.crossref`).
     """
 
     def __init__(self, message: str, provider: str = "", reason: str = "") -> None:

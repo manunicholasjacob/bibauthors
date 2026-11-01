@@ -2,7 +2,7 @@
 
 ``load_bibliography`` is the only entry point the rest of the package needs.
 It takes a path or a string of text, works out whether it is BibTeX or
-CSL-JSON, and returns a list of :class:`bibauthor.entry.Entry`.
+CSL-JSON, and returns a list of :class:`bibauthors.entry.Entry`.
 
 This file is pure ASCII.
 """

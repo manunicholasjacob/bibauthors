@@ -6,7 +6,7 @@ fixtures becomes a CacheMiss, then ProviderUnavailable, then an UNVERIFIABLE
 verdict. Nothing in this file may reach the network: a test that silently
 goes online would pass on someone else's server and fail in a clean checkout.
 
-``bibauthor.cli.main`` is called in-process and the output is read with
+``bibauthors.cli.main`` is called in-process and the output is read with
 pytest's ``capsys``, rather than spawning a subprocess. That keeps the tests
 fast and, more usefully, keeps the tracebacks real when something breaks.
 
@@ -33,9 +33,9 @@ SRC = os.path.join(ROOT, "src")
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from bibauthor import __version__  # noqa: E402
-from bibauthor.cli import main  # noqa: E402
-from bibauthor.verdict import Thresholds, Verdict  # noqa: E402
+from bibauthors import __version__  # noqa: E402
+from bibauthors.cli import main  # noqa: E402
+from bibauthors.verdict import Thresholds, Verdict  # noqa: E402
 
 FIXTURES = os.path.join(HERE, "fixtures")
 BIB_DIR = os.path.join(FIXTURES, "bib")
@@ -257,7 +257,7 @@ def test_json_to_stdout_parses_and_carries_the_contract(capsys):
     data = json.loads(out)
 
     assert data["schema_version"], sorted(data)
-    assert data["tool"] == "bibauthor"
+    assert data["tool"] == "bibauthors"
     assert data["exit_code"] == 1
     assert data["offline"] is True
     assert isinstance(data["counts"], dict) and data["counts"]
@@ -317,7 +317,7 @@ EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 def test_json_report_carries_no_email_address_and_no_api_key(capsys, tmp_path):
     """Nothing identifying goes into a report that lands in a CI artifact.
 
-    bibauthor never sends a contact address to a provider and never takes an
+    bibauthors never sends a contact address to a provider and never takes an
     API key, so neither may appear in the report it writes. This test is the
     guard on that property, because a report is the thing most likely to be
     uploaded, pasted into an issue, or committed.
@@ -358,7 +358,7 @@ def test_github_annotations_carry_file_and_line(capsys):
     assert "file=" in first, first
     assert "line=" in first, first
     assert "chimeric.bib" in first, first
-    assert "title=bibauthor" in first, first
+    assert "title=bibauthors" in first, first
 
 
 def test_github_annotations_are_quiet_on_a_clean_run(capsys, tmp_path):
@@ -455,13 +455,13 @@ def test_version_exits_zero_and_prints_the_version(capsys):
     assert excinfo.value.code == 0
     out = capsys.readouterr().out
     assert __version__ in out, out
-    assert "bibauthor" in out, out
+    assert "bibauthors" in out, out
 
 
 def test_shipped_pyproject_table_loads(capsys):
-    """The documented [tool.bibauthor] example has to be loadable.
+    """The documented [tool.bibauthors] example has to be loadable.
 
-    pyproject.toml carries the project's own defaults in a [tool.bibauthor]
+    pyproject.toml carries the project's own defaults in a [tool.bibauthors]
     table that doubles as the documented example an adopter copies. A typo in
     a key name there raises a config error, so point --config at it and check
     the run still works and still uses the defaults.

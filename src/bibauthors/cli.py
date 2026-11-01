@@ -44,7 +44,7 @@ accusation of fabrication.
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog="bibauthor",
+        prog="bibauthors",
         description=(
             "Verify the author list of every bibliography entry against "
             "authoritative metadata."
@@ -57,7 +57,7 @@ def build_parser() -> argparse.ArgumentParser:
         nargs="*",
         help="bibliography files (.bib or CSL-JSON). Reads stdin when absent.",
     )
-    parser.add_argument("--version", action="version", version="bibauthor " + __version__)
+    parser.add_argument("--version", action="version", version="bibauthors " + __version__)
     parser.add_argument(
         "--format",
         dest="fmt",
@@ -226,7 +226,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
             else Config.discover(args.paths[0] if args.paths else ".")
         )
     except (OSError, ValueError) as exc:
-        sys.stderr.write("bibauthor: config error: %s\n" % exc)
+        sys.stderr.write("bibauthors: config error: %s\n" % exc)
         return EXIT_USAGE
 
     try:
@@ -253,20 +253,20 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
             **overrides
         )
     except ValueError as exc:
-        sys.stderr.write("bibauthor: %s\n" % exc)
+        sys.stderr.write("bibauthors: %s\n" % exc)
         return EXIT_USAGE
 
     try:
         entries, sources = _read_inputs(args.paths, args.fmt)
     except ParseError as exc:
-        sys.stderr.write("bibauthor: %s\n" % exc)
+        sys.stderr.write("bibauthors: %s\n" % exc)
         return EXIT_USAGE
     except OSError as exc:
-        sys.stderr.write("bibauthor: %s\n" % exc)
+        sys.stderr.write("bibauthors: %s\n" % exc)
         return EXIT_USAGE
 
     if not entries:
-        sys.stderr.write("bibauthor: no entries found in the input\n")
+        sys.stderr.write("bibauthors: no entries found in the input\n")
         return EXIT_USAGE
 
     verifier = Verifier(config=config)

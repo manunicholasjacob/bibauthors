@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Print the measured accuracy of bibauthor against the labelled eval sets.
+"""Print the measured accuracy of bibauthors against the labelled eval sets.
 
 Run it from the repository root:
 
     PYTHONPATH=src python -X utf8 tools/evaluate.py
 
 Everything it prints comes from running the shipped code in
-``src/bibauthor`` over ``tests/fixtures/eval``, offline, against the recorded
+``src/bibauthors`` over ``tests/fixtures/eval``, offline, against the recorded
 API responses in ``tests/fixtures/cache``. No network call is made and no
 source file is modified.
 
@@ -41,7 +41,7 @@ for _path in (os.path.join(ROOT, "src"), os.path.join(ROOT, "tests")):
     if _path not in sys.path:
         sys.path.insert(0, _path)
 
-from bibauthor.verdict import MISMATCH_VERDICTS, Thresholds, Verdict  # noqa: E402
+from bibauthors.verdict import MISMATCH_VERDICTS, Thresholds, Verdict  # noqa: E402
 
 from test_accuracy import (  # noqa: E402
     BASELINE_ENTRY_ACCURACY,
@@ -103,7 +103,7 @@ def main() -> int:
     entries = evaluate_entries()
     th = Thresholds()
 
-    print("bibauthor measured accuracy")
+    print("bibauthors measured accuracy")
     rule("=")
     print("name pairs      : %s" % os.path.join("tests", "fixtures", "eval",
                                                 "name_pairs.json"))

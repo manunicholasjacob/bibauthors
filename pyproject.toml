@@ -1,4 +1,4 @@
-# Packaging metadata for bibauthor.
+# Packaging metadata for bibauthors.
 #
 # No email address appears anywhere in this file on purpose. Contact for this
 # project is the issue tracker named under [project.urls].
@@ -8,7 +8,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "bibauthor"
+name = "bibauthors"
 version = "0.1.0"
 description = "Verify bibliography AUTHOR LISTS against authoritative metadata, so a chimeric citation cannot pass as a clean one."
 readme = "README.md"
@@ -56,13 +56,13 @@ dependencies = [
 dev = ["pytest"]
 
 [project.scripts]
-bibauthor = "bibauthor.cli:main"
+bibauthors = "bibauthors.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/manunicholasjacob/bibauthor"
-Source = "https://github.com/manunicholasjacob/bibauthor"
-Issues = "https://github.com/manunicholasjacob/bibauthor/issues"
-Changelog = "https://github.com/manunicholasjacob/bibauthor/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/manunicholasjacob/bibauthors"
+Source = "https://github.com/manunicholasjacob/bibauthors"
+Issues = "https://github.com/manunicholasjacob/bibauthors/issues"
+Changelog = "https://github.com/manunicholasjacob/bibauthors/blob/main/CHANGELOG.md"
 ORCID = "https://orcid.org/0009-0007-6589-6572"
 
 [tool.setuptools.packages.find]
@@ -71,21 +71,21 @@ where = ["src"]
 # No package data. The only data files in the repository are the recorded HTTP
 # fixtures and the .bib fixtures under tests/, and tests are not packaged.
 [tool.setuptools.package-data]
-bibauthor = []
+bibauthors = []
 
 # ---------------------------------------------------------------------------
-# bibauthor's own configuration, which doubles as the documented example of
-# the [tool.bibauthor] table. Every value below is the shipped default, so
+# bibauthors's own configuration, which doubles as the documented example of
+# the [tool.bibauthors] table. Every value below is the shipped default, so
 # deleting this whole table changes nothing. Copy it into your own
-# pyproject.toml (or into a bibauthor.toml) and edit only what you mean to
-# change; bibauthor searches upward from the bibliography for either file.
+# pyproject.toml (or into a bibauthors.toml) and edit only what you mean to
+# change; bibauthors searches upward from the bibliography for either file.
 #
 # CLI flags win over this table, and this table wins over the defaults.
 # cache_dir is deliberately absent: the default is computed per machine from
-# BIBAUTHOR_CACHE, XDG_CACHE_HOME or LOCALAPPDATA, and pinning it here would
+# BIBAUTHORS_CACHE, XDG_CACHE_HOME or LOCALAPPDATA, and pinning it here would
 # hard-code one developer's path into the repository.
 # ---------------------------------------------------------------------------
-[tool.bibauthor]
+[tool.bibauthors]
 providers = ["crossref", "arxiv", "openalex", "semanticscholar"]
 offline = false
 min_interval = 1.0
@@ -95,7 +95,7 @@ stop_after_confident = true
 ignore_keys = []
 fail_on_unverifiable = false
 
-[tool.bibauthor.thresholds]
+[tool.bibauthors.thresholds]
 name_match = 0.92
 name_variant = 0.70
 partial_coverage = 0.50

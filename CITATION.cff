@@ -2,7 +2,7 @@
 #
 # No email address appears in this file on purpose, so the author field omits
 # the optional "email" key. Contact for this project is the issue tracker at
-# https://github.com/manunicholasjacob/bibauthor/issues
+# https://github.com/manunicholasjacob/bibauthors/issues
 #
 # There is no "doi" key yet. Add one under "identifiers" after the first
 # Zenodo deposit, which is what mints the DOI:
@@ -15,21 +15,21 @@
 cff-version: 1.2.0
 message: If you use this software, please cite it using these metadata.
 type: software
-title: bibauthor
+title: bibauthors
 abstract: >-
   A command line tool and Python library that verifies the AUTHOR LIST of
   every bibliography entry against authoritative metadata from CrossRef,
   arXiv, OpenAlex and Semantic Scholar. Citation checkers usually match on
   title and DOI, which lets a chimeric reference through: a real title, a real
-  venue, a real year, and an invented author list. bibauthor grades the author
+  venue, a real year, and an invented author list. bibauthors grades the author
   list instead, reports a graded verdict per entry, and returns a distinct
   exit code for a mismatch, for an entry it could not check, and for a usage
   error, so it can gate a paper repository's CI without crying wolf.
 version: 0.1.0
 date-released: "2026-11-01"
 license: MIT
-repository-code: https://github.com/manunicholasjacob/bibauthor
-url: https://github.com/manunicholasjacob/bibauthor
+repository-code: https://github.com/manunicholasjacob/bibauthors
+url: https://github.com/manunicholasjacob/bibauthors
 authors:
   - given-names: Manu Nicholas
     family-names: Jacob

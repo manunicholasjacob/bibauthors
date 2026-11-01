@@ -1,4 +1,4 @@
-bibauthor evaluation set
+bibauthors evaluation set
 ========================
 
 Two hand-labelled fixture sets and what they are for.
@@ -22,9 +22,9 @@ The labels answer questions about the world, not about the code:
   name_pairs.json   do these two strings denote the same human being?
   entries.json      is the author list in this entry the real author list of
                     the work it claims to cite, and which of the seven
-                    verdicts in src/bibauthor/verdict.py describes it?
+                    verdicts in src/bibauthors/verdict.py describes it?
 
-Every label was written down before any part of bibauthor was run over the
+Every label was written down before any part of bibauthors was run over the
 set, and no label was changed afterwards because the tool disagreed. Where
 the tool and the label disagree, the disagreement is reported as a result:
 see sections 4 and 6 of tools/evaluate.py, and the KNOWN_PAIR_FAILURES and
@@ -172,7 +172,7 @@ Why this position and not the stricter one. The tool exists to tell a
 researcher that a citation's author list does not belong to the work it cites,
 which is an accusation of fabrication in all but name. The cost of being
 wrong is asymmetric and the asymmetry is encoded in the tool's own defaults
-(see the module docstring of src/bibauthor/verdict.py). Abbreviating given
+(see the module docstring of src/bibauthors/verdict.py). Abbreviating given
 names to initials is not a defect in a bibliography, it is what numeric and
 many author-year styles require; a very large share of real .bib files carry
 nothing else. A checker that treats "J. Smith" against "John Smith" as a
