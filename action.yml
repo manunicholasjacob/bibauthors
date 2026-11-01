@@ -118,7 +118,7 @@ runs:
     # practice; that choice is left to the adopter, who can vendor this file
     # and replace the tag with a SHA.
     - name: Set up Python
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v7
       with:
         python-version: ${{ inputs.python-version }}
 
