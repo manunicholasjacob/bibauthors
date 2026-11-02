@@ -1,5 +1,10 @@
 # bibauthors
 
+[![PyPI](https://img.shields.io/pypi/v/bibauthors)](https://pypi.org/project/bibauthors/)
+[![CI](https://github.com/manunicholasjacob/bibauthors/actions/workflows/ci.yml/badge.svg)](https://github.com/manunicholasjacob/bibauthors/actions/workflows/ci.yml)
+[![Python](https://img.shields.io/pypi/pyversions/bibauthors)](https://pypi.org/project/bibauthors/)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 Verify the **author list** of every entry in a bibliography against
 authoritative metadata, and fail when the authors do not belong to the work.
 
